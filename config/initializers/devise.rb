@@ -30,7 +30,10 @@ Devise.setup do |config|
   # Load and configure the ORM. Supports :active_record (default) and
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
   # available as additional gems.
+  #
   require 'devise/orm/active_record'
+  config.secret_key = '54fbf63f1d1a7cdb12386df70d6ec32914c1e7266bcb3ac573f5c71d31c5f80be0d56693e28718b245507a78467acec548eb738d6cdd593711e8b0baf3888f2e'
+
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
@@ -251,7 +254,7 @@ Devise.setup do |config|
   # config.navigational_formats = ['*/*', :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
-  config.sign_out_via = :delete
+  config.sign_out_via = :get
 
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting

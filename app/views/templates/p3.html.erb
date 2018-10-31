@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en-GB" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="AKI TENNIS不動産">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="uploads/icon_black.png">
+  <meta property="og:description"
+        content="AKI TENNIS不動産のオフィシャルサイトです。。">
+  <link rel="shortcut icon" href="uploads/icon_black.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKI TENNIS不動産</title>
+  <link rel='stylesheet' id='tej-all-css' href='/assets/template3/all.min.1526635475.css' type='text/css'
+        media='all'/>
+  <script>
+  </script>
+</head>
+<body class="home page-template-default page page-id-77">
+
+
+<div id='wrapper' style='color: black'>
+  <header>
+    <h1 style="display: block; font-size: 20px"><%= @user.title %></h1>
+    <div class=home-logo>
+      <span style='color: white; margin-top: 200px'>Make Yourself Home<br>Find Your Chill<br>Own Your Original<br>Keep Your Body Comfortable </span>
+    </div>
+    <a href='index.html#' class='hamburger' style='color: #ffffff;'>o</a>
+
+  </header>
+
+  <div id='content' class="home page-template-default page page-id-77">
+    <div id='splash'>
+      <div class='skip-splash'><a href='index.html#' class='hamburger'>o</a></div>
+      <div class=inner>
+        <section class=splash-slideshow>
+          <ul class=slides>
+            <% cnt = @user.title.length  %>
+            <% i=1%>
+            <% cnt.times  do %>
+
+            <li>
+              <img src="/assets/template3/heya<%=i%>.jpg"/>
+              <span><%= @user.title.split("")[i-1]%></span>
+            </li>
+              <% i+=1%>
+              <% end %>
+<!--            <li>-->
+<!--              <img src='/assets/template3/heya2.jpg'/>-->
+<!--              <span>K</span>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <img src='/assets/template3/heya3.jpg'/>-->
+<!--              <span>I</span>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <img src='/assets/template3/heya4.jpg'/>-->
+<!--              <span>T</span>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <img src='/assets/template3/heya5.jpg'/>-->
+<!--              <span>E</span>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <img src='/assets/template3/heya6.jpg'/>-->
+<!--              <span>N</span>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <img src='/assets/template3/heya7.jpg'/>-->
+<!--              <span>N</span>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <img src='/assets/template3/heya8.jpg'/>-->
+<!--              <span>I</span>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <img src='/assets/template3/heya9.jpg'/>-->
+
+<!--              <span>S</span>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <img src='/assets/template3/heya10.jpg'/>-->
+<!--              <span>☆</span>-->
+<!--            </li>-->
+          </ul>
+        </section>
+      </div>
+    </div>
+
+
+    <section class=slideshow>
+      <div class=tint></div>
+      <ul class=slides>
+        <li>
+          <img src='/assets/template3/heya1.jpg'/>
+
+        </li>
+        <li>
+          <img src='/assets/template3/heya2.jpg'/>
+
+        </li>
+        <li>
+          <img src='/assets/template3/heya3.jpg'/>
+
+        </li>
+        <li>
+          <img src='/assets/template3/heya4.jpg'/>
+
+        </li>
+        <li>
+          <img src='/assets/template3/heya5.jpg'/>
+
+        </li>
+        <li>
+          <img src='/assets/template3/heya6.jpg'/>
+
+        </li>
+        <li>
+          <img src='/assets/template3/heya7.jpg'/>
+
+        </li>
+        <li>
+          <img src='/assets/template3/heya8.jpg'/>
+
+        </li>
+      </ul>
+    </section>
+
+
+  </div><!-- /#content -->
+</div><!-- /#wrapper -->
+
+
+<nav>
+  <section class=nav-header>
+    <a href='index.html'><h1 style="display: block; font-size: 20px; color: white;"><%= @user.title %></h1></a>
+    <a href='index.html#' class='hamburger'>x</a>
+  </section>
+
+  <div class='nav-links vc'>
+    <div class=inner>
+      <div style="color: white; font-size: 20px;">--<%= @user.menu1 %>--</div><br>
+      <div style="color: white; font-size: 20px;">--<%= @user.menu2 %>--</div><br>
+      <div style="color: white; font-size: 20px;">--<%= @user.menu3 %>--</div><br>
+      <div style="color: white; font-size: 20px;">--<%= @user.menu4 %>--</div><br>
+      <div style="color: white; font-size: 20px;">--<%= @user.menu5 %>--</div><br>
+
+
+      <div class=social-links>
+        <a class=icon-instagram href='https://www.instagram.com/#/' target='_blank'></a>
+        <a class=icon-twitter href='https://twitter.com/#' target='_blank'></a>
+        <a class=icon-facebook href='https://www.facebook.com/pg/#-342678315818602'
+           target='_blank'></a>
+      </div>
+    </div>
+  </div>
+
+</nav>
+
+
+<footer>
+</footer>
+
+<script type='text/javascript' src='/assets/template3/jquery.1.12.4.js'></script>
+<script type='text/javascript' src='/assets/template3/jquery-migrate.min.1.4.1.js'></script>
+<script type='text/javascript' src='/assets/template3/all.min.1504594696.js'></script>
+<script type='text/javascript' src='/assets/template3/wp-embed.min.4.9.8.js'></script>
+
+<div id='loading-indicator'></div>
+<div id='grid-overlay'>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+</body>
+</html>
+<!-- 60 queries in 0.610 seconds. -->

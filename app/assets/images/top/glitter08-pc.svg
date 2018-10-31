@@ -1,0 +1,33 @@
+<svg id="あしらい" xmlns="http://www.w3.org/2000/svg" width="352.25" height="300" viewBox="0 0 352.25 300">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #fabe00;
+      }
+
+      .cls-1, .cls-4 {
+        fill-opacity: 0.3;
+      }
+
+      .cls-2, .cls-3 {
+        fill-opacity: 0.8;
+      }
+
+      .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="長方形_12" data-name="長方形 12" class="cls-1" y="286" width="14" height="14"/>
+  <rect id="長方形_12-2" data-name="長方形 12" class="cls-2" x="329" y="40" width="11" height="11"/>
+  <path id="長方形_12-3" data-name="長方形 12" class="cls-3" d="M414.121,4460L426,4448.12,437.879,4460,426,4471.88Z" transform="translate(-321 -4432)"/>
+  <path id="長方形_12-4" data-name="長方形 12" class="cls-3" d="M398,4500.76l4.243,4.24L398,4509.24l-4.243-4.24Z" transform="translate(-321 -4432)"/>
+  <path id="長方形_12-5" data-name="長方形 12" class="cls-4" d="M669,4517.76l4.243,4.24L669,4526.24l-4.243-4.24Z" transform="translate(-321 -4432)"/>
+  <path id="長方形_12-6" data-name="長方形 12" class="cls-3" d="M434,4681.76l4.243,4.24L434,4690.24l-4.243-4.24Z" transform="translate(-321 -4432)"/>
+  <rect id="長方形_12-7" data-name="長方形 12" class="cls-2" x="322" width="6" height="6"/>
+  <rect id="長方形_12-8" data-name="長方形 12" class="cls-2" x="45" y="30" width="6" height="6"/>
+  <rect id="長方形_12-9" data-name="長方形 12" class="cls-2" x="54" y="283" width="6" height="6"/>
+  <path id="長方形_12-10" data-name="長方形 12" class="cls-4" d="M473.456,4679.27l6.364,6.37-6.364,6.36-6.364-6.36Z" transform="translate(-321 -4432)"/>
+  <path id="長方形_12-11" data-name="長方形 12" class="cls-3" d="M400.456,4687.27l6.364,6.37-6.364,6.36-6.364-6.36Z" transform="translate(-321 -4432)"/>
+  <path id="長方形_12-12" data-name="長方形 12" class="cls-3" d="M417.456,4625.27l6.364,6.37-6.364,6.36-6.364-6.36Z" transform="translate(-321 -4432)"/>
+</svg>

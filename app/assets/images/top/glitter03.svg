@@ -1,0 +1,37 @@
+<svg id="あしらい" xmlns="http://www.w3.org/2000/svg" width="629.875" height="252" viewBox="0 0 629.875 252">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #fabe00;
+      }
+
+      .cls-1, .cls-2 {
+        fill-opacity: 0.3;
+      }
+
+      .cls-1, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3, .cls-4 {
+        fill-opacity: 0.8;
+      }
+    </style>
+  </defs>
+  <path id="長方形_12" data-name="長方形 12" class="cls-1" d="M622.406,4357.06h16.781v16.81H622.406v-16.81Z" transform="translate(-62.125 -4324.66)"/>
+  <rect id="長方形_12-2" data-name="長方形 12" class="cls-2" x="45.469" y="153.59" width="16.812" height="16.81"/>
+  <rect id="長方形_12-3" data-name="長方形 12" class="cls-3" x="478.687" y="122.4" width="13.188" height="13.19"/>
+  <path id="長方形_12-4" data-name="長方形 12" class="cls-4" d="M544.545,4373.86l14.255-14.25,14.255,14.25L558.8,4388.12Z" transform="translate(-62.125 -4324.66)"/>
+  <path id="長方形_12-5" data-name="長方形 12" class="cls-4" d="M675.2,4355.57l5.091,5.09-5.091,5.09-5.091-5.09Z" transform="translate(-62.125 -4324.66)"/>
+  <path id="長方形_12-6" data-name="長方形 12" class="cls-1" d="M537.2,4475.57l5.091,5.09-5.091,5.09-5.091-5.09Z" transform="translate(-62.125 -4324.66)"/>
+  <path id="長方形_12-7" data-name="長方形 12" class="cls-4" d="M185.6,4551.16l5.091,5.09-5.091,5.09-5.091-5.09Z" transform="translate(-62.125 -4324.66)"/>
+  <path id="長方形_12-8" data-name="長方形 12" class="cls-4" d="M684.8,4461.46H692v7.2h-7.2v-7.2Z" transform="translate(-62.125 -4324.66)"/>
+  <path id="長方形_12-9" data-name="長方形 12" class="cls-1" d="M570.8,4485.46H578v7.2h-7.2v-7.2Z" transform="translate(-62.125 -4324.66)"/>
+  <path id="長方形_12-10" data-name="長方形 12" class="cls-4" d="M645.2,4408.66h7.2v7.2h-7.2v-7.2Z" transform="translate(-62.125 -4324.66)"/>
+  <path id="長方形_12-11" data-name="長方形 12" class="cls-4" d="M585.2,4324.66h7.2v7.2h-7.2v-7.2Z" transform="translate(-62.125 -4324.66)"/>
+  <path id="長方形_12-12" data-name="長方形 12" class="cls-4" d="M143.6,4538.25h7.2v7.2h-7.2v-7.2Z" transform="translate(-62.125 -4324.66)"/>
+  <path id="長方形_12-13" data-name="長方形 12" class="cls-1" d="M152.547,4561.38l7.637,7.63-7.637,7.64-7.637-7.64Z" transform="translate(-62.125 -4324.66)"/>
+  <path id="長方形_12-14" data-name="長方形 12" class="cls-4" d="M604.947,4416.19l7.637,7.63-7.637,7.64-7.637-7.64Z" transform="translate(-62.125 -4324.66)"/>
+  <path id="長方形_12-15" data-name="長方形 12" class="cls-4" d="M69.747,4514.58l7.637,7.64-7.637,7.63-7.637-7.63Z" transform="translate(-62.125 -4324.66)"/>
+  <path id="長方形_12-16" data-name="長方形 12" class="cls-4" d="M193.347,4488.18l7.637,7.64-7.637,7.63-7.637-7.63Z" transform="translate(-62.125 -4324.66)"/>
+</svg>
