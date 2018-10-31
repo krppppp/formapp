@@ -1,14 +1,7 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Tops</h1>
-
 <% if current_user %>
-  <p><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></p>
+  <%= link_to "ログアウト", destroy_user_session_path %>
+  <%= link_to "マイページ", user_path(current_user) %>
 <% else %>
-  <p><%= link_to "ログイン", new_user_session_path %></p>
-  <p><%= link_to "登録", new_user_registration_path	 %></p>
+  <%= link_to "ランディング", new_user_registration_path(current_user) %>
+
 <% end %>
-
-<br>
-
-<%= link_to 'New Top', new_top_path %>

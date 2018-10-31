@@ -1,0 +1,119 @@
+<%= form_for @user do |f| %>
+  <div class='container pb-5'>
+    <% if @user.errors.any? %>
+      <div id='error_explanation'>
+        <h2><%= pluralize(user.errors.count, 'error') %> 箇所の誤りがあります。</h2>
+        <ul>
+          <% user.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <script src='https://ajaxzip3.github.io/ajaxzip3.js' charset='UTF-8'></script>
+
+
+    <div class='form-team my-2'>
+      <%= f.label :HPタイトル, class: "text-white" %>
+      <%= f.text_field :title, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+    <br><br>
+
+
+    <div class='form-team my-2'>
+      <%= f.label :メニュー１, class: "text-white" %>
+      <%= f.text_field :menu1, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+    <br><br>
+    <div class='form-team my-2'>
+      <%= f.label :メニュー2, class: "text-white" %>
+      <%= f.text_field :menu2, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+
+    <br><br>
+    <div class='form-team my-2'>
+      <%= f.label :メニュー3, class: "text-white" %>
+      <%= f.text_field :menu3, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+
+    <br><br>
+    <div class='form-team my-2'>
+      <%= f.label :メニュー4, class: "text-white" %>
+      <%= f.text_field :menu4, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+    <br><br>
+
+    <div class='form-team my-2'>
+      <%= f.label :メニュー5, class: "text-white" %>
+      <%= f.text_field :menu5, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+    <br><br>
+
+    <div class='form-team my-2'>
+      <%= f.label :見出し1, class: "text-white" %>
+      <%= f.text_field :heading1, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+    <br><br>
+
+    <div class='form-team my-2'>
+      <%= f.label :小見出し1, class: "text-white" %>
+      <%= f.text_field :subheading1, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+    <br><br>
+
+
+    <div class='form-team my-2'>
+      <%= f.label :見出し2, class: "text-white" %>
+      <%= f.text_field :heading2, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+    <br><br>
+
+    <div class='form-team my-2'>
+      <%= f.label :小見出し2, class: "text-white" %>
+      <%= f.text_field :subheading2, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+    <br><br>
+
+
+    <div class='form-team my-2'>
+      <%= f.label :見出し3, class: "text-white" %>
+      <%= f.text_field :heading3, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+    <br><br>
+
+    <div class='form-team my-2'>
+      <%= f.label :小見出し3, class: "text-white" %>
+      <%= f.text_field :subheading3, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+    <br><br>
+
+
+    <div class='form-team my-2'>
+      <%= f.label :見出し4, class: "text-white" %>
+      <%= f.text_field :heading4, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+    <br><br>
+
+    <div class='form-team my-2'>
+      <%= f.label :小見出し4, class: "text-white" %>
+      <%= f.text_field :subheading4, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+    <br><br>
+
+    <div class='form-team my-2'>
+      <%= f.label :見出し5, class: "text-white" %>
+      <%= f.text_field :heading5, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+    <br><br>
+
+    <div class='form-team my-2'>
+      <%= f.label :小見出し5, class: "text-white" %>
+      <%= f.text_field :subheading5, class: 'frame-none contact-form', id: 'last_name' %>
+    </div>
+    <br><br>
+
+    <div class='form-team text-center'>
+      <%= f.submit '登録する', data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, class: 'text3 btn pera-button w-50 text-white mt-5', id: 'formButton' %>
+    </div>
+
+<% end %>

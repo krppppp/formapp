@@ -1,38 +1,580 @@
-<h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+          'gtm.start':
+              new Date().getTime(), event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-5JPGDVQ');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="/assets/top/head.js"></script>
+  <script>
+      if (Useragnt.mobile) {
+          document.write('<meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1, maximum-scale=1, minimum-scale=1">');
+      } else if (Useragnt.tablet) {
+          document.write('<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=1100">');
+      } else {
+          document.write('<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=1100">');
+      }
+  </script>
+  <title>AKI HP</title>
+  <meta name="description" itemprop="description"
+        content="AKI HP"/>
+  <meta name="keywords" itemprop="keywords"
+        content="AKI HP,AKI HP"/>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <meta property="og:title" content="AKI HP"/>
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+        content="icon_black.png"/>
+  <meta property="og:site_name" content="AKI HP"/>
+  <meta property="og:description"
+        content="AKI HP"/>
+  <link rel="shortcut icon" href="icon_black.png">
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="AKI HP">
+  <meta name="twitter:title" content="AKI HP">
+  <meta name="twitter:url" content="#.jp/">
+  <meta name="twitter:image"
+        content="icon_black.png"/>
+  <meta name="twitter:description"
+        content="AKI HP">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/top/reset.css">
+  <link rel="stylesheet" href="/assets/top/style.css">
+  <script type="text/javascript" src="/assets/top/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="/assets/top/lib.js"></script>
+  <script type="text/javascript" src="/assets/top/snap.svg.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+  <script type="text/javascript" src="/assets/top/jquery.mobile.custom.min.js"></script>
+  <script type="text/javascript" src="/assets/top/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="/assets/top/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="/assets/top/common.js"></script>
+  <script type="text/javascript" src="/assets/top/top.js"></script>
+
+  <meta name="google-site-verification" content="J5DdloWFXFB6L7yHtZkNI7p7u6FWP-A7PW3A_ruQqwQ"/>
+  <meta name="google-site-verification" content="wuW2wlEGvuWQ29F2z-fCmNDi0awzpNCLTBA2Mkp2pEA"/>
+</head>
+<body id="top-body">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JPGDVQ"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrapper">
+  <header class="header">
+    <div class="inner">
+      <h1 class="logo"><a href="index.html">AKI HP</a></h1>
+      <div class="sp gnav-switch"></div>
+      <nav class="gnav">
+        <ul>
+          <li><a href="index.html#service" onClick="ga('send', 'event', 'SERVICE遷移', 'クリック', 'ヘッダ', 1);">プランのご紹介</a>
+          </li>
+          <li><a href="index.html#howtouse" onClick="ga('send', 'event', 'HOW TO USE遷移', 'クリック', 'ヘッダ', 1);">テンプレ見学</a>
+          </li>
+          <li><a href="index.html#howitworks"
+                 onClick="ga('send', 'event', 'HOW IT WORKS遷移', 'クリック', 'ヘッダ', 1);">ヘルプ</a></li>
+          <li><a href="#.jp/faq" class="exlink">FAQ</a></li>
+        </ul>
+        <!--a
+                            <div class="social sp">
+                                <div class="facebook"><a href="#" class="exlink">Facebook</a></div>
+                                <div class="twitter"><a href="#" class="exlink">Twitter</a></div>
+                            </div>
+        -->
+        <div class="gnav-close sp">×</div>
+      </nav>
+    </div>
+  </header>
+  <div class="kv">
+    <div class="inner">
+      <div class="kv-title">
+        <div id="kv-title-logo">
+          <svg version="1.1" id="kv-logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+               y="0px" viewBox="0 0 103.4 81.9" xml:space="preserve" width="103.432px" height="81.95px" enable-background="new 117.695 396.547 564.282 129.791">
+            <ellipse transform="matrix(0.9065 -0.4222 0.4222 0.9065 -18.6928 41.5439)" class="circle" cx="84.5" cy="63" rx="8.7" ry="8.7"/>
+            <ellipse transform="matrix(0.9065 -0.4222 0.4222 0.9065 -24.815 13.8948)" class="circle" cx="19" cy="63" rx="8.7" ry="8.7"/>
+            <path class="left" d="M23.1,19.1l0-7.4c0-0.7,0.6-1.4,1.4-1.4l4.7,0c0.8,0,1.5-0.7,1.5-1.5l0-7.3c0-0.4-0.2-0.8-0.4-1.1
+                C30,0.2,29.6,0,29.2,0L6.8,0C5.9,0,5.3,0.7,5.3,1.5l0,7.3c0,0.4,0.2,0.8,0.4,1.1c0.3,0.3,0.7,0.4,1.1,0.4l4.7,0c0.4,0,0.7,0.1,1,0.4
+                c0.3,0.3,0.4,0.6,0.4,1l0,13.1v6.1h0l0,13.2c0,0.5-0.3,1.1-0.9,1.3c-0.3,0.1-0.7,0.3-1,0.4C1.5,50.2-2.6,61.5,1.8,71
+                c4.4,9.5,15.7,13.6,25.2,9.2c9.5-4.4,13.6-15.7,9.2-25.2c-2.3-5-6.7-8.7-12-10.2c-0.6-0.2-1-0.7-1-1.3l0-11.9l0-0.6l0-10.1
+                L23.1,19.1z M26.8,59.3c2,4.3,0.1,9.5-4.2,11.5c-4.3,2-9.5,0.1-11.5-4.2c-2-4.3-0.1-9.5,4.2-11.5C19.6,53.1,24.8,55,26.8,59.3z"/>
+            <path class="right" d="M101.7,55c-2.3-5-6.7-8.7-12-10.2c-0.6-0.2-1-0.7-1-1.3l0-11.9l0-0.6h0v-5l0-6.8l0-7.4c0-0.7,0.6-1.4,1.4-1.4
+                l4.7,0c0.8,0,1.5-0.7,1.5-1.5l0-7.3c0-0.4-0.2-0.8-0.4-1.1C95.4,0.2,95.1,0,94.7,0L72.3,0c-0.8,0-1.5,0.7-1.5,1.5l0,7.3
+                c0,0.4,0.2,0.8,0.4,1.1c0.3,0.3,0.7,0.4,1.1,0.4l4.7,0c0.4,0,0.7,0.1,1,0.4c0.3,0.3,0.4,0.6,0.4,1l0,9.1l0,10.1l0,13.2
+                c0,0.5-0.3,1.1-0.9,1.3c-0.3,0.1-0.7,0.3-1,0.4C67,50.2,62.9,61.5,67.3,71c4.4,9.5,15.7,13.6,25.2,9.2C102,75.8,106.1,64.5,101.7,55
+                z M88.1,70.9c-4.3,2-9.5,0.1-11.5-4.2c-2-4.3-0.1-9.5,4.2-11.5c4.3-2,9.5-0.1,11.5,4.2C94.4,63.7,92.5,68.8,88.1,70.9z"/>
+          </svg>
+              <svg version="1.1" id="kv-logo-svg-center" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                   y="0px" width="564.282px" height="129.791px" viewBox="117.695 396.547 564.282 129.791"
+                   enable-background="new 117.695 396.547 564.282 129.791" xml:space="preserve">
+                <path fill="#FFFFFF" d="M681.651,432.836l-17.328-36.289c0.981,2.289,0,4.904-1.961,5.885
+                c-71.925,38.904-165.101,60.482-263.18,60.482s-190.601-21.578-262.199-60.482c-1.961-0.981-2.942-3.596-1.961-5.885l-17.327,37.271
+                c0.654-1.309,1.634-1.962,2.615-2.289c1.308-0.327,2.615-0.327,3.596,0.327c68.656,40.539,171.639,94.482,275.93,94.482
+                c103.964,0,207.273-53.943,275.93-94.482c0.98-0.654,2.615-0.654,3.596-0.327c1.308,0.327,2.289,1.308,2.615,2.289"/>
+              </svg>
+        </div>
+        <div id="kv-title-hello" class="kv-vertical-motion">初期費用０円、納期最短１秒、月額費４９０円で</div>
+        <div id="kv-title-cycling" class="kv-vertical-motion">初心者でも簡単作成申込み！！</div>
+      </div>
+      <div class="glitter"></div>
+      <div class="action kv-vertical-motion">
+        <div class="btn btn-submit"><a href="/users/sign_in" target="_blank"
+                                       onclick="ga('send', 'event', '会員登録', 'クリック', 'キービジュアル', 1);">ログイン</a>
+        </div>
+        <div class="btn btn-search"><a href="#.jp/app/top" target="_blank"
+                                       onclick="ga('send', 'event', 'STATION SEARCH', 'クリック', 'キービジュアル', 1);">活用事例を見てみる</a>
+        </div>
+        <div class="apli-link" style="text-align: center; max-width: 250px; margin: 10px auto 0;">
+          <a class="ios"
+             href="https://itunes.apple.com/jp/app/hello-cycling-%E3%81%A9%E3%81%93%E3%81%A7%E3%82%82%E5%80%9F%E3%82%8A%E3%82%8C%E3%82%8B%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%82%B7%E3%82%A7%E3%82%A2/id1216653677?mt=8"
+             style="display: block; float: left; padding: 10px;">
+            <img style="width: 105px;" alt='Download on the App Store'
+                 src='https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg'/>
+          </a>
+          <a class="android"
+             href='locycling&hl=ja&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+             style="display: block; float: right;">
+            <img style="width: 125px;" alt='Get it on Google Play'
+                 src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+          </a>
+        </div>
+      </div>
+      <div class="arrow-down">↓</div>
+    </div>
+    <div id="bg-cover"></div>
   </div>
+  <main>
+    <section class="section-wrap" id="service">
+      <div class="section-title vertical-title-motion">
+        <h1></h1>
+        <p>AKI HPとは</p>
+      </div>
+      <div class="section-content">
+        <div class="inner">
+          <p class="headline vertical-title-motion">誰でも簡単にホームページ作成の申し込みが可能<br class="sp"><span
+            class="pc"> </span>
+          </p>
+          <p class="text vertical-title-motion">AKI HPはお客様がご入力頂いた情報を元にホームページを作成、<br class="pc">最短１秒でいくつかのホームページをお客様にご提案させていただくサービスです
+          </p>
+          <ul class="feature-list">
+            <li class="feature01 vertical-motion">
+              <div class="right">
+                <div class="image">
+                  <div class="glitter"></div>
+                </div>
+              </div>
+              <div class="left">
+                <div class="illust"></div>
+                <p class="feature-number">POINT <span class="number">01</span></p>
+                <p class="feature-title">フォームを入力するだけで<br>ホームページが手に入る！</p>
+                <p class="feature-text">２ステップで皆様のお手元に<br>洗練されたホームページをお届けします。
+                </p>
+              </div>
+            </li>
+            <li class="feature02 vertical-motion">
+              <div class="left">
+                <div class="image">
+                  <div class="glitter"></div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="illust"></div>
+                <p class="feature-number">POINT <span class="number">02</span></p>
+                <p class="feature-title">気に入っていただければ<br class="pc">その場で公開可能！</p>
+                <p class="feature-text">メールにて届いたホームページがお気に召しました場合<br class="pc">その場で公開ボタンひとつでそのホームページがあなたのモノに！！
+                </p>
+              </div>
+            </li>
+            <li class="feature03 vertical-motion">
+              <div class="right">
+                <div class="image">
+                  <div class="glitter"></div>
+                </div>
+              </div>
+              <div class="left">
+                <div class="illust"></div>
+                <p class="feature-number">POINT <span class="number">03</span></p>
+                <p class="feature-title">お客さまのニーズに応える<br>多彩なオプション</p>
+                <p class="feature-text">ご希望であればロゴデザインや<br class="pc">ご希望したURLを取得、利用など好きなようにカスタム可能！</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
 
-  <%= f.hidden_field :password, :value =>"test1234" %>
-  <%= f.hidden_field :password_confirmation, :value => "test1234" %>
+    <section class="section-wrap yellow" id="howtouse">
+      <div class="section-title vertical-title-motion">
+        <h1>HOW TO USE</h1>
+        <p>ご利用方法</p>
+      </div>
+      <div class="section-content">
+        <div class="inner">
+          <ul class="step-list">
+            <li class="step01 vertical-motion">
+              <p class="step-number">STEP <span class="number">01</span></p>
+              <div class="image">
+                <div class="glitter"></div>
+                <img src="/assets/top/ネットサーフィンアイコン2 (1).png" alt="STEP01 登録">
+              </div>
+              <p class="step-title">やることはフォームを入力するだけ！</p>
+              <p class="step-text">フォームから社名や載せたい文章、写真の選択などを行ってもらいます</p>
+            </li>
+            <li class="step02 vertical-motion">
+              <p class="step-number">STEP <span class="number">02</span></p>
+              <div class="image">
+                <div class="glitter"></div>
+                <img src="/assets/top/アンケートシートのフリー素材.png" alt="STEP02 借りる">
+              </div>
+              <p class="step-title">選択する</p>
+              <p class="step-text">弊社からお客様が入力したメールアドレス宛にホームページ候補をいくつかお届けするので<br>拝見してよく吟味してください<br>
+                <span><a href="#.jp/time_price/">※プランの詳細についてはこちら</a></span></p>
+            </li>
+            <li class="step03 vertical-motion">
+              <p class="step-number">STEP <span class="number">03</span></p>
+              <div class="image">
+                <div class="glitter"></div>
+                <img src="/assets/top/お金アイコン.png" alt="STEP03 返却">
+              </div>
+              <p class="step-title">プランの購入</p>
+              <p class="step-text">STEP02で気に入ったホームページがありましたら、その場でプラン購入、晴れて公開することが出来ます！</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section-wrap" id="search">
+      <p class="search-text">AKI HPのテンプレ<br class="sp"><span class="pc"> </span> Gallery</p>
+      <div class="action">
+        <div class="btn btn-search"><a href="#.jp/app/top" target="_blank"
+                                       onclick="ga('send', 'event', 'STATION SEARCH', 'クリック', 'ハローサイクル ボディ', 1);">SEARCH</a>
+        </div>
+      </div>
+    </section>
+    <section class="section-wrap" id="links">
+      <div class="inner">
+        <h2 class="subtitle">参加企業</h2>
+        <ul class="link-list">
+          <li class="link-nakano"><a href="" class="hover" target="_blank">AKI OPEN</a></li>
+          <li class="link-lacool"><a href="" class="hover" target="_blank">かんどころ</a></li>
+          <!--<li class="link-ecomobi"><a href="https://ecomobi.hellocycling.jp/" class="hover" target="_blank"></a>-->
+          <!--</li>-->
+          <!--<li class="link-norisuke"><a href="https://norisuke.hellocycling.jp/" class="hover" target="_blank">のりすけ　さくらシェアリング</a>-->
+          <!--</li>-->
+          <!--<li class="link-bellsharing"><a href="https://bellsharing.hellocycling.jp/" class="hover"-->
+          <!--target="_blank">Bell Sharing</a></li>-->
+          <!--<li class="link-ecobike"><a href="https://ecobike.hellocycling.jp/" class="hover" target="_blank">エコバイク</a>-->
+          <!--</li>-->
+          <!--<li class="link-daichari"><a href="https://daichari.hellocycling.jp/" class="hover" target="_blank">ダイチャリ</a>-->
+          <!--</li>-->
+          <!--<li class="link-clover"><a href="https://clover.hellocycling.jp/" class="hover" target="_blank">CLOVER</a>-->
+          <!--</li>-->
+          <!--<li class="link-anabuki"><a href="https://anabuki.hellocycling.jp/" class="hover" target="_blank">anabuki</a>-->
+          <!--</li>-->
+        </ul>
+      </div>
+
+    </section>
+    <!--<section class="section-wrap" id="howitworks">-->
+    <!--<div class="section-title vertical-title-motion">-->
+    <!--<span class="before">企業の方へ</span>-->
+    <!--<h1>HOW IT WORKS</h1>-->
+    <!--<p>運営について</p>-->
+    <!--</div>-->
+    <!--<div class="section-content">-->
+    <!--<div class="inner">-->
+    <!--<ul class="flow-list">-->
+    <!--<li class="flow01 vertical-motion">-->
+    <!--<div class="left">-->
+    <!--<div class="image">-->
+    <!--<div class="glitter"></div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="right">-->
+    <!--<div class="illust"></div>-->
+    <!--<p class="flow-headline">HARDWARE</p>-->
+    <!--<p class="flow-title">必要なハードは<br class="sp">自転車のみです。</p>-->
+    <!--<p class="flow-text">どんなモデルの自転車でも、スマートキーを装着すれば<br class="pc">HELLO-->
+    <!--CYCLINGのシステムをご利用いただけます。</p>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--<li class="flow02 vertical-motion">-->
+    <!--<div class="left">-->
+    <!--<div class="image">-->
+    <!--<div class="glitter"></div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="right">-->
+    <!--<div class="illust"></div>-->
+    <!--<p class="flow-headline">NETWORK</p>-->
+    <!--<p class="flow-title">AKI HP<br class="sp">システムで<br class="pc">簡単に<br class="sp">管理・運営が可能です。-->
+    <!--</p>-->
+    <!--<p class="flow-text">注文管理や売上集計、アナライズ機能をご利用になれます。</p>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--<li class="flow03 vertical-motion">-->
+    <!--<div class="left">-->
+    <!--<div class="image">-->
+    <!--<div class="glitter"></div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="right">-->
+    <!--<div class="illust"></div>-->
+    <!--<p class="flow-headline">BRANDING</p>-->
+    <!--<p class="flow-title">地域に合わせた<br class="sp">ブランドを作れます。</p>-->
+    <!--<p class="flow-text">地域の持つ魅力・資源を活かしたブランド戦略が可能です。</p>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--<li class="flow04 vertical-motion">-->
+    <!--<div class="left">-->
+    <!--<div class="image">-->
+    <!--<div class="glitter"></div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="right">-->
+    <!--<div class="illust"></div>-->
+    <!--<p class="flow-headline">SUPPORT</p>-->
+    <!--<p class="flow-title">運用もサポート<br class="sp">いたします。</p>-->
+    <!--<p class="flow-text">運営に関わるご相談も受け付けております。</p>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</section>-->
+    <section class="section-wrap yellow" id="contact">
+      <div class="section-title vertical-title-motion">
+        <h1>CONTACT US</h1>
+        <p>お問い合わせ</p>
+      </div>
+      <div class="section-content vertical-motion">
+        <div class="inner">
+          <p class="text">弊社サービスへのお問い合わせは以下のフォームよりお願いいたします。<br class="pc">法人様の場合は企業名を必ずご入力下さい。</p>
+          <div class="form-state-box">
+            <ul class="form_state clearfix">
+              <li class="step1 on">
+                <div class="list_inner"><span>1</span>送信内容の入力</div>
+              </li>
+              <li class="step2"><span>2</span>入力内容の確認</li>
+              <li class="step3"><span>3</span>送信完了</li>
+            </ul>
+          </div>
+
+          <div id="cstype_error" style="color: #ff0000; display:none">
+            <p class="text">※お問合せ種別を選択してください</p>
+          </div>
+          <div id="form_content_wrap">
+            <section class="form_step form_step1 on">
+              <%= form_for @user do |f| %>
+                <div class='container pb-5'>
+                  <% if @user.errors.any? %>
+                    <div id='error_explanation'>
+                      <h2><%= pluralize(@user.errors.count, 'error') %> 箇所の誤りがあります。</h2>
+                      <ul>
+                        <% @user.errors.full_messages.each do |message| %>
+                          <li><%= message %></li>
+                        <% end %>
+                      </ul>
+                    </div>
+                  <% end %>
+                  <script src='https://ajaxzip3.github.io/ajaxzip3.js' charset='UTF-8'></script>
+                  <%= f.hidden_field :password, :value => "test1234" %>
+                  <%= f.hidden_field :password_confirmation, :value => "test1234" %>
+                  <div class="form-left">
+                    <div class='form-team my-2'>
+                      <%= f.label :Email, class: "text-white" %>
+                      <%= f.text_field :email, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+
+                    <div class='form-team my-2'>
+                      <%= f.label :名前, class: "text-white" %>
+                      <%= f.text_field :name, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+
+                    <div class='form-team my-2'>
+                      <%= f.label :HPタイトル, class: "text-white" %>
+                      <%= f.text_field :title, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
 
 
-  <!-- <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+                    <div class='form-team my-2'>
+                      <%= f.label :メニュー１, class: "text-white" %>
+                      <%= f.text_field :menu1, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+                    <div class='form-team my-2'>
+                      <%= f.label :メニュー2, class: "text-white" %>
+                      <%= f.text_field :menu2, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div> -->
+                    <br><br>
+                    <div class='form-team my-2'>
+                      <%= f.label :メニュー3, class: "text-white" %>
+                      <%= f.text_field :menu3, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+                    <br><br>
 
-<%= render "devise/shared/links" %>
+                    <div class='form-team my-2'>
+                      <%= f.label :メニュー4, class: "text-white" %>
+                      <%= f.text_field :menu4, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+
+                    <div class='form-team my-2'>
+                      <%= f.label :メニュー5, class: "text-white" %>
+                      <%= f.text_field :menu5, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+
+                    <div class='form-team my-2'>
+                      <%= f.label :見出し1, class: "text-white" %>
+                      <%= f.text_field :heading1, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+
+
+                  </div>
+
+                  <div class="form-right">
+                    <div class='form-team my-2'>
+                      <%= f.label :小見出し1, class: "text-white" %>
+                      <%= f.text_field :subheading1, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+                    <div class='form-team my-2'>
+                      <%= f.label :見出し2, class: "text-white" %>
+                      <%= f.text_field :heading2, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+
+                    <div class='form-team my-2'>
+                      <%= f.label :小見出し2, class: "text-white" %>
+                      <%= f.text_field :subheading2, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+
+
+                    <div class='form-team my-2'>
+                      <%= f.label :見出し3, class: "text-white" %>
+                      <%= f.text_field :heading3, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+
+                    <div class='form-team my-2'>
+                      <%= f.label :小見出し3, class: "text-white" %>
+                      <%= f.text_field :subheading3, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+
+
+                    <div class='form-team my-2'>
+                      <%= f.label :見出し4, class: "text-white" %>
+                      <%= f.text_field :heading4, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+
+                    <div class='form-team my-2'>
+                      <%= f.label :小見出し4, class: "text-white" %>
+                      <%= f.text_field :subheading4, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+
+                    <div class='form-team my-2'>
+                      <%= f.label :見出し5, class: "text-white" %>
+                      <%= f.text_field :heading5, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+
+                    <div class='form-team my-2'>
+                      <%= f.label :小見出し5, class: "text-white" %>
+                      <%= f.text_field :subheading5, class: 'frame-none contact-form', id: 'last_name' %>
+                    </div>
+                    <br><br>
+                  </div>
+
+                  <%= f.submit '登録する',style:"    padding: 20px;
+    background: #FF5722;
+    border-radius: 40px;
+    color: white;
+    width: 100%;
+    float: right;
+    font-size: 20px;", data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, id: 'formButton' %>
+                </div>
+
+              <% end %>
+
+            </section>
+            <!-- form_1 end -->
+          </div><!-- /#form_content_wrap -->
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="inner">
+      <div class="pagetop"><a href="index.html#">PAGETOP</a></div>
+      <ul class="footnav">
+        <li><a href="#.jp/app/terms" target="blank">TERMS OF USE</a></li>
+        <li><a href="#.jp/privacypolicy/">PRIVACY POLICY</a></li>
+        <li><a href="#.jp/company">COMPANY</a></li>
+        <li><a href="#.jp/app/law">LAW</a></li>
+        <!--
+        <li class="social facebook"><a href="#">Facebook</a></li>
+        <li class="social twitter"><a href="#">Twitter</a></li>
+      -->
+      </ul>
+    </div>
+  </footer>
+</div>
+<script>
+
+    var _chaq = _chaq || [];
+
+    _chaq['_accountID'] = 2664;
+
+    (function (D, s) {
+
+        var ca = D.createElement(s)
+
+            , ss = D.getElementsByTagName(s)[0];
+
+        ca.type = 'text/javascript';
+
+        ca.async = !0;
+
+        ca.setAttribute('charset', 'utf-8');
+
+        var sr = 'https://v1.chamo-chat.com/chamovps.js';
+
+        ca.src = sr + '?' + parseInt((new Date) / 60000);
+
+        ss.parentNode.insertBefore(ca, ss);
+
+    })(document, 'script');
+
+</script>
+</body>
+</html>

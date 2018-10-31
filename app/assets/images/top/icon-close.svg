@@ -1,0 +1,12 @@
+<svg id="BTN_CLOSE" xmlns="http://www.w3.org/2000/svg" width="28.031" height="28" viewBox="0 0 28.031 28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="角丸長方形_1" data-name="角丸長方形 1" class="cls-1" d="M689.4,165.58l24.042,24.043a2,2,0,0,1-2.829,2.827l-24.041-24.041A2,2,0,1,1,689.4,165.58Z" transform="translate(-686 -165.031)"/>
+  <path id="角丸長方形_1-2" data-name="角丸長方形 1" class="cls-1" d="M713.441,165.58a2,2,0,0,1,0,2.829L689.4,192.45a2,2,0,0,1-2.829-2.827l24.042-24.043A2,2,0,0,1,713.441,165.58Z" transform="translate(-686 -165.031)"/>
+</svg>

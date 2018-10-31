@@ -1,0 +1,35 @@
+<svg id="あしらい" xmlns="http://www.w3.org/2000/svg" width="357" height="150.25" viewBox="0 0 357 150.25">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-4 {
+        fill-opacity: 0.3;
+      }
+
+      .cls-2, .cls-3 {
+        fill-opacity: 0.8;
+      }
+
+      .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="長方形_12" data-name="長方形 12" class="cls-1" x="95" y="46" width="14" height="14"/>
+  <rect id="長方形_12-2" data-name="長方形 12" class="cls-1" x="343" y="51" width="14" height="14"/>
+  <rect id="長方形_12-3" data-name="長方形 12" class="cls-2" x="7" y="75" width="11" height="11"/>
+  <path id="長方形_12-4" data-name="長方形 12" class="cls-3" d="M182.121,3279L194,3267.12,205.879,3279,194,3290.88Z" transform="translate(-139 -3238)"/>
+  <path id="長方形_12-5" data-name="長方形 12" class="cls-3" d="M285,3365.76l4.243,4.24L285,3374.24l-4.243-4.24Z" transform="translate(-139 -3238)"/>
+  <path id="長方形_12-6" data-name="長方形 12" class="cls-4" d="M177,3364.76l4.243,4.24L177,3373.24l-4.243-4.24Z" transform="translate(-139 -3238)"/>
+  <path id="長方形_12-7" data-name="長方形 12" class="cls-3" d="M445,3379.76l4.243,4.24L445,3388.24l-4.243-4.24Z" transform="translate(-139 -3238)"/>
+  <rect id="長方形_12-8" data-name="長方形 12" class="cls-2" y="35" width="6" height="6"/>
+  <rect id="長方形_12-9" data-name="長方形 12" class="cls-1" x="57" y="94" width="6" height="6"/>
+  <rect id="長方形_12-10" data-name="長方形 12" class="cls-2" x="127" y="70" width="6" height="6"/>
+  <rect id="長方形_12-11" data-name="長方形 12" class="cls-2" x="77" width="6" height="6"/>
+  <rect id="長方形_12-12" data-name="長方形 12" class="cls-2" x="322" y="103" width="6" height="6"/>
+  <path id="長方形_12-13" data-name="長方形 12" class="cls-3" d="M240.456,3351.27l6.364,6.37-6.364,6.36-6.364-6.36Z" transform="translate(-139 -3238)"/>
+  <path id="長方形_12-14" data-name="長方形 12" class="cls-3" d="M415.456,3332.27l6.364,6.37-6.364,6.36-6.364-6.36Z" transform="translate(-139 -3238)"/>
+</svg>

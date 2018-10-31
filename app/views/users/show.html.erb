@@ -1,0 +1,10 @@
+<% if @user = current_user %>
+  <%= link_to "ログアウト", destroy_user_session_path %>
+  <p><%= link_to "項目編集", edit_user_path(@user) %></p>
+  <%= link_to "テンプレ１", templates_1_path(@user.name) %>
+  <%= link_to "テンプレ2", templates_2_path(@user.name) %>
+  <%= link_to "テンプレ3", templates_3_path(@user.name) %>
+
+<% end %>
+a
+<%= current_user.name %>
