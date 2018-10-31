@@ -19,8 +19,8 @@ class UsersController < ApplicationController
       for i in 1..3 do
         #i = 1
 
-        #doc = File.read('/Users/krppppp/loginapp-master/app/views/templates/p1.html.erb')
-        doc = File.read("/Users/krppppp/loginapp-master/app/views/templates/p#{i}.html.erb")
+        #doc = File.read('/app/views/templates/p1.html.erb')
+        doc = File.read("#{Rails.root}/app/views/templates/p#{i}.html.erb")
         doc.gsub!(/<%= @user.title %>/, "#{@user.title}")
         doc.sub!(/<%= @user.menu1 %>/, "#{@user.menu1}")
         doc.sub!(/<%= @user.menu2 %>/, "#{@user.menu2}")
@@ -63,12 +63,12 @@ class UsersController < ApplicationController
                               s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
                           })
         #該当ディレクトリ下の必要なファイルをすべてアップロード
-        dir_name = Dir.open("/Users/krppppp/loginapp-master/app/assets/images/template#{i}")
+        dir_name = Dir.open("/app/assets/images/template#{i}")
         dir_name.each_with_index do |f, index|
           if index == 0 || index == 1
             next
           end
-          data = File.read("/Users/krppppp/loginapp-master/app/assets/images/template#{i}" + '/' + f)
+          data = File.read("/app/assets/images/template#{i}" + '/' + f)
           client.put_object({
                                 :bucket_name => "#{bucket_name}",
                                 :key => "template#{i}/#{f}",
