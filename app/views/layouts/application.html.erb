@@ -1,0 +1,16 @@
+<% if controller.controller_name == "templates"  %>
+  <% if !@user.has_valid_subscription? %>
+    月額費用を払えば希望ドメインでこのホームページがあなたのモノに！
+<%= form_tag(action: :pay, method: :post, name: "#{@user.id}", template: "#{@id}") do %>
+  <script type="text/javascript"
+          src="https://checkout.pay.jp"
+          class="payjp-button"
+          data-key=<%= Rails.application.secrets.payjp_public_key %>
+              data-text="無料会員で払う"
+  >
+
+  </script>
+    <% end %>
+  <% end %>
+<% end %>
+<%= yield %>

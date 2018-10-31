@@ -11,4 +11,10 @@ class SendMailer < ApplicationMailer
     mail to:      user.email,
          subject: '会員情報が更新されました。'
   end
+
+  def send_when_subscription_create(user)
+    @user = user
+    mail to:      user.email,
+         subject: '会員情報が更新されました。'
+  end
 end

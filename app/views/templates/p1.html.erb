@@ -1,14 +1,5 @@
 
-<%= form_tag(action: :pay, method: :post, name: "#{@user.id}") do %>
-  <script type="text/javascript"
-          src="https://checkout.pay.jp"
-          class="payjp-button"
-          data-key=<%= Rails.application.secrets.payjp_public_key %>
-              data-text="無料会員で払う"
-  >
 
-  </script>
-<% end %>
 <!DOCTYPE html>
 <!-- saved from url=(0028)# -->
 <html class="no-js" lang="ja"><!--<![endif]-->

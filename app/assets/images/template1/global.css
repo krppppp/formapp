@@ -1899,7 +1899,6 @@ img {
     height: 16px; }
 @media only screen and (max-width: 499px) {
     #topContent #block4 .content a {
-        background-image: url(b4_link_sp.png);
         width: 58.608px;
         height: 17.982px; } }
 @media only screen and (max-width: 499px) {
@@ -1973,13 +1972,11 @@ img {
     margin: 0 0 30px; }
 #topContent #block5 .content a {
     display: block;
-    background-image: url(b5_link_pc.png);
     background-size: cover;
     width: 51px;
     height: 16px; }
 @media only screen and (max-width: 499px) {
     #topContent #block5 .content a {
-        background-image: url(b5_link_sp.png);
         width: 69.93px;
         height: 18.315px; } }
 #topContent #block6 {
@@ -2060,13 +2057,11 @@ img {
     color: #33330f; }
 #topContent #block7 .content a {
     display: block;
-    background-image: url(b7_link_pc.png);
     background-size: cover;
     width: 150px;
     height: 16px; }
 @media only screen and (max-width: 499px) {
     #topContent #block7 .content a {
-        background-image: url(b7_link_sp.png);
         width: 195.804px;
         height: 18.315px; } }
 #topContent #block8 {
@@ -2158,13 +2153,11 @@ img {
     margin: 0 0 30px; }
 #topContent #block9 .content a {
     display: block;
-    background-image: url(b9_link_pc.png);
     background-size: cover;
     width: 55px;
     height: 16px; }
 @media only screen and (max-width: 499px) {
     #topContent #block9 .content a {
-        background-image: url(b9_link_sp.png);
         width: 73.926px;
         height: 17.982px; } }
 @media only screen and (max-width: 499px) {
@@ -2247,14 +2240,12 @@ img {
 #topContent #block10 .content a {
     display: block;
     margin: 0 auto;
-    background-image: url(b10_link_pc.png);
     background-size: cover;
     width: 88px;
     height: 16px; }
 @media only screen and (max-width: 499px) {
     #topContent #block10 .content a {
         margin: 0;
-        background-image: url(b10_link_sp.png);
         width: 116.55px;
         height: 18.315px; } }
 #topContent #block11 {
