@@ -43,7 +43,6 @@ ActiveRecord::Schema.define(version: 2018_10_24_041244) do
     t.string "heading3"
     t.string "subheading4"
     t.string "heading4"
-    t.text "sub_image4"
     t.string "subheading5"
     t.string "heading5"
     t.text "self"
