@@ -20,7 +20,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
 
     for i in 1..2 do
-      doc = File.read("/Users/krppppp/loginapp-master/app/views/templates/p#{i}.html.erb")
+      doc = File.read("#{Rails.root}/app/views/templates/p#{i}.html.erb")
       doc.sub!(/<%= @user.title %>/, "#{@user.title}")
       doc.sub!(/<%= @user.menu1 %>/, "#{@user.menu1}")
       doc.sub!(/<%= @user.menu2 %>/, "#{@user.menu2}")
