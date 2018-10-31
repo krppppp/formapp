@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'aws-sdk-s3', '~> 1'
 gem 'aws-sdk', '~>1'
+gem 'payjp'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 #
 gem 'rails', '~> 5.2.1'

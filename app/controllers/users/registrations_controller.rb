@@ -16,70 +16,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
     pass_temp = Devise.friendly_token.first(8)
     @user.encrypted_password = BCrypt::Password.create(pass_temp)
     @user.save
-    url = []
 
-
-    for i in 1..2 do
-      doc = File.read("/Users/krppppp/loginapp-master/app/views/templates/p#{i}.html.erb")
-      doc.sub!(/<%= @user.title %>/, "#{@user.title}")
-      doc.sub!(/<%= @user.menu1 %>/, "#{@user.menu1}")
-      doc.sub!(/<%= @user.menu2 %>/, "#{@user.menu2}")
-      doc.sub!(/<%= @user.menu3 %>/, "#{@user.menu3}")
-      doc.sub!(/<%= @user.menu4 %>/, "#{@user.menu4}")
-      doc.sub!(/<%= @user.menu5 %>/, "#{@user.menu5}")
-      doc.sub!(/<%= @user.subheading1 %>/, "#{@user.subheading1}")
-      doc.gsub!(/\/assets/, ".")
-
-      client = AWS::S3::Client.new(
-          access_key_id: "AKIAJXOOQX7JR6MEO5IQ",
-          secret_access_key: "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"
-      )
-      s3 = AWS::S3.new(
-          access_key_id: "AKIAJXOOQX7JR6MEO5IQ",
-          secret_access_key: "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"
-      )
-
-      bucket_name = "#{@user.email.split("@").first}-" + "#{i}"
-
-      #バケット作成
-      client.create_bucket(bucket_name: "#{bucket_name}") unless s3.buckets[bucket_name].exists?
-
-      #indexをアップロード
-      client.put_object({
-                            # :bucket_name => "#{@user.email}-"+"#{i}",
-                            :bucket_name => "#{bucket_name}",
-                            :key => 'index.html',
-                            :data => doc,
-                            s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
-                        })
-
-
-      policy = {
-          "Version": "2012-10-17",
-          "Statement": [
-              {
-                  "Sid": "AddPerm",
-                  "Effect": "Allow",
-                  "Principal": "*",
-                  "Action": [
-                      "s3:GetObject"
-                  ],
-                  "Resource": [
-                      "arn:aws:s3:::#{bucket_name}/*"
-                  ]
-              }
-          ]
-      }.to_json
-      client.set_bucket_policy(
-          bucket_name: bucket_name,
-          policy: policy
-      )
-
-      url.push("https://s3.amazonaws.com/#{bucket_name}/index.html")
-    end
-    puts url.class
-    puts url.length
-    SendMailer.send_when_update(current_user, pass_temp, url).deliver
+    SendMailer.send_when_update(current_user, pass_temp).deliver
 
 
   end

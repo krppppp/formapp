@@ -74,6 +74,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       t.string   "crypted_password"
       t.string   "salt"
 
+      t.string   "payjp_id"
+
       t.index ["email"], name: "index_members_on_email", unique: true, using: :btree
       t.index ["reset_password_token"], name: "index_members_on_reset_password_token", using: :btree
       t.index ["unlock_token"], name: "index_members_on_unlock_token", unique: true, using: :btree

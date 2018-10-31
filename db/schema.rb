@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_24_041244) do
+ActiveRecord::Schema.define(version: 2018_10_31_035303) do
+
+  create_table "subscriptions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "payjp_id", null: false
+    t.bigint "user_id"
+    t.integer "status", null: false
+    t.integer "current_period_start"
+    t.integer "current_period_end"
+    t.integer "trial_start"
+    t.integer "trial_end"
+    t.integer "canceled_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_subscriptions_on_user_id"
+  end
 
   create_table "tops", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -64,6 +78,7 @@ ActiveRecord::Schema.define(version: 2018_10_24_041244) do
     t.datetime "locked_at"
     t.string "crypted_password"
     t.string "salt"
+    t.string "payjp_id"
     t.index ["email"], name: "index_members_on_email", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_members_on_reset_password_token"
