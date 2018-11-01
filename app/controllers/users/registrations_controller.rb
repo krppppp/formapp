@@ -17,6 +17,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     @user.encrypted_password = BCrypt::Password.create(pass_temp)
     @user.save
 
+    url =[]
     for i in 1..2 do
 
     #doc = File.read('/app/views/templates/p1.html.erb')
@@ -106,8 +107,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
         policy: policy
     )
 
+    u = "https://s3.amazonaws.com/#{bucket_name}/index.html"
+      url.push(u)
+
     end
-    url = "https://s3.amazonaws.com/#{bucket_name}/index.html"
 
     SendMailer.send_when_update(current_user, pass_temp, url).deliver
   end

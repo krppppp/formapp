@@ -18,6 +18,8 @@ class SubscriptionsController < ApplicationController
   end
 
   def show
+    @user = User.find(params[:id])
+    @id = 1
     @subscription = current_user.subscriptions.last
   end
 
