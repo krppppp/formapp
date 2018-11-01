@@ -240,15 +240,12 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.1.19)
       execjs (>= 0.3.0, < 3)
-<<<<<<< HEAD
-    unicorn (5.4.1)
-      kgio (~> 2.6)
-      raindrops (~> 0.7)
-=======
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.5)
->>>>>>> 23f5f5e0bb8537ba3eb3a9991aa68445947ba0e0
+    unicorn (5.4.1)
+      kgio (~> 2.6)
+      raindrops (~> 0.7)
     warden (1.2.7)
       rack (>= 1.0)
     web-console (3.7.0)
