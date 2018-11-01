@@ -28,27 +28,28 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       # t.text     "main_image",                        limit: 65535
 
       t.string   "heading1"
-      t.string   "subheading1"
+      t.text   "subheading1"
       # t.text     "sub_image1",                        limit: 65535
       # t.text     "sub_icon1",                        limit: 65535
 
       t.string   "heading2"
-      t.string   "subheading2"
+      t.text   "subheading2"
       # t.text     "sub_image2",                        limit: 65535
       # t.text     "sub_icon2",                        limit: 65535
 
-      t.string   "subheading3"
       t.string   "heading3"
+      t.text   "subheading3"
+
       # t.text     "sub_image3",                        limit: 65535
       # t.text     "sub_icon3",                        limit: 65535
 
-      t.string   "subheading4"
       t.string   "heading4"
+      t.text   "subheading4"
       # t.text     "sub_image4",                        limit: 65535
       # t.text     "sub_icon4",                        limit: 65535
 
-      t.string   "subheading5"
       t.string   "heading5"
+      t.text   "subheading5"
       # t.text     "sub_image5",                        limit: 65535
       # t.text     "sub_icon5",                        limit: 65535
 
@@ -73,6 +74,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
 
       t.string   "crypted_password"
       t.string   "salt"
+
+      t.string   "payjp_id"
 
       t.index ["email"], name: "index_members_on_email", unique: true, using: :btree
       t.index ["reset_password_token"], name: "index_members_on_reset_password_token", using: :btree

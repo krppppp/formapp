@@ -1,0 +1,15 @@
+current directory: /Users/krppppp/loginapp/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
+/Users/krppppp/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20181031-98073-16un4il.rb extconf.rb
+creating Makefile
+
+current directory: /Users/krppppp/loginapp/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/krppppp/loginapp/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/krppppp/loginapp/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20181031-98073-8vqps6

@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   require 'aws-sdk-v1'
   require "aws-sdk-core"
 
+  before_action :authenticate_user?
   before_action :set_user
 
   def show
@@ -12,13 +13,10 @@ class UsersController < ApplicationController
   end
 
   def update
-
     @user = User.find(params[:id])
-
     if @user.update(user_params)
       for i in 1..3 do
         #i = 1
-
         #doc = File.read('/app/views/templates/p1.html.erb')
         doc = File.read("#{Rails.root}/app/views/templates/p#{i}.html.erb")
         doc.gsub!(/<%= @user.title %>/, "#{@user.title}")
@@ -27,7 +25,21 @@ class UsersController < ApplicationController
         doc.sub!(/<%= @user.menu3 %>/, "#{@user.menu3}")
         doc.sub!(/<%= @user.menu4 %>/, "#{@user.menu4}")
         doc.sub!(/<%= @user.menu5 %>/, "#{@user.menu5}")
+        doc.sub!(/<%= @user.heading1 %>/, "#{@user.heading1}")
+        doc.sub!(/<%= @user.heading2 %>/, "#{@user.heading2}")
+        doc.sub!(/<%= @user.heading3 %>/, "#{@user.heading3}")
+        doc.sub!(/<%= @user.heading4 %>/, "#{@user.heading4}")
+        doc.sub!(/<%= @user.heading5 %>/, "#{@user.heading5}")
         doc.sub!(/<%= @user.subheading1 %>/, "#{@user.subheading1}")
+        doc.sub!(/<%= @user.subheading2 %>/, "#{@user.subheading2}")
+        doc.sub!(/<%= @user.subheading3 %>/, "#{@user.subheading3}")
+        doc.sub!(/<%= @user.subheading4 %>/, "#{@user.subheading4}")
+        doc.gsub!(/<%= @user.subheading5 %>/, "#{@user.subheading5}")
+        # doc.sub!(/<%= simple_format(@user.subheading1) %>/, "#{@user.subheading1}")
+        # doc.sub!(/<%= simple_format(@user.subheading2) %>/, "#{@user.subheading2}")
+        # doc.sub!(/<%= simple_format(@user.subheading3) %>/, "#{@user.subheading3}")
+        # doc.sub!(/<%= simple_format(@user.subheading4) %>/, "#{@user.subheading4}")
+        # doc.sub!(/<%= simple_format(@user.subheading5) %>/, "#{@user.subheading5}")
         doc.gsub!(/\/assets/, ".")
 
         client = AWS::S3::Client.new(
@@ -52,53 +64,53 @@ class UsersController < ApplicationController
                               :data => doc,
                               s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
                           })
+        #
+        # #空のtemplate#{i}フォルダ作成
+        #
+        # client.put_object({
+        #                       # :bucket_name => "#{@user.email}-"+"#{i}",
+        #                       :bucket_name => "#{bucket_name}",
+        #                       :key => "template#{i}/",
+        #                       :data => doc,
+        #                       s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
+        #                   })
+        # #該当ディレクトリ下の必要なファイルをすべてアップロード
+        # dir_name = Dir.open("#{Rails.root}/app/assets/images/template#{i}")
+        # dir_name.each_with_index do |f, index|
+        #   if f == "." || f == ".."
+        #     next
+        #   end
+        #   data = File.read("#{Rails.root}/app/assets/images/template#{i}" + '/' + f)
+        #   client.put_object({
+        #                         :bucket_name => "#{bucket_name}",
+        #                         :key => "template#{i}/#{f}",
+        #                         :data => data,
+        #                         s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
+        #                     })
+        # end
+        # policy = {
+        #     "Version": "2012-10-17",
+        #     "Statement": [
+        #         {
+        #             "Sid": "AddPerm",
+        #             "Effect": "Allow",
+        #             "Principal": "*",
+        #             "Action": [
+        #                 "s3:GetObject"
+        #             ],
+        #             "Resource": [
+        #                 "arn:aws:s3:::#{bucket_name}/*"
+        #             ]
+        #         }
+        #     ]
+        # }.to_json
+        # client.set_bucket_policy(
+        #     bucket_name: bucket_name,
+        #     policy: policy
+        # )
 
-        #空のtemplate#{i}フォルダ作成
 
-        client.put_object({
-                              # :bucket_name => "#{@user.email}-"+"#{i}",
-                              :bucket_name => "#{bucket_name}",
-                              :key => "template#{i}/",
-                              :data => doc,
-                              s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
-                          })
-        #該当ディレクトリ下の必要なファイルをすべてアップロード
-        dir_name = Dir.open("/app/assets/images/template#{i}")
-        dir_name.each_with_index do |f, index|
-          if index == 0 || index == 1
-            next
-          end
-          data = File.read("/app/assets/images/template#{i}" + '/' + f)
-          client.put_object({
-                                :bucket_name => "#{bucket_name}",
-                                :key => "template#{i}/#{f}",
-                                :data => data,
-                                s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
-                            })
-        end
-        policy = {
-            "Version": "2012-10-17",
-            "Statement": [
-                {
-                    "Sid": "AddPerm",
-                    "Effect": "Allow",
-                    "Principal": "*",
-                    "Action": [
-                        "s3:GetObject"
-                    ],
-                    "Resource": [
-                        "arn:aws:s3:::#{bucket_name}/*"
-                    ]
-                }
-            ]
-        }.to_json
-        client.set_bucket_policy(
-            bucket_name: bucket_name,
-            policy: policy
-        )
-
-
-      end
+      end/Users/krppppp/loginapp/app/assets/images/template1/global.css
       redirect_to user_path(current_user)
     else
       redirect_to edit_user_path(current_user)
@@ -124,7 +136,47 @@ class UsersController < ApplicationController
 
   end
 
+  def authenticate_user?
+    unless current_user
+      redirect_to new_user_registration_path
+    end
+  end
+
+
   def set_user
+
     @user = User.find(params[:id])
+  end
+
+  def pay
+    user = User.find(params[:name])
+    card_token = params["payjp-token"]
+    create_payjp_customer(user, card_token) if user.payjp_id.blank?
+    Payjp.api_key = Rails.application.secrets.payjp_private_key
+    sub = Payjp::Subscription.create(
+        plan: 'pln_a4aac1a3a0bd2474baa9f69d00da',
+        customer: user.payjp_id,
+    )
+    Subscription.create!(
+        payjp_id: sub.id,
+        user: user,
+        status: sub.status,
+        current_period_start: sub.current_period_start,
+        current_period_end: sub.current_period_end,
+        trial_start: sub.trial_start,
+        trial_end: sub.trial_end
+    )
+    redirect_to user_path(user)
+  end
+
+  private
+
+  def create_payjp_customer(user, card_token)
+    Payjp.api_key = Rails.application.secrets.payjp_private_key
+    customer = Payjp::Customer.create(
+        email: user.email,
+        card: card_token
+    )
+    user.update!(payjp_id: customer.id)
   end
 end
