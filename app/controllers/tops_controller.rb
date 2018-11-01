@@ -1,4 +1,5 @@
 class TopsController < ApplicationController
+  before_action :authenticate_user?
   before_action :set_top, only: [:show, :edit, :update, :destroy]
 
   # GET /tops
@@ -71,4 +72,10 @@ class TopsController < ApplicationController
     def user_params
       params.require(:top).permit(:name, :id, :email)
     end
+
+  def authenticate_user?
+    unless current_user
+      redirect_to new_user_registration_path
+    end
+  end
 end

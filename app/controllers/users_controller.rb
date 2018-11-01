@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   require 'aws-sdk-v1'
   require "aws-sdk-core"
 
+  before_action :authenticate_user?
   before_action :set_user
 
   def show
@@ -12,13 +13,10 @@ class UsersController < ApplicationController
   end
 
   def update
-
     @user = User.find(params[:id])
-
     if @user.update(user_params)
       for i in 1..3 do
         #i = 1
-
         #doc = File.read('/app/views/templates/p1.html.erb')
         doc = File.read("#{Rails.root}/app/views/templates/p#{i}.html.erb")
         doc.gsub!(/<%= @user.title %>/, "#{@user.title}")
@@ -63,12 +61,12 @@ class UsersController < ApplicationController
                               s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
                           })
         #該当ディレクトリ下の必要なファイルをすべてアップロード
-        dir_name = Dir.open("/app/assets/images/template#{i}")
+        dir_name = Dir.open("#{Rails.root}/app/assets/images/template#{i}")
         dir_name.each_with_index do |f, index|
-          if index == 0 || index == 1
+          if f == "." || f == ".."
             next
           end
-          data = File.read("/app/assets/images/template#{i}" + '/' + f)
+          data = File.read("#{Rails.root}/app/assets/images/template#{i}" + '/' + f)
           client.put_object({
                                 :bucket_name => "#{bucket_name}",
                                 :key => "template#{i}/#{f}",
@@ -124,9 +122,18 @@ class UsersController < ApplicationController
 
   end
 
+  def authenticate_user?
+    unless current_user
+      redirect_to new_user_registration_path
+    end
+  end
+
+
   def set_user
+
     @user = User.find(params[:id])
   end
+
   def pay
     user = User.find(params[:name])
     card_token = params["payjp-token"]
@@ -135,7 +142,7 @@ class UsersController < ApplicationController
     sub = Payjp::Subscription.create(
         plan: 'pln_a4aac1a3a0bd2474baa9f69d00da',
         customer: user.payjp_id,
-        )
+    )
     Subscription.create!(
         payjp_id: sub.id,
         user: user,
