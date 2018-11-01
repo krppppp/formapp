@@ -28,7 +28,16 @@ class Users::RegistrationsController < Devise::RegistrationsController
     doc.sub!(/<%= @user.menu3 %>/, "#{@user.menu3}")
     doc.sub!(/<%= @user.menu4 %>/, "#{@user.menu4}")
     doc.sub!(/<%= @user.menu5 %>/, "#{@user.menu5}")
+    doc.sub!(/<%= @user.heading1 %>/, "#{@user.heading1}")
+    doc.sub!(/<%= @user.heading2 %>/, "#{@user.heading2}")
+    doc.sub!(/<%= @user.heading3 %>/, "#{@user.heading3}")
+    doc.sub!(/<%= @user.heading4 %>/, "#{@user.heading4}")
+    doc.sub!(/<%= @user.heading5 %>/, "#{@user.heading5}")
     doc.sub!(/<%= @user.subheading1 %>/, "#{@user.subheading1}")
+    doc.sub!(/<%= @user.subheading2 %>/, "#{@user.subheading2}")
+    doc.sub!(/<%= @user.subheading3 %>/, "#{@user.subheading3}")
+    doc.sub!(/<%= @user.subheading4 %>/, "#{@user.subheading4}")
+    doc.gsub!(/<%= @user.subheading5 %>/, "#{@user.subheading5}")
     doc.gsub!(/\/assets/, ".")
 
     client = AWS::S3::Client.new(

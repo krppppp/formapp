@@ -25,7 +25,21 @@ class UsersController < ApplicationController
         doc.sub!(/<%= @user.menu3 %>/, "#{@user.menu3}")
         doc.sub!(/<%= @user.menu4 %>/, "#{@user.menu4}")
         doc.sub!(/<%= @user.menu5 %>/, "#{@user.menu5}")
+        doc.sub!(/<%= @user.heading1 %>/, "#{@user.heading1}")
+        doc.sub!(/<%= @user.heading2 %>/, "#{@user.heading2}")
+        doc.sub!(/<%= @user.heading3 %>/, "#{@user.heading3}")
+        doc.sub!(/<%= @user.heading4 %>/, "#{@user.heading4}")
+        doc.sub!(/<%= @user.heading5 %>/, "#{@user.heading5}")
         doc.sub!(/<%= @user.subheading1 %>/, "#{@user.subheading1}")
+        doc.sub!(/<%= @user.subheading2 %>/, "#{@user.subheading2}")
+        doc.sub!(/<%= @user.subheading3 %>/, "#{@user.subheading3}")
+        doc.sub!(/<%= @user.subheading4 %>/, "#{@user.subheading4}")
+        doc.gsub!(/<%= @user.subheading5 %>/, "#{@user.subheading5}")
+        # doc.sub!(/<%= simple_format(@user.subheading1) %>/, "#{@user.subheading1}")
+        # doc.sub!(/<%= simple_format(@user.subheading2) %>/, "#{@user.subheading2}")
+        # doc.sub!(/<%= simple_format(@user.subheading3) %>/, "#{@user.subheading3}")
+        # doc.sub!(/<%= simple_format(@user.subheading4) %>/, "#{@user.subheading4}")
+        # doc.sub!(/<%= simple_format(@user.subheading5) %>/, "#{@user.subheading5}")
         doc.gsub!(/\/assets/, ".")
 
         client = AWS::S3::Client.new(
@@ -50,50 +64,50 @@ class UsersController < ApplicationController
                               :data => doc,
                               s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
                           })
-
-        #空のtemplate#{i}フォルダ作成
-
-        client.put_object({
-                              # :bucket_name => "#{@user.email}-"+"#{i}",
-                              :bucket_name => "#{bucket_name}",
-                              :key => "template#{i}/",
-                              :data => doc,
-                              s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
-                          })
-        #該当ディレクトリ下の必要なファイルをすべてアップロード
-        dir_name = Dir.open("#{Rails.root}/app/assets/images/template#{i}")
-        dir_name.each_with_index do |f, index|
-          if f == "." || f == ".."
-            next
-          end
-          data = File.read("#{Rails.root}/app/assets/images/template#{i}" + '/' + f)
-          client.put_object({
-                                :bucket_name => "#{bucket_name}",
-                                :key => "template#{i}/#{f}",
-                                :data => data,
-                                s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
-                            })
-        end
-        policy = {
-            "Version": "2012-10-17",
-            "Statement": [
-                {
-                    "Sid": "AddPerm",
-                    "Effect": "Allow",
-                    "Principal": "*",
-                    "Action": [
-                        "s3:GetObject"
-                    ],
-                    "Resource": [
-                        "arn:aws:s3:::#{bucket_name}/*"
-                    ]
-                }
-            ]
-        }.to_json
-        client.set_bucket_policy(
-            bucket_name: bucket_name,
-            policy: policy
-        )
+        #
+        # #空のtemplate#{i}フォルダ作成
+        #
+        # client.put_object({
+        #                       # :bucket_name => "#{@user.email}-"+"#{i}",
+        #                       :bucket_name => "#{bucket_name}",
+        #                       :key => "template#{i}/",
+        #                       :data => doc,
+        #                       s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
+        #                   })
+        # #該当ディレクトリ下の必要なファイルをすべてアップロード
+        # dir_name = Dir.open("#{Rails.root}/app/assets/images/template#{i}")
+        # dir_name.each_with_index do |f, index|
+        #   if f == "." || f == ".."
+        #     next
+        #   end
+        #   data = File.read("#{Rails.root}/app/assets/images/template#{i}" + '/' + f)
+        #   client.put_object({
+        #                         :bucket_name => "#{bucket_name}",
+        #                         :key => "template#{i}/#{f}",
+        #                         :data => data,
+        #                         s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
+        #                     })
+        # end
+        # policy = {
+        #     "Version": "2012-10-17",
+        #     "Statement": [
+        #         {
+        #             "Sid": "AddPerm",
+        #             "Effect": "Allow",
+        #             "Principal": "*",
+        #             "Action": [
+        #                 "s3:GetObject"
+        #             ],
+        #             "Resource": [
+        #                 "arn:aws:s3:::#{bucket_name}/*"
+        #             ]
+        #         }
+        #     ]
+        # }.to_json
+        # client.set_bucket_policy(
+        #     bucket_name: bucket_name,
+        #     policy: policy
+        # )
 
 
       end
