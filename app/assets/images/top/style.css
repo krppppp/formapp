@@ -437,7 +437,6 @@ strong {
           margin-top: -7px;
           width: 15px;
           height: 15px;
-          background: url(icon-search.svg) no-repeat center;
           background-size: contain; }
         .btn.btn-search a:hover {
           opacity: 1; }
@@ -546,7 +545,6 @@ strong {
           margin-top: -7px;
           width: 14px;
           height: 14px;
-          background: url(icon-search.svg) no-repeat center;
           background-size: contain; }
     .btn.btn-reset, .btn.btn-back {
       width: 125px;
@@ -1641,7 +1639,6 @@ strong {
           position: absolute;
           width: 208px;
           height: 313px;
-          background: url(flow-bg-pc01.svg) no-repeat center;
           background-size: 208px 313px;
           left: 91px;
           top: 89px;
@@ -1652,7 +1649,6 @@ strong {
           width: 236px;
           height: 236px;
           border-radius: 118px;
-          background: #fdebb2 url(flow01.svg) no-repeat center;
           background-size: 188px 133px; }
           #howitworks ul.flow-list li.flow01 .image .glitter {
             position: absolute;
@@ -1671,7 +1667,6 @@ strong {
           position: absolute;
           width: 208px;
           height: 313px;
-          background: url(flow-bg-pc01.svg) no-repeat center;
           background-size: 208px 313px;
           left: -69px;
           top: 89px;
@@ -1686,7 +1681,6 @@ strong {
           width: 236px;
           height: 236px;
           border-radius: 118px;
-          background: #fdebb2 url(flow02.svg) no-repeat center;
           background-size: 159px 129px; }
           #howitworks ul.flow-list li.flow02 .image .glitter {
             position: absolute;
@@ -1705,7 +1699,6 @@ strong {
           position: absolute;
           width: 208px;
           height: 313px;
-          background: url(flow-bg-pc01.svg) no-repeat center;
           background-size: 208px 313px;
           left: 91px;
           top: 89px;
@@ -1716,7 +1709,6 @@ strong {
           width: 236px;
           height: 236px;
           border-radius: 118px;
-          background: #fdebb2 url(flow03.svg) no-repeat center;
           background-size: 172px 151px; }
           #howitworks ul.flow-list li.flow03 .image .glitter {
             position: absolute;
@@ -1734,7 +1726,6 @@ strong {
           width: 236px;
           height: 236px;
           border-radius: 118px;
-          background: #fdebb2 url(flow04.svg) no-repeat center;
           background-size: 172px 151px; }
           #howitworks ul.flow-list li.flow04 .image .glitter {
             position: absolute;
@@ -2721,7 +2712,6 @@ strong {
           width: 95px;
           height: 95px;
           border-radius: 48px;
-          background: #fdebb2 url(flow01.svg) no-repeat center;
           background-size: 71.5px auto; }
           #howitworks ul.flow-list li.flow01 .image .glitter {
             position: absolute;
@@ -2739,7 +2729,6 @@ strong {
           width: 95px;
           height: 95px;
           border-radius: 48px;
-          background: #fdebb2 url(flow02.svg) no-repeat center;
           background-size: 61.5px auto; }
           #howitworks ul.flow-list li.flow02 .image .glitter {
             position: absolute;
@@ -2757,7 +2746,6 @@ strong {
           width: 95px;
           height: 95px;
           border-radius: 48px;
-          background: #fdebb2 url(flow03.svg) no-repeat center;
           background-size: 62px auto; }
         #howitworks ul.flow-list li.flow03 .glitter {
           position: absolute;
@@ -2771,7 +2759,6 @@ strong {
         width: 95px;
         height: 95px;
         border-radius: 48px;
-        background: #fdebb2 url(flow04.svg) no-repeat center;
         background-size: 55px auto; }
   #contact {
     /* form parts 	********************************/ }
@@ -3467,14 +3454,7 @@ strong {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
-    #time_price .feature-list li .image.image01 {
-      background-image: url(time_price/flow01.svg); }
-    #time_price .feature-list li .image.image02 {
-      background-image: url(time_price/flow02.svg); }
-    #time_price .feature-list li .image.image03 {
-      background-image: url(time_price/flow03.svg); }
-    #time_price .feature-list li .image.image04 {
-      background-image: url(time_price/flow04.svg); }
+
   #time_price .feature-list li .text {
     padding-left: 25px;
     vertical-align: middle; }
@@ -3582,14 +3562,7 @@ strong {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
-    #time_price .feature-list li .image.image01 {
-      background-image: url(time_price/flow01.svg); }
-    #time_price .feature-list li .image.image02 {
-      background-image: url(time_price/flow02.svg); }
-    #time_price .feature-list li .image.image03 {
-      background-image: url(time_price/flow03.svg); }
-    #time_price .feature-list li .image.image04 {
-      background-image: url(time_price/flow04.svg); }
+
   #time_price .feature-list li .text {
     padding-left: 25px;
     vertical-align: middle; }
