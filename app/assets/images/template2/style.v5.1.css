@@ -121,7 +121,7 @@ section{
 #first{
     top:-100px;
     margin-bottom:-100px;
-    background:#fff  url(Preloader_6のコピー.gif) center center no-repeat;
+    background:#fff  url(Preloader_6のコピー.gif) center center no-repeat;
     transition:all .7s;
     min-height:740px
 }

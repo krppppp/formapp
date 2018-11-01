@@ -192,22 +192,22 @@ table {
 
 @font-face {
     font-family: GT-America-Standard-Regular;
-    src: url(../fonts/GT-America-Standard-Regular.woff2) format("woff2"), url(../fonts/GT-America-Standard-Regular.woff) format("woff");
+    src: url(../../images/fonts/GT-America-Standard-Regular.woff2) format("woff2"), url(../../images/fonts/GT-America-Standard-Regular.woff) format("woff");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: GT-America-Mono-Regular;
-    src: url(../fonts/GT-America-Mono-Regular.woff2) format("woff2"), url(../fonts/GT-America-Mono-Regular.woff) format("woff");
+    src: url(../../images/fonts/GT-America-Mono-Regular.woff2) format("woff2"), url(../../images/fonts/GT-America-Mono-Regular.woff) format("woff");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: tej-font;
-    src: url(../fonts/tej-font.eot);
-    src: url(../fonts/tej-font.eot?) format("embedded-opentype"), url(../fonts/tej-font.woff) format("woff"), url(../fonts/tej-font.ttf) format("truetype"), url(../fonts/tej-font.svg) format("svg");
+    src: url(../../images/fonts/tej-font.eot);
+    src: url(../../images/fonts/tej-font.eot?) format("embedded-opentype"), url(../../images/fonts/tej-font.woff) format("woff"), url(../../images/fonts/tej-font.ttf) format("truetype"), url(../../images/fonts/tej-font.svg) format("svg");
     font-weight: 400;
     font-style: normal
 }

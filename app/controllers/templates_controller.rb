@@ -1,5 +1,10 @@
 class TemplatesController < ApplicationController
   include PayjpModule
+
+  def index
+    @templates = Template.all
+  end
+
   def p1
     @user =User.find_by(name: params[:name])
     @id = 1

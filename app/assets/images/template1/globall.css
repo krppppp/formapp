@@ -1740,11 +1740,11 @@ img {
     margin: -128px 0 0 -89px;
     width: 178px;
     height: 178px;
-    background-image: url(./icon_white.png);
+    background-image: url(icon_white.png);
     background-size: cover; }
 @media only screen and (max-width: 499px) {
     #topContent #block1 h1 {
-        background-image: url(./icon_white.png);
+        background-image: url(icon_white.png);
         width: 197.136px;
         height: 197.136px;
         margin: -146.52px 0 0 -98.568px; } }
