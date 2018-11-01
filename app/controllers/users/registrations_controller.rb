@@ -16,68 +16,99 @@ class Users::RegistrationsController < Devise::RegistrationsController
     pass_temp = Devise.friendly_token.first(8)
     @user.encrypted_password = BCrypt::Password.create(pass_temp)
     @user.save
-    url = []
 
+    # for i in 1..3 do
+    i = 1
 
-    for i in 1..2 do
-      doc = File.read("#{Rails.root}/app/views/templates/p#{i}.html.erb")
-      doc.sub!(/<%= @user.title %>/, "#{@user.title}")
-      doc.sub!(/<%= @user.menu1 %>/, "#{@user.menu1}")
-      doc.sub!(/<%= @user.menu2 %>/, "#{@user.menu2}")
-      doc.sub!(/<%= @user.menu3 %>/, "#{@user.menu3}")
-      doc.sub!(/<%= @user.menu4 %>/, "#{@user.menu4}")
-      doc.sub!(/<%= @user.menu5 %>/, "#{@user.menu5}")
-      doc.sub!(/<%= @user.subheading1 %>/, "#{@user.subheading1}")
-      doc.gsub!(/\/assets/, ".")
+    #doc = File.read('/app/views/templates/p1.html.erb')
+    doc = File.read("#{Rails.root}/app/views/templates/p#{i}.html.erb")
+    doc.gsub!(/<%= @user.title %>/, "#{@user.title}")
+    doc.sub!(/<%= @user.menu1 %>/, "#{@user.menu1}")
+    doc.sub!(/<%= @user.menu2 %>/, "#{@user.menu2}")
+    doc.sub!(/<%= @user.menu3 %>/, "#{@user.menu3}")
+    doc.sub!(/<%= @user.menu4 %>/, "#{@user.menu4}")
+    doc.sub!(/<%= @user.menu5 %>/, "#{@user.menu5}")
+    doc.sub!(/<%= @user.heading1 %>/, "#{@user.heading1}")
+    doc.sub!(/<%= @user.heading2 %>/, "#{@user.heading2}")
+    doc.sub!(/<%= @user.heading3 %>/, "#{@user.heading3}")
+    doc.sub!(/<%= @user.heading4 %>/, "#{@user.heading4}")
+    doc.sub!(/<%= @user.heading5 %>/, "#{@user.heading5}")
+    doc.sub!(/<%= @user.subheading1 %>/, "#{@user.subheading1}")
+    doc.sub!(/<%= @user.subheading2 %>/, "#{@user.subheading2}")
+    doc.sub!(/<%= @user.subheading3 %>/, "#{@user.subheading3}")
+    doc.sub!(/<%= @user.subheading4 %>/, "#{@user.subheading4}")
+    doc.gsub!(/<%= @user.subheading5 %>/, "#{@user.subheading5}")
+    doc.gsub!(/\/assets/, ".")
 
-      client = AWS::S3::Client.new(
-          access_key_id: "AKIAJXOOQX7JR6MEO5IQ",
-          secret_access_key: "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"
-      )
-      s3 = AWS::S3.new(
-          access_key_id: "AKIAJXOOQX7JR6MEO5IQ",
-          secret_access_key: "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"
-      )
+    client = AWS::S3::Client.new(
+        access_key_id: "AKIAJXOOQX7JR6MEO5IQ",
+        secret_access_key: "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"
+    )
+    s3 = AWS::S3.new(
+        access_key_id: "AKIAJXOOQX7JR6MEO5IQ",
+        secret_access_key: "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"
+    )
 
-      bucket_name = "#{@user.email.split("@").first}-" + "#{i}"
+    bucket_name = "#{@user.email.split("@").first}-#{i}"
 
-      #バケット作成
-      client.create_bucket(bucket_name: "#{bucket_name}") unless s3.buckets[bucket_name].exists?
+    #バケット作成
+    client.create_bucket(bucket_name: "#{bucket_name}") unless s3.buckets[bucket_name].exists?
 
-      #indexをアップロード
+    #indexをアップロード
+    client.put_object({
+                          # :bucket_name => "#{@user.email}-"+"#{i}",
+                          :bucket_name => "#{bucket_name}",
+                          :key => 'index.html',
+                          :data => doc,
+                          s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
+                      })
+
+    #空のtemplate#{i}フォルダ作成
+
+    client.put_object({
+                          # :bucket_name => "#{@user.email}-"+"#{i}",
+                          :bucket_name => "#{bucket_name}",
+                          :key => "template#{i}/",
+                          :data => doc,
+                          s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
+                      })
+    #該当ディレクトリ下の必要なファイルをすべてアップロード
+    dir_name = Dir.open("#{Rails.root}/app/assets/images/template#{i}")
+    dir_name.each_with_index do |f, index|
+      if f == "." || f == ".."
+        next
+      end
+      data = File.read("#{Rails.root}/app/assets/images/template#{i}" + '/' + f)
       client.put_object({
-                            # :bucket_name => "#{@user.email}-"+"#{i}",
                             :bucket_name => "#{bucket_name}",
-                            :key => 'index.html',
-                            :data => doc,
+                            :key => "template#{i}/#{f}",
+                            :data => data,
                             s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
                         })
- 
-      policy = {
-          "Version": "2012-10-17",
-          "Statement": [
-              {
-                  "Sid": "AddPerm",
-                  "Effect": "Allow",
-                  "Principal": "*",
-                  "Action": [
-                      "s3:GetObject"
-                  ],
-                  "Resource": [
-                      "arn:aws:s3:::#{bucket_name}/*"
-                  ]
-              }
-          ]
-      }.to_json
-      client.set_bucket_policy(
-          bucket_name: bucket_name,
-          policy: policy
-      )
-
-      url.push("https://s3.amazonaws.com/#{bucket_name}/index.html")
     end
-    puts url.class
-    puts url.length
+    policy = {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "AddPerm",
+                "Effect": "Allow",
+                "Principal": "*",
+                "Action": [
+                    "s3:GetObject"
+                ],
+                "Resource": [
+                    "arn:aws:s3:::#{bucket_name}/*"
+                ]
+            }
+        ]
+    }.to_json
+    client.set_bucket_policy(
+        bucket_name: bucket_name,
+        policy: policy
+    )
+
+    url = "https://s3.amazonaws.com/#{bucket_name}/index.html"
+    # end
     SendMailer.send_when_update(current_user, pass_temp, url).deliver
 
 

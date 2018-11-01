@@ -13,4 +13,10 @@ Rails.application.routes.draw do
   }
   resources :users, except: [:new, :create] do
   end
+  # subscriptions
+  #
+  resources :plan_subscriptions, only: %i(new create index destroy), controller: 'subscriptions'
+
+  post "pay", to: "templates#pay"
+
 end
