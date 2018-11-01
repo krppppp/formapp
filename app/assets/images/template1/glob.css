@@ -1734,18 +1734,17 @@ img {
         background-image: url(b1_bg_sp.jpg); } }
 #topContent #block1 h1 {
     position: absolute;
-    left: 50%;
+    left: 45%;
     top: 50%;
     margin: -128px 0 0 -89px;
-    width: 178px;
-    height: 178px;
-    background-image: url(icon_white.png);
-    background-size: cover; }
+    font-size: 60px;
+    color: white;
+    }
 @media only screen and (max-width: 499px) {
     #topContent #block1 h1 {
-        background-image: url(icon_white.png);
-        width: 197.136px;
-        height: 197.136px;
+font-size: 40px;
+        left: 40%;
+        color: #fff;
         margin: -146.52px 0 0 -98.568px; } }
 #topContent #block1 p {
     position: absolute;
