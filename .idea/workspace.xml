@@ -90,8 +90,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/templates/p1.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-74">
-                  <caret line="18" column="68" lean-forward="true" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+                <state relative-caret-position="-299">
+                  <caret line="32" column="82" lean-forward="true" selection-start-line="32" selection-start-column="82" selection-end-line="32" selection-end-column="82" />
                   <folding>
                     <element signature="n#style#0;n#img#0;n#div#1;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -102,8 +102,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/templates/p2.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="233">
-                  <caret line="430" column="28" lean-forward="true" selection-start-line="430" selection-start-column="28" selection-end-line="430" selection-end-column="28" />
+                <state relative-caret-position="286">
+                  <caret line="143" column="16" lean-forward="true" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -230,6 +230,7 @@
       <replace>/assets/templates_index</replace>
       <replace>&lt;%= current_user.name%&gt;/1/トップ</replace>
       <replace>/assets/templates_index/</replace>
+      <replace>@user.title</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -612,13 +613,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31322000" />
+    <option name="totallyTimeSpent" value="31572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1080" y="-1063" width="1080" height="1920" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26878613" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26878613" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -631,7 +632,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" x="0" y="-1036" width="1920" height="1036" id="Terminal" order="10" type="WINDOWED" visible="true" weight="0.1434903" />
+      <window_info active="true" anchor="bottom" x="0" y="-1036" width="1920" height="1036" id="Terminal" order="10" type="WINDOWED" visible="true" weight="0.1434903" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" x="42" y="331" width="1038" height="259" id="Messages" order="12" type="WINDOWED" weight="0.3299363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1017,8 +1018,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/p1.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="18" column="68" lean-forward="true" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+        <state relative-caret-position="-299">
+          <caret line="32" column="82" lean-forward="true" selection-start-line="32" selection-start-column="82" selection-end-line="32" selection-end-column="82" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#1;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1027,8 +1028,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/p2.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="430" column="28" lean-forward="true" selection-start-line="430" selection-start-column="28" selection-end-line="430" selection-end-column="28" />
+        <state relative-caret-position="286">
+          <caret line="143" column="16" lean-forward="true" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
         </state>
       </provider>
     </entry>
