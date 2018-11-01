@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-
+gem "unicorn"
 gem 'aws-sdk-s3', '~> 1'
 gem 'aws-sdk', '~>1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

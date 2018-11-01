@@ -52,8 +52,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
                             :data => doc,
                             s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
                         })
-
-
+ 
       policy = {
           "Version": "2012-10-17",
           "Statement": [
