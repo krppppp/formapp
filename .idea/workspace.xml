@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d210315e-25a0-411f-a4df-cfdc48e0f0f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/globa.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/globa.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/subscriptions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/subscriptions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/templates_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/templates_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/send_mailer/send_when_update.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/send_mailer/send_when_update.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/subscriptions/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/subscriptions/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/templates/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/templates/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/templates/p1.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/templates/p1.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/templates/p2.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/templates/p2.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -30,8 +20,8 @@
     <session id="1766249100">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="239" />
-          <entry key="erb" value="1418" />
+          <entry key="css" value="247" />
+          <entry key="erb" value="1446" />
           <entry key="htm" value="14" />
           <entry key="html" value="58" />
           <entry key="js" value="1" />
@@ -41,11 +31,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="239" />
+          <entry key="CSS" value="247" />
           <entry key="HTML" value="72" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="RHTML" value="1417" />
+          <entry key="RHTML" value="1445" />
           <entry key="Ruby" value="657" />
         </counts>
       </usages-collector>
@@ -53,7 +43,7 @@
         <counts>
           <entry key="Gemfile" value="2" />
           <entry key="css" value="9" />
-          <entry key="erb" value="34" />
+          <entry key="erb" value="35" />
           <entry key="htm" value="3" />
           <entry key="html" value="2" />
           <entry key="jbuilder" value="1" />
@@ -70,7 +60,7 @@
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="18" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="RHTML" value="34" />
+          <entry key="RHTML" value="35" />
           <entry key="Ruby" value="28" />
           <entry key="SCSS" value="1" />
         </counts>
@@ -100,8 +90,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/templates/p1.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="278">
-                  <caret line="75" column="39" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
+                <state relative-caret-position="-74">
+                  <caret line="18" column="68" lean-forward="true" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
                   <folding>
                     <element signature="n#style#0;n#img#0;n#div#1;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -110,10 +100,19 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/assets/images/template1/globa.css">
+            <entry file="file://$PROJECT_DIR$/app/views/templates/p2.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="383">
-                  <caret line="1744" column="16" lean-forward="true" selection-start-line="1744" selection-start-column="16" selection-end-line="1744" selection-end-column="16" />
+                <state relative-caret-position="233">
+                  <caret line="430" column="28" lean-forward="true" selection-start-line="430" selection-start-column="28" selection-end-line="430" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/images/template1/glob.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="443">
+                  <caret line="1748" column="23" lean-forward="true" selection-start-line="1748" selection-start-column="23" selection-end-line="1748" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -191,7 +190,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>document</find>
       <find>jqu</find>
       <find>flow</find>
       <find>01</find>
@@ -220,6 +218,7 @@
       <find>medi</find>
       <find>style/6/</find>
       <find>style/9/</find>
+      <find>icon_white</find>
       <find>hTx</find>
     </findStrings>
     <replaceStrings>
@@ -267,7 +266,6 @@
         <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tops_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/templates/p2.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/images/top/style.css" />
         <option value="$PROJECT_DIR$/app/assets/images/template1/globall.css" />
@@ -284,8 +282,10 @@
         <option value="$PROJECT_DIR$/app/views/subscriptions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/templates_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/templates/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/templates/p1.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/images/template1/globa.css" />
+        <option value="$PROJECT_DIR$/app/assets/images/template1/glob.css" />
+        <option value="$PROJECT_DIR$/app/views/templates/p1.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/templates/p2.html.erb" />
       </list>
     </option>
   </component>
@@ -612,7 +612,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30726000" />
+    <option name="totallyTimeSpent" value="31322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1080" y="-1063" width="1080" height="1920" extended-state="0" />
@@ -782,16 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/p2.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="179" column="18" selection-start-line="179" selection-start-column="18" selection-end-line="179" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#li#5;n#ul#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1018,20 +1008,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/template1/glob.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="1748" column="23" lean-forward="true" selection-start-line="1748" selection-start-column="23" selection-end-line="1748" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/p1.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="75" column="39" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
+        <state relative-caret-position="-74">
+          <caret line="18" column="68" lean-forward="true" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#1;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/template1/globa.css">
+    <entry file="file://$PROJECT_DIR$/app/views/templates/p2.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="1744" column="16" lean-forward="true" selection-start-line="1744" selection-start-column="16" selection-end-line="1744" selection-end-column="16" />
+        <state relative-caret-position="233">
+          <caret line="430" column="28" lean-forward="true" selection-start-line="430" selection-start-column="28" selection-end-line="430" selection-end-column="28" />
         </state>
       </provider>
     </entry>
