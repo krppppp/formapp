@@ -64,6 +64,7 @@
           href="#.com/biography/"><%= @user.menu4 %></a></li>
         <li id="menu-item-387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387"><a
           href="#.com/biography/"><%= @user.menu5 %></a></li>
+        <li id="menu-item-387" style="display: none" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387"></li>
       </ul>
       <div class="closeMenu"><i class="fa fa-times"></i></div>
     </div>
@@ -77,9 +78,8 @@
           style="background: url(/assets/template2/gazoのコピー.jpg);background-size: cover;background-position: center center">
         <div class="slideText">
           <a href="#.com/new-documentary-before-the-flood-to-air-globally-on-natgeo-on-october-30th-2/">
-            <h1>レストランそのやまレストランそのやまレストランそのやまレストランそのやまレストランそのやま</h1></a>
-          <p>
-            雑誌でコラム・料理レシピなどを紹介をするかたわら、テレビやラジオ番組にも出演。料理トークショー・講演会・料理教室といったイベント活動も行う。また、商品開発・食カウンセリング・飲食店経営も手掛けている。</p>
+            <h1><%= @user.heading1 %></h1></a>
+          <p><%= @user.subheading1 %></p>
           <a class='sliderLink'
              href='#.com/new-documentary-before-the-flood-to-air-globally-on-natgeo-on-october-30th-2/'>詳しくはこちら</a>
         </div>
@@ -89,10 +89,8 @@
           style="background: url(/assets/template2/main02のコピー.jpg);background-size: cover;background-position: center center">
         <div class="slideText">
           <a href="#.com/leonardo-calls-for-climate-action-at-mayors-summit-in-paris-3/">
-            <h1>そのやま第２楽章始めます</h1></a>
-          <p>「もっともっと、楽天人生をテーマに、孤高の料理、オンリーワンの世界観を」2015年3月3日にオープンした紹介制料理店『そのやま』。
-            「最後から二番目の晩餐に大切な人と来てもらえるようなお店」をコンセプトに、より多くの方に「そのやま」
-            流料理を楽しんで頂くため、第二楽章の始動をここに宣言。</p>
+            <h1><%= @user.heading2 %></h1></a>
+          <p><%= @user.subheading2 %></p>
           <a class='sliderLink'
              href='#.com/leonardo-calls-for-climate-action-at-mayors-summit-in-paris-3/'>詳しくはこちら</a>
         </div>
@@ -102,33 +100,28 @@
           style="background: url(/assets/template2/main03のコピー.jpg);background-size: cover;background-position: center center">
         <div class="slideText">
           <a href="#.com/the-revenant-set-to-release-on-christmas-day-gallery/">
-            <h1>「最後から二番目の晩餐に大切な方と」「美味しいご縁結び」「楽天人生」</h1></a>
-          <p>「楽天人生」と「背中に感謝」を大きなテーマに、孤高の料理、そして、
-            オンリーワンの世界観を作り上げるべく、2015年3月3日にオープンした恵比寿の料理店『そのやま』。</p>
+            <h1><%= @user.heading3 %></h1></a>
+          <p><%= @user.subheading3 %></p>
           <a class='sliderLink'
              href='#.com/the-revenant-set-to-release-on-christmas-day-gallery/'>詳しくはこちら</a>
         </div>
-        <p class="flex-caption">The Revenant / 20th Century Fox</p>
       </li>
       <li class="slide" id="485"
           style="background: url(/assets/template2/gazo5のコピー.jpg);background-size: cover;background-position: center center">
         <div class="slideText">
           <a href="#.com/"><h1>
-            「そのや米」をはじめとしたオリジナル商品の開発</h1></a>
-          <p>実際のコース料理はご来店された方のお楽しみでもあるので、ごく一部のご縁結び料理と、
-            美味しさと健康に配慮したまかない料理と、リターンの中の「あんみつ姫アイス」をご紹介させて頂きます。</p>
+            <%= @user.heading4 %></h1></a>
+          <p><%= @user.subheading4 %></p>
           <a class='sliderLink'
              href='#.com/'>詳しくはこちら</a>
         </div>
-        <p class="flex-caption">Creative Commons: Michael Buholzer, World Economic Form 2016</p>
       </li>
       <li class="slide" id="431"
           style="background: url(/assets/template2/main02のコピー.jpg);background-size: cover;background-position: center center">
         <div class="slideText">
           <a href="#.com/leonardo-joins-artists-and-public-leaders-at-the-global-citizen-festival/">
-            <h1>食作家 園山真希絵</h1></a>
-          <p>実際のコース料理はご来店された方のお楽しみでもあるので、ごく一部のご縁結び料理と、
-            美味しさと健康に配慮したまかない料理と、リターンの中の「あんみつ姫アイス」をご紹介させて頂きます。</p>
+            <h1><%= @user.heading5 %></h1></a>
+          <p><%= @user.subheading5 %></p>
           <a class='sliderLink'
              href='#.com/leonardo-joins-artists-and-public-leaders-at-the-global-citizen-festival/'>詳しくはこちら</a>
         </div>
@@ -180,11 +173,11 @@
     <div class="threecols secondNumbers">
       <div class="cont">
         <div class="bigNumbers" style="padding-top: 54px"><h1>1993</h1>
-          <p>そのやま<br/>開業</p></div>
+          <p>サンプル１</p></div>
         <div class="bigNumbers" style="padding-top: 68px"><h1>2000</h1>
-          <p>そのやま第２楽章開始</p></div>
+          <p>サンプル２</p></div>
         <div class="bigNumbers" style="padding-top: 68px"><h1>2018</h1>
-          <p>メディア出演</p></div>
+          <p>サンプル３</p></div>
       </div>
     </div>
     <div class="clearfix"></div>
