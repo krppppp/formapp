@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root to: 'tops#index'
 
+  get "/index", to:"templates#index", as:"templates"
+
   for i in 0..32 do
     get ":name/#{i}/トップ", to: "templates#p#{i}", as: "templates_#{i}"
   end
@@ -15,7 +17,7 @@ Rails.application.routes.draw do
   end
   # subscriptions
   #
-  resources :plan_subscriptions, only: %i(new create index destroy), controller: 'subscriptions'
+  resources :subscriptions, only: %i(new create index destroy show), controller: 'subscriptions'
 
   post "pay", to: "templates#pay"
 

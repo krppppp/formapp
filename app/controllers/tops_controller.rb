@@ -5,7 +5,9 @@ class TopsController < ApplicationController
   # GET /tops
   # GET /tops.json
   def index
-    @tops = Top.all
+    if current_user
+      redirect_to user_path(current_user.id)
+    end
   end
 
   # GET /tops/1

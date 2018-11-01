@@ -1,5 +1,28 @@
+<style>
+  .contact-form {
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #37383b;
+    padding-top: 2px;
+    padding: 6px 12px;
+    color: black;
+  }
+    .vod-mod-content{
+      width: 50%;
+      margin: auto;
+    }
+    .button {
+      width: 100%;
+      background: #00BCD4;
+      margin: auto;
+      padding: 20px;
+      border-radius: 50px;
+      color: white;
+      font-size: 20px;
+    }
+</style>
 <%= form_for @user do |f| %>
-  <div class='container pb-5'>
+  <div class='vod-mod-content pb-5'>
     <% if @user.errors.any? %>
       <div id='error_explanation'>
         <h2><%= pluralize(user.errors.count, 'error') %> 箇所の誤りがあります。</h2>
@@ -13,7 +36,7 @@
     <script src='https://ajaxzip3.github.io/ajaxzip3.js' charset='UTF-8'></script>
 
 
-    <div class='form-team my-2'>
+    <div class='my-2'>
       <%= f.label :HPタイトル, class: "text-white" %>
       <%= f.text_field :title, class: 'frame-none contact-form', id: 'last_name' %>
     </div>
@@ -113,7 +136,7 @@
     <br><br>
 
     <div class='form-team text-center'>
-      <%= f.submit '登録する', data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, class: 'text3 btn pera-button w-50 text-white mt-5', id: 'formButton' %>
+      <%= f.submit '更新する', class: 'button', id: 'formButton' %>
     </div>
 
 <% end %>

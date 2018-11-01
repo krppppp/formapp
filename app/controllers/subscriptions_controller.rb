@@ -1,5 +1,4 @@
 class SubscriptionsController < ApplicationController
-  before_action :authenticate_member!
   include PayjpModule
 
   def index
@@ -11,14 +10,15 @@ class SubscriptionsController < ApplicationController
     redirect_to plan_subscriptions_path if current_member.has_valid_subscription?
   end
 
+
+
   def create
     create_subscription(current_member, params['payjp-token'])
     redirect_to new_plan_subscription_path, info: '定額プランの購入を完了しました。'
   end
 
-  def plan_confirm
-    @subscription = current_member.subscriptions.last
-    @gp = current_member.sum_robbed_pl.floor
+  def show
+    @subscription = current_user.subscriptions.last
   end
 
   def destroy
