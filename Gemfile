@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-
+gem "unicorn"
 gem 'aws-sdk-s3', '~> 1'
 gem 'aws-sdk', '~>1'
-gem 'payjp'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 #
 gem 'rails', '~> 5.2.1'
@@ -66,4 +65,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
+gem 'payjp'
 gem 'omniauth-twitter'

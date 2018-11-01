@@ -99,7 +99,7 @@ class TemplatesController < ApplicationController
     #該当ディレクトリ下の必要なファイルをすべてアップロード
     dir_name = Dir.open("#{Rails.root}/app/assets/images/template#{id}")
     dir_name.each_with_index do |f, index|
-      if index == 0 || index == 1
+      if f == "." || f == ".."
         next
       end
       data = File.read("#{Rails.root}/app/assets/images/template#{id}" + '/' + f)
