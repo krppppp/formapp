@@ -1,0 +1,1322 @@
+@charset "UTF-8";
+/* *****************************
+ * reset
+ **************************** */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* *****************************
+ * base
+ **************************** */
+html{
+  overflow-y: scroll;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #000;
+  font-family: Verdana,"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W6",Osaka,"ＭＳ Ｐゴシック",Arial,sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+* html body {
+  /* for IE6 */
+  font-size: 100%;
+}
+
+*:first-child + html body {
+  /* for IE7 */
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#container {
+  width: 100%;
+}
+
+/* *****************************
+ * common
+ **************************** */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  z-index: 999;
+  background: #FFF;
+}
+header h1 {
+  padding: 56px 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 1018px;
+  background: #FFF;
+}
+header h1 a {
+  display: inline;
+  height: 12px;
+  width: 141px;
+}
+header #navWrap{
+  width: 100%;
+  height: 12px;
+  background: #FFF;
+  padding: 0 0 50px;
+}
+header nav {
+  width: 1018px;
+  margin: 0 auto;
+  
+  background: #FFF;
+}
+header nav #menu {
+  width: 850px;
+  margin: 0 auto;
+}
+header nav #menu li {
+  float: left;
+}
+header nav #menu li a {
+  font-size: 20px;
+  font-family: cursive;
+}
+header nav #menu li a:hover {
+  /*border-bottom: 1px solid #000;*/
+  opacity: 0.5 !important;
+}
+header nav #menu li img {
+  padding: 0 0 2px;
+}
+header nav #menu #nav01, header nav #menu #nav02, header nav #menu #nav03, header nav #menu #nav04, header nav #menu #nav05, header nav #menu #nav06, header nav #menu #nav11 {
+  margin: 0 47px 0 0;
+}
+header nav #menu #nav07{
+  margin: 0 36px 0 0;
+}
+header nav #menu #nav08 {
+  margin: -4px 16px 0 0;
+}
+header nav #menu #nav09 {
+  margin: -4px 12px 0 0;
+}
+header nav #menu #nav10 {
+  margin: -4px 0 0 0;
+}
+header nav #menu .on {
+  /*border-bottom: 1px solid #000;*/
+  opacity: 0.5 !important;
+}
+header nav #menu .off {
+  opacity: 1 !important;
+}
+header .lowerNavWrap {
+  display: none;
+  /*width: 100%;*/
+  width: 1018px;
+  margin: 0 auto;
+  padding: 15px 0 0;
+  background: #FFF;
+  z-index: 9999;
+}
+header .lowerNavWrap .lowerNav {
+  
+  /*margin: 0 auto;*/
+}
+header .lowerNavWrap .styleLowerNav{
+  padding: 0 0 0 200px;
+}
+header .lowerNavWrap .productLowerNav{
+  padding: 0 0 0 290px;
+}
+header .lowerNavWrap .lowerNav li {
+  display: inline-block;
+  padding: 0 18px;
+}
+header .lowerNavWrap .lowerNav li:last-child {
+  border-right: 0px;
+}
+header .lowerNavWrap .lowerNav li a {
+  color: #000;
+  font-size: 11px;
+}
+header .lowerNavWrap .lowerNav li a:hover {
+  opacity: 0.5 !important;
+}
+
+/* *****************************
+ * top
+ **************************** */
+.top {
+  padding: 150px 0 0;
+}
+.top section {
+  /*width: 1018px;*/
+}
+.top section article h2 {
+  text-align: center;
+}
+.top .anchorPoint {
+  display: block;
+}
+.top #sec1 {
+  margin: 68px 80px 0 80px;
+  clear: both;
+}
+.top #sec1 article {
+  width: 100%;
+  height: 100%;
+  min-width: 885px;
+  margin: 0 auto;
+}
+.top #sec1 article #slide {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  min-height: 590px;
+  text-align: left;
+  /*overflow: hidden;*/
+}
+.top #sec1 article #slide ul {
+  width: 100%;
+  height: 100%;
+  /*min-height: 589px;*/
+  text-align: left;
+  /*overflow: hidden;*/
+  position: relative;
+}
+.top #sec1 article #slide ul li {
+  top: 0;
+  left: 0;
+  /*width: 885px;*/
+  width: 100%;
+  height: 100%;
+  /*min-height: 589px;*/
+  display: none;
+  position: absolute;
+}
+.top #sec1 article #slide ul li img {
+  width: 100%;
+}
+.top #sec2 {
+  margin-bottom: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+.top #sec2 article {
+  /*width: 885px;*/
+  width: 1018px;
+  margin: 0 auto;
+}
+.top #sec2 article h2 {
+  margin: 0 0 52px;
+}
+.top #sec2 article ul {
+  clear: both;
+  width: 885px;
+  overflow: hidden;
+  margin: 0 auto 30px;
+}
+.top #sec2 article ul:last-child {
+  margin: 0 auto;
+}
+.top #sec2 article ul li {
+  float: left;
+  font-size: 0;
+  margin: 0 30px 0 0;
+}
+.top #sec2 article ul li:last-child {
+  margin: 0;
+}
+.top #sec3 {
+  clear: both;
+  margin-top: 50px;
+  margin-bottom: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 190px;
+}
+.top #sec3 article {
+  width: 1018px;
+  margin: 0 auto;
+  text-align: center;
+}
+.top #sec3 article h3 {
+  margin: 25px 0 0;
+}
+.top #sec3 article .idBox01Wrap {
+  width: 1018px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.top #sec3 article .clBox01 {
+  width: 275px;
+  float: left;
+  padding: 20px 32px 0;
+}
+.top #sec3 article .clBox01:hover {
+  width: 275px;
+  -ms-filter: "alpha( opacity=70 )";
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  zoom: 1;
+}
+.top #sec3 article .clBox01 a {
+  color: #000000;
+  cursor: pointer;
+}
+.top #sec3 article .clBox01 .clBox02 {
+  padding-bottom: 15px;
+}
+.top #sec4 {
+  margin-top: 50px;
+  margin-bottom: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 190px;
+}
+.top #sec4 article{
+  width: 1018px;
+  margin: 0 auto;
+}
+.top #sec4 article p {
+  width: 628px;
+  margin: 52px auto 0;
+  padding: 0 0 0 60px;
+}
+.top #sec5 {
+  margin-top: 50px;
+  margin-bottom: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 190px;
+}
+.top #sec5 article{
+  width: 1018px;
+  margin: 0 auto;
+}
+.top #sec5 article table {
+  width: 776px;
+  margin: 46px auto 0;
+}
+.top #sec5 article table th, .top #sec5 article table td {
+  text-align: left;
+  font-weight: normal;
+  padding: 12px 0;
+  line-height: 1;
+  font-size: 9px;
+  font-size: 0.5625rem;
+}
+.top #sec5 article table th {
+  width: 262px;
+}
+.top #sec5 article table th a:hover,.top #sec5 article table td a:hover {
+  color: #C5C5C5;
+}
+.top #sec5 article table .dl_td1 {
+  width: 432px;
+}
+.top #sec5 article table .dl_td2 {
+  width: 82px;
+}
+.top #sec6 {
+  margin-top: 50px;
+  margin-bottom: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 190px;
+}
+.top #sec6 article table {
+  width: 331px;
+  margin: 52px auto 0;
+}
+.top #sec6 article table th, .top #sec6 article table td {
+  text-align: left;
+  padding: 10px 0;
+  font-size: 11px;
+  font-size: 0.6875rem;
+}
+.top #sec6 article table th {
+  width: 135px;
+}
+.top #sec6 article table td a:hover {
+  color: #C5C5C5;
+}
+.top .credits {
+  width: 1018px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 0 0 45px;
+}
+
+/*.top #sec2,.top #sec3,.top #sec4,.top #sec5,.top .credits{
+  display: none;
+}*/
+
+/* *****************************
+ * style
+ **************************** */
+.style #sec1 article {
+  margin-top: 190px;
+  margin-right: 331.5px;
+  margin-bottom: 0px;
+  margin-left: 331.5px;
+}
+.style #sec1 article .styleImgWrap {
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+}
+.style #sec1 article .styleImgWrap .styleImg {
+  display: block;
+  margin-bottom: 86px;
+  width: 100%;
+}
+.style #sec1 article .styleImgWrap .styleInfo {
+  position: absolute;
+  right: -176px;
+  bottom: 140px;
+  width: 160px;
+  display: none;
+}
+.style #sec1 article .styleImgWrap .styleInfo p {
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  margin: 0px;
+  min-width: 0px;
+  width: 200px;
+  font-size: 9px;
+  text-align: left;
+}
+.style #sec1 article .styleImgWrap .credits {
+  width: 31px;
+  margin: 0 auto;
+  padding: 0 0 45px;
+  display: none;
+}
+.style #sec1 article .next, .style #sec1 article .prev {
+  display: none;
+  height: 31px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -999px;
+  top: 42%;
+  width: 16px;
+  opacity: 1;
+  cursor: pointer;
+}
+.style #sec1 article .prev {
+  background: url("../images/prev.jpg") no-repeat top center;
+  left: -80px;
+}
+.style #sec1 article .next {
+  background: url("../images/next.jpg") no-repeat top center;
+  right: -80px;
+}
+.style #sec1 article .next:hover, .style #sec1 article .prev:hover {
+  opacity: 0.7;
+}
+
+/* *****************************
+ * PRODUCT detail
+ **************************** */
+.product section article #idPopup01 {
+  width: 863px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+  position: relative;
+  padding: 196px 0;
+}
+.product section article #idPopup01 #idBack {
+  left: -30px;
+}
+.product section article #idPopup01 #idNext {
+  right: -30px;
+}
+.product section article #idPopup01 #idBack, .product section article #idPopup01 #idNext {
+  position: absolute;
+  bottom: 336px;
+}
+.product section article #idPopup01 #idBack a, .product section article #idPopup01 #idNext a {
+  padding: 50px;
+  display: block;
+}
+.product section article #idPopup01 #idBack a:hover, .product section article #idPopup01 #idNext a:hover {
+  -ms-filter: "alpha( opacity=40 )";
+  filter: alpha(opacity=40);
+  opacity: 0.4;
+  zoom: 1;
+}
+.product section article #idPopup01 img {
+  border: none;
+}
+.product section article #idPopup01 #idPopup02 {
+  width: 725px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 18px 0 0 0;
+  position: relative;
+}
+.product section article #idPopup01 #idPopup02 .clPad_r8 {
+  padding-right: 8px;
+}
+.product section article #idPopup01 #idPopup02 .clPad_r9 {
+  padding-right: 9px;
+}
+.product section article #idPopup01 #idPopup02 #idPopup03L {
+  width: 40px;
+  height: 40px;
+  float: left;
+  padding: 14px 0;
+}
+.product section article #idPopup01 #idPopup02 #idPopup03R {
+  float: left;
+  /*	width:715px;*/
+  width: 700px;
+  text-align: left;
+  padding: 26px 0 0 9px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+}
+.product section article #idPopup01 #idPopup02 #idPopup04L {
+  float: left;
+  width: 400px;
+  text-align: left;
+}
+.product section article #idPopup01 #idPopup02 #idPopup04L #idPopup04LSub01 {
+  height: 400px;
+}
+.product section article #idPopup01 #idPopup02 #idPopup04R {
+  width: 290px;
+  position: absolute;
+  bottom: -4px;
+  left: 435px;
+}
+.product section article #idPopup01 #idPopup02 #idPopup04R h2 {
+  width: 50px;
+  float: left;
+  font-size: 10px;
+  font-weight: normal;
+  height: 11px;
+  text-align: left;
+  padding: 0 15px 8px 0;
+  margin: 0;
+  line-height: 1.6em;
+}
+.product section article #idPopup01 #idPopup02 #idPopup04R p {
+  width: 225px;
+  float: left;
+  font-size: 10px;
+  text-align: left;
+  padding: 0 0 8px 0;
+  line-height: 1.6em;
+}
+.product section article #idPopup01 #idPopup02 #idPopup04R .lastH2 {
+  padding: 0 15px 0 0;
+}
+.product section article #idPopup01 #idPopup02 #idPopup04R .lastP {
+  padding: 0;
+}
+.product section article #idPopup01 #idPopup02 #idPopup04R .clBtn01 {
+  padding: 17px 0 0 175px;
+  text-align: left;
+  width: 90px;
+  height: 10px;
+}
+.product section article #idPopup01 .clSimgWrap {
+  width: 407px;
+  padding-left: 70px;
+  float: left;
+  margin: 20px 0 0;
+  overflow: hidden;
+}
+.product section article #idPopup01 .clSimgWrap .clSimgBox01 {
+  float: left;
+  width: 50px;
+  padding: 0 1px 1px 0;
+}
+.product section article #idPopup01 .clSimgWrap .clSimgBox01 img {
+  cursor: pointer;
+}
+.product section article #idPopup01 .clSimgWrap .clSimgBox01 img:hover {
+  height: 50px;
+  width: 50px;
+  -ms-filter: "alpha( opacity=70 )";
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  zoom: 1;
+}
+.product section article #idGimg01 {
+  position: relative;
+}
+.product section article #idGimg02, .product section article #idGimg03, .product section article #idGimg04, .product section article #idGimg05, .product section article #idGimg06, .product section article #idGimg07, .product section article #idGimg08 {
+  display: none;
+  position: relative;
+}
+.product section article .credits {
+  width: 31px;
+  margin: 0 auto;
+  padding: 0 0 45px;
+}
+
+/* *****************************
+ * information
+ **************************** */
+.information {
+  padding: 195px 0 0;
+}
+.information section #contents {
+  width: 1032px;
+  margin: 0 auto;
+  clear: both;
+  overflow: hidden;
+  position: relative;
+}
+.information section #contents #sidebar {
+  width: 170px;
+  float: left;
+  font-family: Meiryo, メイリオ, 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',sans-serif;
+}
+.information section #contents #archives {
+  width: 170px;
+  font-size: 9px;
+  color: #000;
+  text-align: right;
+  
+}
+.information section #contents #archives h3 {
+  margin: 0 0 15px;
+  padding: 0;
+}
+.information section #contents #archives #archivesList {
+  padding: 6px 0 0;
+  list-style: none;
+  /*width: 50px;*/
+  text-align: right;
+  border-bottom: 1px solid #000;
+}
+.information section #contents #archives #archivesList a {
+  color: #000;
+  text-decoration: none;
+}
+.information section #contents #archives #archivesList a:hover {
+  color: #c5c5c5;
+}
+.information section #contents #archives #archivesList li {
+  margin: 0 0 10px;
+  padding: 0;
+}
+.information section #contents #archives #archivesList li:first-child {
+  border-bottom: 1px solid #000;
+  padding: 0 0 10px;
+}
+.information section #contents #archives #archivesList li.yearList {
+  border-top: 1px solid #000;
+  padding: 10px 0 0;
+}
+.information section #contents #calendar {
+  margin: 30px 0 0;
+  font-size: 9px;
+  overflow: hidden;
+}
+.information section #contents #calendar table{
+  float: right;
+}
+.information section #contents #calendar caption{
+  margin: 0 0 10px;
+  text-align: right;
+}
+.information section #contents #calendar table thead th,.information section #contents #calendar table tbody td{
+  /*padding: 4px;*/
+  text-align: right;
+  width: 21px;
+  height: 18px;
+}
+.information section #contents #calendar table tbody td a{
+  background: #EEE;
+}
+.information section #contents #calendar table tfoot #prev,.information section #contents #calendar table tfoot #next{
+  padding: 6px 4px 0px;
+}
+.information section #contents #calendar table tfoot #prev{
+  text-align: left;
+}
+.information section #contents #calendar table tfoot #next{
+  text-align: right;
+}
+
+.information section #contents #links{
+  clear: both;
+  margin: 30px 0 0;
+  font-size: 9px;
+}
+.information section #contents #links li{
+  margin: 0 0 20px;
+  text-align: right;
+  line-height: 1.6;
+}
+.information section #contents #links li a{
+  display: block;
+  padding: 7px 10px;
+  border: 1px solid #000;
+}
+.information section #contents #links li a:hover{
+  color: #c5c5c5;
+}
+
+.information section #contents .article {
+  width: 627px;
+  text-align: left !important;
+  margin: 0 0 0 274px;
+}
+.information section #contents .article a {
+  color: #000;
+}
+.information section #contents .article a:hover {
+  color: #c5c5c5;
+}
+.information section #contents .article h2 {
+  font-family: Meiryo, メイリオ, 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.information section #contents .article .entry_post {
+  font-family: Meiryo, メイリオ, 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',sans-serif;
+  font-size: 10px;
+  line-height: 24px;
+  margin: 0;
+}
+.information section #contents .article .entry_post p img{
+  max-width: 100%;
+  height: auto;
+}
+.information section #contents .article .articleFoot {
+  width: 627px;
+  margin: 20px auto 100px;
+  /*clear: both;*/
+  overflow: hidden;
+}
+.information section #contents .article .articleFoot .day {
+  width: 110px;
+  float: left;
+}
+.information section #contents .article .articleSocial {
+  /*width: 35px;*/
+  height: 16px;
+  float: left;
+}
+.information section #contents .article .articleSocial p {
+  float: left;
+}
+.information section #contents .article .articleSocial .articleTwitter {
+  width: 16px;
+  float: left;
+  margin: 3px 0 0 12px;
+}
+.information section #contents .article .articleSocial .articleFacebook {
+  width: 16px;
+  float: left;
+  margin: 3px 0 0 8px;
+}
+.information section #contents .article .articleSocial .articleTwitter a:hover,.information section #contents .article .articleSocial .articleFacebook a:hover{
+  opacity: 0.5;
+}
+.information section #contents .article .articlePageNation {
+  width: 627px;
+  margin: 40px auto 60px;
+  clear: both;
+  overflow: hidden;
+}
+.information section #contents .article .articlePageNation a:hover {
+  -ms-filter: "alpha( opacity=50 )";
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  zoom: 1;
+}
+.information section #contents .article .articlePageNation .back {
+  float: left;
+}
+.information section #contents .article .articlePageNation .next {
+  float: right;
+}
+.information section .credits {
+  width: 580px;
+  margin: 10px auto 45px;
+  text-align: center;
+}
+
+
+/* *****************************
+ * diary
+ **************************** */
+.diary {
+  padding: 195px 0 0;
+}
+.diary section #contents {
+  width: 1032px;
+  margin: 0 auto;
+  clear: both;
+  overflow: hidden;
+  position: relative;
+}
+.diary section #contents #sidebar {
+  width: 170px;
+  float: left;
+  font-family: Meiryo, メイリオ, 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',sans-serif;
+}
+.diary section #contents #archives {
+  width: 170px;
+  font-size: 9px;
+  color: #000;
+  text-align: right;
+  
+}
+.diary section #contents #archives h3 {
+  margin: 0 0 15px;
+  padding: 0;
+}
+.diary section #contents #archives #archivesList {
+  padding: 6px 0 0;
+  list-style: none;
+  /*width: 50px;*/
+  text-align: right;
+  border-bottom: 1px solid #000;
+}
+.diary section #contents #archives #archivesList a {
+  color: #000;
+  text-decoration: none;
+}
+.diary section #contents #archives #archivesList a:hover {
+  color: #c5c5c5;
+}
+.diary section #contents #archives #archivesList li {
+  margin: 0 0 10px;
+  padding: 0;
+}
+.diary section #contents #archives #archivesList li:first-child {
+  border-bottom: 1px solid #000;
+  padding: 0 0 10px;
+}
+.diary section #contents #archives #archivesList li.yearList {
+  border-top: 1px solid #000;
+  padding: 10px 0 0;
+}
+.diary section #contents #calendar {
+  margin: 30px 0 0;
+  font-size: 9px;
+  overflow: hidden;
+}
+.diary section #contents #calendar table{
+  float: right;
+}
+.diary section #contents #calendar caption{
+  margin: 0 0 10px;
+  text-align: right;
+}
+.diary section #contents #calendar table thead th,.diary section #contents #calendar table tbody td{
+  /*padding: 4px;*/
+  text-align: right;
+  width: 21px;
+  height: 18px;
+}
+.diary section #contents #calendar table tbody td a{
+  background: #EEE;
+}
+.diary section #contents #calendar table tfoot #prev,.diary section #contents #calendar table tfoot #next{
+  padding: 6px 4px 0px;
+}
+.diary section #contents #calendar table tfoot #prev{
+  text-align: left;
+}
+.diary section #contents #calendar table tfoot #next{
+  text-align: right;
+}
+
+.diary section #contents #links{
+  clear: both;
+  margin: 30px 0 0;
+  font-size: 9px;
+}
+.diary section #contents #links li{
+  margin: 0 0 20px;
+  text-align: right;
+  line-height: 1.6;
+}
+.diary section #contents #links li a{
+  display: block;
+  padding: 7px 10px;
+  border: 1px solid #000;
+}
+.diary section #contents #links li a:hover{
+  color: #c5c5c5;
+}
+
+.diary section #contents .article {
+  width: 627px;
+  text-align: left !important;
+  margin: 0 0 0 274px;
+}
+.diary section #contents .article a {
+  color: #000;
+}
+.diary section #contents .article a:hover {
+  color: #c5c5c5;
+}
+.diary section #contents .article h2 {
+  font-family: Meiryo, メイリオ, 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.diary section #contents .article .entry_post {
+  font-family: Meiryo, メイリオ, 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',sans-serif;
+  font-size: 10px;
+  line-height: 24px;
+  margin: 0;
+}
+.diary section #contents .article .entry_post p img{
+  max-width: 100%;
+  height: auto;
+}
+.diary section #contents .article .articleFoot {
+  width: 627px;
+  margin: 20px auto 100px;
+  /*clear: both;*/
+  overflow: hidden;
+}
+.diary section #contents .article .articleFoot .day {
+  width: 110px;
+  float: left;
+}
+.diary section #contents .article .articleSocial {
+  /*width: 35px;*/
+  height: 16px;
+  float: left;
+}
+.diary section #contents .article .articleSocial p {
+  float: left;
+}
+.diary section #contents .article .articleSocial .articleTwitter {
+  width: 16px;
+  float: left;
+  margin: 3px 0 0 12px;
+}
+.diary section #contents .article .articleSocial .articleFacebook {
+  width: 16px;
+  float: left;
+  margin: 3px 0 0 8px;
+}
+.diary section #contents .article .articleSocial .articleTwitter a:hover,.diary section #contents .article .articleSocial .articleFacebook a:hover{
+  opacity: 0.5;
+}
+.diary section #contents .article .articlePageNation {
+  width: 627px;
+  margin: 40px auto 60px;
+  clear: both;
+  overflow: hidden;
+}
+.diary section #contents .article .articlePageNation a:hover {
+  -ms-filter: "alpha( opacity=50 )";
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  zoom: 1;
+}
+.diary section #contents .article .articlePageNation .back {
+  float: left;
+}
+.diary section #contents .article .articlePageNation .next {
+  float: right;
+}
+.diary section .credits {
+  width: 580px;
+  margin: 10px auto 45px;
+  text-align: center;
+}
+
+
+/* *****************************
+ * company
+ **************************** */
+.company {
+  padding: 192px 0 0;
+}
+.company section {
+  width: 830px;
+  margin: 0 auto;
+}
+.company section article {
+  font-family: "メイリオ", Meiryo,"ＭＳ Ｐゴシック","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",  Osaka, "MS PGothic", sans-serif;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 9px;
+  text-align: center;
+  line-height: 20px;
+}
+.company section article a {
+  color: #000;
+  text-decoration: none;
+}
+.company section article a:hover {
+  color: #c5c5c5;
+}
+.company section article h2 {
+  font-size: 10px;
+  font-weight: normal;
+}
+.company section article h3 {
+  font-size: 10px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+.company section article .text {
+  margin: 0 0 50px;
+}
+.company section article .text02 {
+  margin: 0 0 20px;
+}
+
+/* *****************************
+ * clearfix
+ **************************** */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+
+/* *****************************
+ * contact
+ **************************** */
+.top #sec_contact {
+  margin: 0 0 140px;
+  padding: 60px 0 0;
+}
+.top #sec_contact article {
+  width: 1018px;
+    margin: 0 auto;
+}
+.top #sec_contact article .form {
+    width: 580px;
+    margin: 0 auto;
+    padding: 46px 0 0;
+}
+.top #sec_contact article .form dl {
+    display: table;
+    width: 100%;
+    padding: 0 0 1em;
+}
+.top #sec_contact article .form dt {
+    display: table-cell;
+    width: 50%;
+    line-height: 2.5em;
+    text-align: center;
+    vertical-align: top;
+}
+.top #sec_contact article .form dd {
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+.top #sec_contact article .form dd input,
+.top #sec_contact article .form dd textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px #ccc solid;
+    border-radius: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+.top #sec_contact article .form dd input {
+    line-height: 1;
+}
+.top #sec_contact article .form dd textarea {
+    height: 12em;
+    vertical-align: top;
+    font-family: inherit;
+}
+.top #sec_contact article .form .btn {
+    padding: 1em 0 0;
+    text-align: center;
+}
+.top #sec_contact article .form .btn input[type="submit"] {
+    width: 10em;
+    height: 3em;
+    background: #fff;
+    border: 1px #b9b9b9 solid;
+    border-radius: 0;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+    -webkit-appearance: none;
+}
+.top #sec_contact article .form .btn input[type="submit"]:hover {
+    background: #ccc;
+}
+div.wpcf7 img.ajax-loader {
+    display: block;
+    margin: 5px auto 0 !important;
+}
+
+
+.area04 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 50px 20px 70px;
+  width: 100%;
+  background: url(../images/03.jpg) no-repeat 50% 0;
+  background-size: cover;
+  text-align: center;
+  -webkit-background-size: cover;
+}
+
+.area04 h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: .14em;
+  margin-bottom: 40px;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+
+.area04 .slideOuter {
+  zoom: 1;
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 76vw;
+  margin: 0 auto;
+}
+
+.area04 .slideOuter .slideInner {
+  zoom: 1;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.area04 .slideOuter .slideInner .owl-carousel {
+  margin: 0 0;
+}
+
+.area04 .slideOuter .slideInner .owl-prev {
+  left: 0%;
+  background: url(../images/btn_prev.png) no-repeat 0 0;
+  background-size: 13px auto;
+  -webkit-background-size: 13px auto;
+}
+
+.area04 .slideOuter .slideInner .owl-prev, .area04 .slideOuter .slideInner .owl-next {
+  position: absolute;
+  top: 43%;
+  margin-top: -13px;
+  width: 13px;
+  height: 26px;
+  text-indent: -9999px;
+  font-size: 0;
+}
+
+.area04 .slideOuter .slideInner .owl-next {
+  right: 0%;
+  background: url(../images/btn_next.png) no-repeat 0 0;
+  background-size: 13px auto;
+  -webkit-background-size: 13px auto;
+}
+
+.area04 .glrBtn a {
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: .14em;
+  display: inline-block;
+  padding: 12px 50px 11px;
+  border: white 1px solid;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.1;
+}
+
+.area04 .slideOuter .slideInner .owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.area04 .slideOuter .slideInner .owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+.area04 .slideOuter .slideInner .owl-theme .owl-dots .owl-dot.active span, .area04 .slideOuter .slideInner .owl-theme .owl-dots .owl-dot:hover span {
+  background: white;
+}
+
+.area04 .slideOuter .slideInner .owl-theme .owl-dots .owl-dot span {
+  display: block;
+  margin: 15px 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 30px;
+  background: #545459;
+  transition: opacity 200ms ease;
+  -webkit-backface-visibility: visible;
+}
+
+
+@media (min-width: 768px) {
+  .area04 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 100px 0 100px;
+    width: 100%;
+    background: url(../images/03.jpg) no-repeat 50% 0;
+    background-size: cover;
+    text-align: center;
+    -webkit-background-size: cover;
+  }
+
+  .area04 h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: .14em;
+    margin-bottom: 40px;
+    color: black;
+    text-align: center;
+    font-size: 38px;
+    line-height: 1.1;
+    font-weight: 300;
+  }
+
+  .area04 .slideOuter {
+    zoom: 1;
+    display: block;
+    text-align: center;
+  }
+
+  .area04 .slideOuter .slideInner {
+    zoom: 1;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+    left: 0;
+  }
+
+  .area04 .slideOuter .slideInner .owl-carousel {
+    margin: 0 0;
+  }
+
+  .area04 .slideOuter .slideInner .owl-prev {
+    left: -10%;
+    top: 47%;
+    background-image: url(../images/btn_prev.png);
+    background-position: top 0 right 0;
+    background-size: 20px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .area04 .slideOuter .slideInner .owl-prev, .area04 .slideOuter .slideInner .owl-next {
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -ms-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s;
+    position: absolute;
+    top: 50%;
+    margin-top: -26px;
+    width: 23px;
+    height: 26px;
+    background-size: 13px auto;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    font-size: 0;
+    -webkit-background-size: 13px auto;
+  }
+
+  .area04 .slideOuter .slideInner .owl-next {
+    right: -10%;
+    top: 47%;
+    background-image: url(../images/btn_next.png);
+    background-position: top 0 left 0;
+    background-size: 20px;
+    height: 40px;
+    width: 40px;
+  }
+}
