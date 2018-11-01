@@ -3,14 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="d210315e-25a0-411f-a4df-cfdc48e0f0f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/globall.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/grade_black_sp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/コックアイコン.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/マッチョアイコン5 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/梅アイコン3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/福助人形のフリーイラスト.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/templates/p1.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/templates/p1.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20181024041244_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20181024041244_devise_create_users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -28,23 +29,24 @@
     <session id="1766249100">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="145" />
-          <entry key="erb" value="261" />
+          <entry key="css" value="149" />
+          <entry key="erb" value="262" />
           <entry key="pid" value="1" />
-          <entry key="rb" value="376" />
+          <entry key="rb" value="377" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="145" />
+          <entry key="CSS" value="149" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="RHTML" value="261" />
-          <entry key="Ruby" value="376" />
+          <entry key="RHTML" value="262" />
+          <entry key="Ruby" value="377" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Gemfile" value="2" />
+          <entry key="css" value="1" />
           <entry key="erb" value="8" />
           <entry key="pid" value="1" />
           <entry key="rb" value="8" />
@@ -53,6 +55,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CSS" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="RHTML" value="8" />
           <entry key="Ruby" value="10" />
@@ -83,8 +86,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="511">
-                  <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+                <state relative-caret-position="-277">
+                  <caret line="112" column="71" selection-start-line="112" selection-start-column="71" selection-end-line="112" selection-end-column="71" />
                 </state>
               </provider>
             </entry>
@@ -107,6 +110,15 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="285">
                   <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/images/template1/globall.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45">
+                  <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -137,8 +149,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/users/registrations_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="322">
-                  <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+                <state relative-caret-position="1005">
+                  <caret line="67" column="15" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -148,28 +160,10 @@
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/assets/images/template1/global.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="673">
-                  <caret line="1958" column="20" selection-start-line="1958" selection-start-column="20" selection-end-line="1958" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/テンプレ/園山5/css/h6hvo.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="112">
-                  <caret line="596" column="21" selection-start-line="596" selection-start-column="21" selection-end-line="596" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/templates/p1.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="193">
+                <state relative-caret-position="196">
                   <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
                 </state>
               </provider>
@@ -245,10 +239,10 @@
         <option value="$PROJECT_DIR$/app/views/send_mailer/send_when_update.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20181024041244_devise_create_users.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/images/template1/global.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/images/template1/global.css" />
         <option value="$PROJECT_DIR$/app/views/templates/p1.html.erb" />
       </list>
     </option>
@@ -566,18 +560,18 @@
       <workItem from="1540956126718" duration="1345000" />
       <workItem from="1540957594747" duration="6915000" />
       <workItem from="1540967162246" duration="10053000" />
-      <workItem from="1540987074517" duration="7614000" />
+      <workItem from="1540987074517" duration="9147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12074000" />
+    <option name="totallyTimeSpent" value="13607000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1080" y="-1063" width="1080" height="1920" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26878613" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26878613" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -590,7 +584,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" x="0" y="-1036" width="1920" height="1036" id="Terminal" order="10" type="WINDOWED" visible="true" weight="0.1434903" />
+      <window_info anchor="bottom" x="0" y="-1036" width="1920" height="1036" id="Terminal" order="10" type="WINDOWED" visible="true" weight="0.1434903" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" x="42" y="331" width="1038" height="259" id="Messages" order="12" type="WINDOWED" weight="0.3299363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -698,46 +692,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/RubymineProjects/AKI100/config/unicorn.conf.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/template1/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="1958" column="20" selection-start-line="1958" selection-start-column="20" selection-end-line="1958" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/テンプレ/園山5/css/h6hvo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="596" column="21" selection-start-line="596" selection-start-column="21" selection-end-line="596" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users/registrations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181024041101_create_tops.rb">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
@@ -789,16 +749,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/テンプレ/園山5/css/h6hvo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="596" column="21" selection-start-line="596" selection-start-column="21" selection-end-line="596" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/registrations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="15" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+        <state relative-caret-position="-277">
+          <caret line="112" column="71" selection-start-line="112" selection-start-column="71" selection-end-line="112" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/template1/globall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181024041101_create_tops.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/RubymineProjects/AKI100/config/unicorn.conf.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/p1.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="196">
           <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
         </state>
       </provider>

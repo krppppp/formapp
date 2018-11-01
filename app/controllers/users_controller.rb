@@ -110,7 +110,7 @@ class UsersController < ApplicationController
         # )
 
 
-      end
+      end/Users/krppppp/loginapp/app/assets/images/template1/global.css
       redirect_to user_path(current_user)
     else
       redirect_to edit_user_path(current_user)
