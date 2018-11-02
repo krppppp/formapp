@@ -107,7 +107,7 @@ img {
         height: 69.264px; } }
 #header .logo {
     position: absolute;
-    left: 0px;
+    left: -150px;
     top: 20px; }
 @media only screen and (max-width: 499px) {
     #header .logo {
@@ -1734,18 +1734,21 @@ img {
         background-image: url(b1_bg_sp.jpg); } }
 #topContent #block1 h1 {
     position: absolute;
-    left: 45%;
     top: 50%;
-    margin: -128px 0 0 -89px;
-    font-size: 60px;
+    width: 100%;
+    margin: -128px 0 0 0px;
+    text-align: center;
+    font-size: 130px;
     color: white;
     }
 @media only screen and (max-width: 499px) {
     #topContent #block1 h1 {
-font-size: 40px;
-        left: 40%;
+        font-size: 70px;
+        left: 0;
+        text-align: center;
+        width: 100%;
         color: #fff;
-        margin: -146.52px 0 0 -98.568px; } }
+        margin: -146.52px 0 0 0px;} }
 #topContent #block1 p {
     position: absolute;
     left: 50%;

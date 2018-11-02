@@ -1,2 +1,64 @@
 
 <%= yield %>
+
+
+<% if controller.controller_name == "templates" %>
+  <% if controller.action_name != "index" %>
+  <button style="display: none;" class = "btn" id="ClickMe" data-toggle='modal' data-target="#NewLoginModal"></button>
+  <%= render "templates/popup.html.erb" %>
+  <script>
+      //無料会員へ有料会員への誘導ポップアップ
+      window.onload = function () {
+          $(function(){
+                  var click = document.getElementById("ClickMe");
+                  click.click();
+          });
+      };
+
+  </script>
+  <style>
+    .modal-open .modal{
+      opacity: 1.0;
+    }
+
+    .modal {
+      width: 310px;
+      top: -100px !important;
+      left: 50% !important;
+      transform: translate(-50%);
+    }
+
+    .modal-content {
+      background-color: black;
+    }
+
+    .modal::-webkit-scrollbar{
+      display:none;
+    }
+
+    .modal-order-show {
+      width: 100%;
+    }
+
+    .modal-order-body {
+      position: relative;
+      flex: 1 1 auto;
+      padding: 1rem;
+    }
+
+    .modal-content-order-show {
+      display: flex;
+      background : rgba(255, 255, 255, 1);
+      opacity: 1.0;
+      border-radius : 20px;
+      -moz-border-radius : 20px;
+      -webkit-border-radius : 20px;
+      box-shadow : 6px 6px 15px rgba(0, 0, 0, 0.5);
+      flex-direction: column;
+      pointer-events: auto;
+    }
+
+  </style>
+
+
+  <% end %><% end %>

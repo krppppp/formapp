@@ -4,8 +4,8 @@
 
   <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title></title>
-  <meta name="description" content="斉藤秀です！応援よろしくおねがいします！！！">
+  <title><%= @user.title %></title>
+  <meta name="description" content="<%= @user.title %>">
 
   <link rel="stylesheet" id="bootstrap.min-css" href="/assets/template3/bootstrap.min.css" type="text/css" media="all">
   <link rel="stylesheet" id="style-css" href="/assets/template3/style.css" type="text/css" media="screen">
@@ -160,10 +160,6 @@
 
 
     #section0 .fp-tableCell{ background-color:rgba(0,0,0, 0.3); }#section0 .btn_def{background-color:rgba(255,0,0,0.5); border:solid 1px #FFFFFF;}#section0 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(2,128,255,0.5);}#section1 .fp-tableCell{ background-color:rgba(0,0,0, 0.3); }#section1 .btn_def{background-color:rgba(0,0,0,0.5); border:solid 1px #FFFFFF;}#section1 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(255,0,0,0.5);}#section2 .fp-tableCell{ background-color:rgba(0,0,0, 0.4); }#section2 .btn_def{background-color:rgba(0,113,191,0.5); border:solid 1px #FFFFFF;}#section2 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(0,0,0,0.5);}#section3 .fp-tableCell{ background-color:rgba(0,0,0, 0.5); }#section3 .btn_def{background-color:rgba(255,10,10,0.5); border:solid 1px #FFFFFF;}#section3 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(0,0,0,0.5);}#section4 .fp-tableCell{ background-color:rgba(0,0,0, 0.4); }#section4 .btn_def{background-color:rgba(0,0,0,0.5); border:solid 1px #FFFFFF;}#section4 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(255,0,0,0.5);}#section5 .fp-tableCell{ background-color:rgba(0,0,0, 0.3); }#section5 .btn_def{background-color:rgba(0,0,0,0.5); border:solid 1px #FFFFFF;}#section5 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(255,0,0,0.5);}#section6 .fp-tableCell{ background-color:rgba(0,0,0, 0.3); }#section6 .btn_def{background-color:rgba(0,0,0,0.5); border:solid 1px #FFFFFF;}#section6 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(255,0,0,0.5);}#section7 .fp-tableCell{ background-color:rgba(0,0,0, 0.5); }#section7 .btn_def{background-color:rgba(253,106,0,0.5); border:solid 1px #FFFFFF;}#section7 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(0,0,0,0.5);}
-
-
-
-
   </style>
 
 </head>
@@ -176,24 +172,24 @@
       <!-- logo -->
       <div id="logo_image">
         <h1 class="logo">
-          <a href="#" title="斉藤秀オフィシャルウェブサイト" data-label="斉藤秀オフィシャルウェブサイト">
-            <img class="h_logo" src="/assets/template3/og_logo.png" alt="斉藤秀オフィシャルウェブサイト" title="斉藤秀オフィシャルウェブサイト"></a>
+          <a href="#">
+            <img class="h_logo" src="/assets/template3/og_logo.png"></a>
         </h1>
       </div>
 
       <a href="#" class="menu_button pc-none" style="display: none;"><span>menu</span></a>
       <div id="global_menu" class="clearfix">
-        <ul id="menu-%e3%81%94%e5%85%a5%e4%bc%9a%e6%a1%88%e5%86%85" class="menu"><li id="menu-item-6574" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6574"><a href="#" style="visibility: visible;">Academy class</a></li>
-          <li id="menu-item-6494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6494"><a href="#" style="visibility: visible;">Profile</a></li>
-          <li id="menu-item-6495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6495"><a href="#" style="visibility: visible;">Member</a></li>
-          <li id="menu-item-6497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6497"><a href="#" style="visibility: visible;">Gallery</a></li>
-          <li id="menu-item-6515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6515"><a href="#" style="visibility: visible;">Fanletter</a></li>
+        <ul id="menu-%e3%81%94%e5%85%a5%e4%bc%9a%e6%a1%88%e5%86%85" class="menu"><li id="menu-item-6574" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6574"><a href="#section1" style="visibility: visible;"><%= @user.menu1 %></a></li>
+          <li id="menu-item-6494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6494"><a href="#section2" style="visibility: visible;"><%= @user.menu2 %></a></li>
+          <li id="menu-item-6495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6495"><a href="#section3" style="visibility: visible;"><%= @user.menu3 %></a></li>
+          <li id="menu-item-6497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6497"><a href="#section4" style="visibility: visible;"><%= @user.menu4 %></a></li>
+          <li id="menu-item-6515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6515"><a href="#section5" style="visibility: visible;"><%= @user.menu5 %></a></li>
         </ul>			</div>
       <!-- social button -->
       <ul class="user_sns clearfix sp-none">
       </ul>
       <div class="store-information sp-none">
-        <p class="store-name">斉藤秀プロ</p>		<p class="store-address">アカデミークラスがついに開講。勝てる選手に育つレッスンをお届けします。<br>
+        <p class="store-address"><%= @user.title %><br>
       </p>			</div>
     </div>
     <!-- main col -->
@@ -202,21 +198,25 @@
         <div id="index_news">
           <div id="newsticker">
             <div class="row no-gutters">
-              <div class="ticker col-md-10" rel="fade" style="height: 60px;">
+              <div class="ticker col-md-9" rel="fade" style="height: 60px;">
                 <ul>
 
                   <li class="showlist" style="top: 0px; left: 0px; position: absolute; display: block; opacity: 0.254439; z-index: 99;">
                     <time class="date"></time>
-                    <span class="title"><a href=" #" style="visibility: visible;">Shu Saito Academy Class開講</a></span>
+                    <span class="title"><a href=" #" style="visibility: visible;"><%= @user.headline1 %></a></span>
                   </li>
                   <li style="top: 0px; left: 0px; position: absolute;">
-                    <time class="date" datetime="2018-06-25">2018.11.10</time>
-                    <span class="title"><a href="#" style="visibility: visible;">オフィシャルサイトオープン</a></span>
+                    <time class="date"></time>
+                  <span class="title"><a href="#" style="visibility: visible;"><%= @user.headline2 %></a></span>
+                </li>
+                  <li style="top: 0px; left: 0px; position: absolute;">
+                    <time class="date"></time>
+                    <span class="title"><a href="#" style="visibility: visible;"><%= @user.headline3 %></a></span>
                   </li>
                 </ul>
               </div>
-              <div class="archive_link col-md-2">
-                <a href="#">斉藤秀ウェブサイト</a>
+              <div class="archive_link col-md-3">
+                <a href="#"><%= @user.title %></a>
               </div>
             </div>
           </div>
@@ -226,81 +226,59 @@
             <div class="container">
               <div class="row">
                 <div class="top-container col-md-8 fr">
-                  <h2 class="headline movein" style="color:#FF0A0A;font-size:30px;text-shadow:1px 1px 5px #444444;">Profile</h2>
-                  <p class="disc movein" style="color:#FFFFFF !important;font-size:16px;text-shadow:1px 1px 0px #444444;">氏名 : 斉藤秀<br>
-                    フリガナ : サイトウ　シュウ<br>
-                    アルファベット : Shu Saitou<br>
-                    身長 : 178cm<br>
-                    体重 : 72kg<br>
-                    血液型 : A型<br>
-                    生年月日 : 1992年5月4日<br>
-                    星座 : おうし座</p>
-                  <p class="movein"><a href="#" class="btn_def" style="color:#FFFFFF;">プロフィール</a></p>
+                  <h2 class="headline movein" style="color:#FF0A0A;font-size:30px;text-shadow:1px 1px 5px #444444;"><%= @user.menu1 %></h2>
+                  <p class="disc movein" style="color:#FFFFFF !important;font-size:16px;text-shadow:1px 1px 0px #444444;">
+                    <%= @user.menu1_1 %>
+                  </p>
+<!--                  <p class="movein"><a href="#" class="btn_def" style="color:#FFFFFF;">プロフィール</a></p>-->
                 </div>
               </div>
             </div>
           </div></div>
-          <div class="section fp-section fp-table" id="section4" style="background: url(/assets/template3/nisikori5.jpg) center center / cover no-repeat rgb(255, 255, 255); "><div class="fp-tableCell" style="">
+          <div class="section fp-section fp-table" id="section2" style="background: url(/assets/template3/nisikori5.jpg) center center / cover no-repeat rgb(255, 255, 255); "><div class="fp-tableCell" style="">
             <div class="container">
               <div class="row">
                 <div class="top-container col-md-8">
-                  <h2 class="headline movein" style="color:#FF0A0A;font-size:30px;text-shadow:1px 1px 5px #444444;">Play Style</h2>
+                  <h2 class="headline movein" style="color:#FF0A0A;font-size:30px;text-shadow:1px 1px 5px #444444;"><%= @user.menu2 %></h2>
                   <p class="disc movein" style="color:#FFFFFF !important;font-size:16px;text-shadow:1px 1px 0px #444444;">
-                    利き腕 : 右利き<br>
-                    バック : 両手打ち<br>
-                    <br>
-                    バボラ契約選手</p>
-                  <p class="movein"><a href="#" class="btn_def" style="color:#FFFFFF;">プロフィール</a></p>
+                    <%= @user.menu2_1 %></p>
+<!--                <p class="movein"><a href="#" class="btn_def" style="color:#FFFFFF;">プロフィール</a></p>-->
                 </div>
               </div>
             </div>
           </div></div>
-          <div class="section fp-section fp-table fp-completely" id="section0" style="background: url(/assets/template3/nisikori3.jpg) center center / cover no-repeat rgb(255, 255, 255); "><div class="fp-tableCell" style="">
+          <div class="section fp-section fp-table fp-completely" id="section3" style="background: url(/assets/template3/nisikori3.jpg) center center / cover no-repeat rgb(255, 255, 255); "><div class="fp-tableCell" style="">
             <div class="container">
               <div class="row">
                 <div class="top-container col-md-8">
-                  <h2 class="headline movein" style="color:#FF0000;font-size:30px;text-shadow:1px 1px 5px #444444;">Performance</h2>
+                  <h2 class="headline movein" style="color:#FF0000;font-size:30px;text-shadow:1px 1px 5px #444444;"><%= @user.menu3 %></h2>
                   <p class="disc movein" style="color:#FFFFFF !important;font-size:16px;text-shadow:1px 1px 0px #444444;">
-                    RSK全国大会　単　優勝<br>
-                    毎日テニス選手権３００万　単　準優勝<br>
-                    中国テニス選手権１００万　複　優勝<br>
-                    全日本選手権 単　ベスト３２<br>
+                    <%= @user.menu3_1 %>
+                  </p>
 
 
                 </div>
               </div>
             </div>
-          </div></div>		<div class="section fp-section fp-table active" id="section2" style="background: url(/assets/template3/nisikori4.jpg) center center / cover no-repeat rgb(255, 255, 255); "><div class="fp-tableCell" style="">
+          </div></div>		<div class="section fp-section fp-table active" id="section4" style="background: url(/assets/template3/nisikori4.jpg) center center / cover no-repeat rgb(255, 255, 255); "><div class="fp-tableCell" style="">
           <div class="container">
             <div class="row">
               <div class="top-container col-md-8">
-                <h2 class="headline movein movein_ef" style="color:#FF0A0A;font-size:30px;text-shadow:0px 0px 0px #444444;">Biography</h2>
-                <p class="disc movein movein_ef" style="color:#FFFFFF !important;font-size:16px;text-shadow:1px 1px 1px #444444;">テニスを始めた年齢 : 8歳<br>
-                  テニスコーチ経験者だった両親の影響で７歳からテニスを始め、厳しい両親の指導の下で数多くの全国大会を制覇。<br>
-                  日本代表ナショナルＢチーム入りを経験し、錦織選手や世界トップレベルの選手ともプレーをした経験を持つ。<br>
-                  現在も現役プロ選手として活躍しながらジュニア育成に取り組む。</p>
-                <p class="movein movein_ef"><a href="#" class="btn_def" style="color:#FFFFFF;">
-                  Biography</a></p>
+                <h2 class="headline movein movein_ef" style="color:#FF0A0A;font-size:30px;text-shadow:0px 0px 0px #444444;"><%= @user.menu4 %></h2>
+                <p class="disc movein movein_ef" style="color:#FFFFFF !important;font-size:16px;text-shadow:1px 1px 1px #444444;">
+                  <%= @user.menu4_1 %></p>
+<!--                <p class="movein movein_ef"><a href="#" class="btn_def" style="color:#FFFFFF;">Biography</a></p>-->
               </div>
             </div>
           </div>
         </div></div>
-          <div class="section fp-section fp-table" id="section3" style="background: url(/assets/template3/nisikori1.jpg) center center / cover no-repeat rgb(255, 255, 255); "><div class="fp-tableCell" style="">
+          <div class="section fp-section fp-table" id="section5" style="background: url(/assets/template3/nisikori1.jpg) center center / cover no-repeat rgb(255, 255, 255); "><div class="fp-tableCell" style="">
             <div class="container">
               <div class="row">
                 <div class="top-container col-md-8 fr">
-                  <h2 class="headline movein" style="color:#FF0000;font-size:30px;text-shadow:3px 3px 1px #000000;">Academy Theme</h2>
-                  <p class="disc movein" style="color:#FFFFFF !important;font-size:16px;text-shadow:1px 1px 0px #444444;">
-                    「結果を出す」<br><br>
-                    ジュニアが育つためには、ジュニア時代に結果を残した選手が指導に当ることが必要だと考えます。<br>
-                    世界を目指せるジュニアを育成するために、私のキャリアで培ったものを全てを伝えていきたいと思います。<br>
-                    「結果を出す」をテーマに、斉藤秀アカデミークラス開講致します。<br></p>
-                  <p class="disc movein">料金：<br>
-                    小学生...3万円(税別)<br>
-                    中学生以上...4万円(税別)<br>
-                    <span style="font-size: 12px">※コーチの予定次第では割引あり</span>
-                  </p>
-                  <p class="movein"><a href="#" class="btn_def" style="color:#FFFFFF;">LIKE</a></p>
+                  <h2 class="headline movein" style="color:#FF0000;font-size:30px;text-shadow:3px 3px 1px #000000;"><%= @user.menu5 %></h2>
+                  <p class="disc movein" style="color:#FFFFFF !important;font-size:16px;text-shadow:1px 1px 0px #444444;"><%= @user.menu5_1 %> </p>
+<!--                  <p class="movein"><a href="#" class="btn_def" style="color:#FFFFFF;">LIKE</a></p>-->
                 </div>
               </div>
             </div>
@@ -323,7 +301,7 @@
       <div id="footer">
         <ul class="pc-none clearfix">
         </ul>
-        <p id="copyright">©&nbsp;斉藤秀オフィシャルウェブサイト All Rights Reserved.</p>
+        <p id="copyright">©&nbsp;<%= @user.title %> All Rights Reserved.</p>
       </div><!-- / #footer -->
 
 

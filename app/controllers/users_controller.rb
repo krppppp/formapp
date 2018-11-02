@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   before_action :set_user
 
   def show
+    @template = @user.template
 
   end
 
@@ -15,8 +16,8 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      for i in 1..2 do
-        #i = 1
+      # for i in 1..2 do
+        i = 1
         #doc = File.read('/app/views/templates/p1.html.erb')
         doc = File.read("#{Rails.root}/app/views/templates/p#{i}.html.erb")
         doc.gsub!(/<%= @user.title %>/, "#{@user.title}")
@@ -35,11 +36,14 @@ class UsersController < ApplicationController
         doc.gsub!(/<%= @user.subheading3 %>/, "#{@user.subheading3}")
         doc.gsub!(/<%= @user.subheading4 %>/, "#{@user.subheading4}")
         doc.gsub!(/<%= @user.subheading5 %>/, "#{@user.subheading5}")
-        # doc.sub!(/<%= simple_format(@user.subheading1) %>/, "#{@user.subheading1}")
-        # doc.sub!(/<%= simple_format(@user.subheading2) %>/, "#{@user.subheading2}")
-        # doc.sub!(/<%= simple_format(@user.subheading3) %>/, "#{@user.subheading3}")
-        # doc.sub!(/<%= simple_format(@user.subheading4) %>/, "#{@user.subheading4}")
-        # doc.sub!(/<%= simple_format(@user.subheading5) %>/, "#{@user.subheading5}")
+        doc.gsub!(/<%= @user.menu1_1 %>/, "#{@user.menu1_1}")
+        doc.gsub!(/<%= @user.menu2_1 %>/, "#{@user.menu2_1}")
+        doc.gsub!(/<%= @user.menu3_1 %>/, "#{@user.menu3_1}")
+        doc.gsub!(/<%= @user.menu4_1 %>/, "#{@user.menu4_1}")
+        doc.gsub!(/<%= @user.menu5_1 %>/, "#{@user.menu5_1}")
+        doc.gsub!(/<%= @user.headline1 %>/, "#{@user.headline1}")
+        doc.gsub!(/<%= @user.headline2 %>/, "#{@user.headline2}")
+        doc.gsub!(/<%= @user.headline3 %>/, "#{@user.headline3}")
         doc.gsub!(/\/assets/, ".")
 
         client = AWS::S3::Client.new(
@@ -110,7 +114,7 @@ class UsersController < ApplicationController
         # )
 
 
-      end
+      # end
       redirect_to user_path(current_user)
     else
       redirect_to edit_user_path(current_user)
@@ -127,12 +131,14 @@ class UsersController < ApplicationController
     params
         .require(:user)
         .permit(:id, :email, :password, :latitude, :first_name, :last_name,
-                :main_image, :title,
+                :main_image, :title, :template,
                 :city, :self, :name, :menu1, :menu2, :menu3, :menu4, :menu5,
                 :heading1, :heading2, :heading3, :heading4, :heading5,
                 :subheading1, :subheading2, :subheading3, :subheading4, :subheading5,
                 :sub_image1, :sub_image2, :sub_image3, :sub_image4, :sub_image5,
-                :sub_icon1, :sub_icon2, :sub_icon3, :sub_icon4, :sub_icon5)
+                :sub_icon1, :sub_icon2, :sub_icon3, :sub_icon4, :sub_icon5,
+                :headline1, :headline2, :headline3, :headline4, :headline5,
+                :menu1_1, :menu2_1,:menu3_1,:menu4_1,:menu5_1)
 
   end
 

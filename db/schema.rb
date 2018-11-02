@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2018_10_31_035303) do
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.string "email", null: false
+    t.integer "template"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "post_number"
@@ -49,6 +50,14 @@ ActiveRecord::Schema.define(version: 2018_10_31_035303) do
     t.string "menu3"
     t.string "menu4"
     t.string "menu5"
+    t.text "menu1_1"
+    t.text "menu2_1"
+    t.text "menu3_1"
+    t.text "menu4_1"
+    t.text "menu5_1"
+    t.text "headline1"
+    t.text "headline2"
+    t.text "headline3"
     t.string "heading1"
     t.text "subheading1"
     t.string "heading2"

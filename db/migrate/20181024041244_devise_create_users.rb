@@ -5,6 +5,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
     create_table :users do |t|
       t.string   "name"
       t.string   "email",                                                         null: false
+      t.integer  "template", default: 1
 
       t.datetime "created_at",                                                    null: false
       t.datetime "updated_at",                                                    null: false
@@ -24,6 +25,16 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       t.string   "menu3"
       t.string   "menu4"
       t.string   "menu5"
+
+      t.text     "menu1_1"
+      t.text     "menu2_1"
+      t.text     "menu3_1"
+      t.text     "menu4_1"
+      t.text     "menu5_1"
+      t.text     "headline1"
+      t.text     "headline2"
+      t.text     "headline3"
+
 
       # t.text     "main_image",                        limit: 65535
 
