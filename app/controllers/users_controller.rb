@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      for i in 1..3 do
+      for i in 1..2 do
         #i = 1
         #doc = File.read('/app/views/templates/p1.html.erb')
         doc = File.read("#{Rails.root}/app/views/templates/p#{i}.html.erb")
@@ -31,7 +31,7 @@ class UsersController < ApplicationController
         doc.gsub!(/<%= @user.heading4 %>/, "#{@user.heading4}")
         doc.gsub!(/<%= @user.heading5 %>/, "#{@user.heading5}")
         doc.gsub!(/<%= @user.subheading1 %>/, "#{@user.subheading1}")
-        doc.gsub!(/<%= @user.subheading2 %>/, "#{@user.gsubheading2}")
+        doc.gsub!(/<%= @user.subheading2 %>/, "#{@user.subheading2}")
         doc.gsub!(/<%= @user.subheading3 %>/, "#{@user.subheading3}")
         doc.gsub!(/<%= @user.subheading4 %>/, "#{@user.subheading4}")
         doc.gsub!(/<%= @user.subheading5 %>/, "#{@user.subheading5}")

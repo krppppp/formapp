@@ -136,29 +136,27 @@
         <div id="quoteslider" class="flexsliderq">
           <ul class="slides">
             <li>
-              <h3><p>「人を良くする」と書く食で生まれ変わった店主の園山は、縁結びの神様で名高い出雲大社のお膝元生まれ。
-                そのせいか、色んな意味での縁結びも得意とするため、目にはみえないご縁がお店にも轟く。</p>
+              <h3><p><%= @user.subheading1 %></p>
               </h3>
-              <div class="quotecaption">園山真希絵
+              <div class="quotecaption"><%= @user.title %>
               </div>
             </li>
             <li>
-              <h3><p>また、第二章ではなく、第二楽章と名付けたのは、「楽しい」の「楽」という要素を加えたいと思ったからです。</p>
+              <h3><p><%= @user.subheading4 %></p>
               </h3>
-              <div class="quotecaption">園山真希絵
+              <div class="quotecaption"><%= @user.title %>
               </div>
             </li>
             <li>
-              <h3><p>
-                何を言われようが、自分軸ぶらさず、小さくても大きな存在意義のあるお店であり、自分でありたいと願うばかりです。そして、ありがとうをたくさん言い、ありがとうをたくさん言われる存在でありたいと真に思います。</p>
+              <h3><p><%= @user.subheading3 %></p>
               </h3>
-              <div class="quotecaption">園山真希絵
+              <div class="quotecaption"><%= @user.title %>
               </div>
             </li>
             <li>
-              <h3><p>たとえその日嫌なことがあっても、一日の最後は気持ちよく楽しく終えて、また明日も頑張ろうという活力になるような一日の最後の晩餐になっていいなあと。</p>
+              <h3><p><%= @user.subheading2 %></p>
               </h3>
-              <div class="quotecaption">園山真希絵
+              <div class="quotecaption"><%= @user.title %>
               </div>
             </li>
           </ul>
@@ -253,15 +251,12 @@
     </div>
     <div class="twoCols">
       <div class=" cont">
-        <h2 style="color: #7b9199;">レストラン そのやま</h2>
+        <h2 style="color: #7b9199;"><%= @user.title %></h2>
       </div>
     </div>
     <div class="threecols">
       <div class="cont" style="    padding-top: 7px">
-        <p>園山真希絵 オフィシャルサイト園山真希絵 オフィシャルサイト園山真希絵 オフィシャルサイト園山真希絵 オフィシャルサイト園山真希絵 オフィシャルサイト園山真希絵 オフィシャルサイト園山真希絵
-          オフィシャルサイト
-          園山真希絵 オフィシャルサイト園山真希絵 オフィシャルサイト園山真希絵
-          オフィシャルサイト園山真希絵 オフィシャルサイト園山真希絵 オフィシャルサイト</p>
+        <p><%= @user.subheading2 %></p>
         <div class="missionList">
           <table width="100%" border="0">
             <tr>
@@ -368,11 +363,9 @@
              href="#.com/new-documentary-before-the-flood-to-air-globally-on-natgeo-on-october-30th-2/"
              style="background-image:url(/assets/template2/main02のコピー.jpg)"></a>
           <span class="slidePostCont">
-<h4><a href="#.com/new-documentary-before-the-flood-to-air-globally-on-natgeo-on-october-30th-2/">そのやま第２楽章始めます</a></h4>
+<h4><a href="#.com/new-documentary-before-the-flood-to-air-globally-on-natgeo-on-october-30th-2/"><%= @user.heading1 %></a></h4>
 <p class="postDate">10 . 01 . 2016</p>
-<p>「もっともっと、楽天人生をテーマに、孤高の料理、オンリーワンの世界観を」2015年3月3日にオープンした紹介制料理店『そのやま』。
-                        「最後から二番目の晩餐に大切な人と来てもらえるようなお店」をコンセプトに、より多くの方に「そのやま」
-                        流料理を楽しんで頂くため、第二楽章の始動をここに宣言。</p>
+<p><%= @user.subheading1 %></p>
 </span>
         </div>
       </div>
@@ -382,10 +375,10 @@
              href="#.com/leonardo-calls-for-climate-action-at-mayors-summit-in-paris-3/"
              style="background-image:url(/assets/template2/main03のコピー.jpg)"></a>
           <span class="slidePostCont">
-<h4><a href="#.com/leonardo-calls-for-climate-action-at-mayors-summit-in-paris-3/">「最後から二番目の晩餐に大切な方と」「美味しいご縁結び」「楽天人生」</a></h4>
+<h4><a href="#.com/leonardo-calls-for-climate-action-at-mayors-summit-in-paris-3/">
+ <%= @user.heading2 %></a></h4>
 <p class="postDate">08 . 10 . 2016</p>
-<p>「楽天人生」と「背中に感謝」を大きなテーマに、孤高の料理、そして、
-                        オンリーワンの世界観を作り上げるべく、2015年3月3日にオープンした恵比寿の料理店『そのやま』。.</p>
+<p><%= @user.subheading2 %></p>
 </span>
         </div>
       </div>
@@ -397,10 +390,9 @@
              style="background-image:url(/assets/template2/gazo5のコピー.jpg)"></a>
           <span class="slidePostCont">
 <h4><a href="#.com//">
-    最後から二番目の晩餐に大切な方と」「美味しいご縁結び」「楽天人生」</a></h4>
+ <%= @user.heading3 %></a></h4>
 <p class="postDate">02 . 18 . 2016</p>
-<p>「楽天人生」と「背中に感謝」を大きなテーマに、孤高の料理、そして、
-                        オンリーワンの世界観を作り上げるべく、2015年3月3日にオープンした恵比寿の料理店『そのやま』。.</p>
+<p><%= @user.subheading3 %></p>
 </span>
         </div>
       </div>
@@ -410,10 +402,9 @@
              href="#.com/"
              style="background-image:url(/assets/template2/main02のコピー.jpg)"></a>
           <span class="slidePostCont">
-<h4><a href="#.com/">「そのや米」をはじめとしたオリジナル商品の開発</a></h4>
+<h4><a href="#.com/"><%= @user.heading4 %></a></h4>
 <p class="postDate">01 . 22 . 2016</p>
-<p>実際のコース料理はご来店された方のお楽しみでもあるので、ごく一部のご縁結び料理と、
-                        美味しさと健康に配慮したまかない料理と、リターンの中の「あんみつ姫アイス」をご紹介させて頂きます。</p>
+<p><%= @user.subheading4 %></p>
 </span>
         </div>
       </div>
@@ -421,44 +412,16 @@
         <div class="postSlideCont">
           <a class="thumbIm"
              href="#.com//"
-             style="background-image:url/assets/template2/(main02のコピー.jpg)"></a>
+             style="background-image:url(/assets/template2/main02のコピー.jpg)"></a>
           <span class="slidePostCont">
 <h4><a href="#.com//">
-    食作家 園山真希絵</a></h4>
+   <%= @user.heading5 %></a></h4>
 <p class="postDate">12 . 18 . 2015</p>
-<p>実際のコース料理はご来店された方のお楽しみでもあるので、ごく一部のご縁結び料理と、
-                        美味しさと健康に配慮したまかない料理と、リターンの中の「あんみつ姫アイス」をご紹介させて頂きます。</p>
+<p><%= @user.subheading5 %></p>
 </span>
         </div>
       </div>
 
-      <div class="postSlide">
-        <div class="postSlideCont">
-          <a class="thumbIm"
-             href="#.com/"
-             style="background-image:url(/assets/template2/main02のコピー.jpg)"></a>
-          <span class="slidePostCont">
-<h4><a href="#.com/">「そのや米」をはじめとしたオリジナル商品の開発</a></h4>
-<p class="postDate">01 . 22 . 2016</p>
-<p>実際のコース料理はご来店された方のお楽しみでもあるので、ごく一部のご縁結び料理と、
-                        美味しさと健康に配慮したまかない料理と、リターンの中の「あんみつ姫アイス」をご紹介させて頂きます。</p>
-</span>
-        </div>
-      </div>
-      <div class="postSlide">
-        <div class="postSlideCont">
-          <a class="thumbIm"
-             href="#.com//"
-             style="background-image:url(/assets/template2/gazoのコピー.jpg)"></a>
-          <span class="slidePostCont">
-<h4><a href="#.com//">
-    食作家 園山真希絵</a></h4>
-<p class="postDate">12 . 18 . 2015</p>
-<p>実際のコース料理はご来店された方のお楽しみでもあるので、ごく一部のご縁結び料理と、
-                        美味しさと健康に配慮したまかない料理と、リターンの中の「あんみつ姫アイス」をご紹介させて頂きます。</p>
-</span>
-        </div>
-      </div>
 
     </div>
   </div>
@@ -469,7 +432,7 @@
     <div class="clearfix"></div>
     <div class="threecols">
       <div class="cont" style="background: #fbb1b1;">
-        <p>Copyright &copy;&nbsp; Makie Sonoyama &nbsp;All rights reserved.</p>
+        <p>Copyright &copy;&nbsp;<%= @user.title %> &nbsp;All rights reserved.</p>
       </div>
     </div>
     <div class="threecols bottomSocials">

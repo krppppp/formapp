@@ -160,7 +160,6 @@ img {
     background-position: left bottom !important; }
 #header #globalNav > ul {
     height: 32px;
-    width: 800px;
     position: relative; }
 @media only screen and (max-width: 499px) {
     #header #globalNav > ul {
@@ -1735,18 +1734,17 @@ img {
         background-image: url(b1_bg_sp.jpg); } }
 #topContent #block1 h1 {
     position: absolute;
-    left: 50%;
+    left: 45%;
     top: 50%;
     margin: -128px 0 0 -89px;
-    width: 178px;
-    height: 178px;
-    background-image: url(icon_white.png);
-    background-size: cover; }
+    font-size: 60px;
+    color: white;
+    }
 @media only screen and (max-width: 499px) {
     #topContent #block1 h1 {
-        background-image: url(icon_white.png);
-        width: 197.136px;
-        height: 197.136px;
+font-size: 40px;
+        left: 40%;
+        color: #fff;
         margin: -146.52px 0 0 -98.568px; } }
 #topContent #block1 p {
     position: absolute;
@@ -1814,14 +1812,14 @@ img {
 #topContent #block2 p {
     text-align: center;
     position: absolute;
-    left: 0;
+    left: 10%;
     top: 256px;
-    width: 100%; }
+    width: 50%; }
 @media only screen and (max-width: 499px) {
     #topContent #block2 p {
         width: 327.672px;
         left: 50%;
-        top: 309.024px;
+        top: 360px;
         margin: 0 0 0 -164.169px;
         text-align: left; } }
 #topContent #block2 .shape {
@@ -1884,8 +1882,8 @@ img {
     font-size: 100px;}
 @media only screen and (max-width: 499px) {
     #topContent #block4 .content h2 {
-        font-size: 70px; } }
-#topContent #block4 .content p {
+        font-size: 50px; } }
+#topContent #block4.content p {
     margin: 0 0 30px; }
 #topContent #block4 .content a {
     display: block;
@@ -1959,11 +1957,19 @@ img {
 @media only screen and (max-width: 499px) {
     #topContent #block5 .content h2 {
         width: 333.2px;
-        font-size: 30px;
+        font-size: 50px;
 
     } }
 #topContent #block5 .content p {
-    margin: 0 0 30px; }
+    margin: 0 0 30px;
+    width: 80%;
+}
+
+@media only screen and (max-width: 499px){
+    #topContent #block5 p {
+        width: 100%;
+    }
+}
 #topContent #block5 .content a {
     display: block;
     background-size: cover;
@@ -2044,12 +2050,20 @@ font-size: 60px;
     } }
 #topContent #block7 .content p {
     margin: 0 0 30px;
-    color: #33330f; }
+    color: #33330f;
+    width: 34%;}
+
+@media only screen and (max-width: 499px){
+    #topContent #block7 .content p {
+        width: 100%;
+    }}
 #topContent #block7 .content a {
     display: block;
     background-size: cover;
     width: 150px;
     height: 16px; }
+
+
 @media only screen and (max-width: 499px) {
     #topContent #block7 .content a {
         width: 195.804px;
@@ -2135,10 +2149,10 @@ font-size: 120px;
 }
 @media only screen and (max-width: 499px) {
     #topContent #block9 .content h2 {
-        font-size: 70px;
+        font-size: 60px;
 } }
 #topContent #block9 .content p {
-    margin: 0 0 30px; }
+    margin: -30 0 30px; }
 #topContent #block9 .content a {
     display: block;
     background-size: cover;
@@ -2212,7 +2226,7 @@ font-size: 120px;
 }
 @media only screen and (max-width: 499px) {
     #topContent #block10 .content h2 {
-        font-size: 70px } }
+        font-size: 50px } }
 #topContent #block10 .content p {
     margin: 0 0 30px;
     text-align: center;

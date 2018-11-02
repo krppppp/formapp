@@ -1,7 +1,85 @@
-<%# @templates.each_with_index do |template, i| %>
-<!--  <p><%#= link_to "テンプレート#{i+1}", templates_path(current_user.name), class:"fa fa-clone"%></p>-->
-<%# end %>
+<!DOCTYPE html>
+<!-- saved from url=(0014) -->
+<html lang="ja" class=" webkit chrome mac js">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>AKI TENNIS  | ECサイト</title>
+  <meta name="keywords" content="AKI TENNIS">
+  <meta name="description" content="AKI TENNISのオフィシャルサイトです">
+  <!-- Open Graph -->
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="AKI TENNIS">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="/assets/templates_index/icon_black.png">
+  <meta property="og:description"
+        content="AKI TENNISのECサイトです">
+  <link rel="shortcut icon" href="/assets/templates_index/icon_black.png">
+
+  <!-- /Open Graph -->
+  <link rel="stylesheet" href="/assets/templates_index/style.css">
+  <script src="/assets/templates_index/jquery-1.8.1.min.js"></script>
+  <script src="/assets/templates_index/jquery.easing.min.js"></script>
+  <script src="/assets/templates_index/imagesLoaded.js"></script>
+  <script src="/assets/templates_index/top.js"></script>
+  <script src="/assets/templates_index/index.js"></script>
+  <!-- SP sublimeSlideshow -->
+  <script src="/assets/templates_index/jquery.sublimeSlideshow.js"></script>
+  <!-- GALLERY owlcarousel -->
+  <link href="/assets/templates_index/owl.carousel.css" rel="stylesheet">
+  <script src="/assets/templates_index/owl.carousel.js"></script>
+</head>
+
+<body>
+<header>
+  <h1><a href="#" id="logo" class="topLink">
+    <span style="font-size: 23px;position: relative;font-family: cursive;   top: -12px;">Onesecond ホームページテンプレート一覧.</span></a></h1>
+
+</header>
+
+<div id="container" class="top">
+
+  <section id="sec1">
+    <article>
+      <div id="slide" style="height: 843px;">
+        <ul>
+          <!--top.jsに記述-->
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <div id="style" class="anchorPoint"></div>
 
 
-<p><%= link_to "テンプレート1", templates_1_path(current_user.name), class:"fa fa-clone"%></p>
-<p><%= link_to "テンプレート2", templates_2_path(current_user.name), class:"fa fa-clone"%></p>
+  <section id="sec2">
+    <article>
+      <h2 style="margin-top: 50px">
+        TEMPLATE STYLE
+        <!--<img src="/assets/templates_index/title01.jpg" width="44" height="9" alt="STYLE">-->
+      </h2>
+      <ul>
+          <li>
+          <a href="<%= current_user.name%>/1/トップ"><img src="/assets/templates_index/04.jpg" width="275" height="252" alt=""
+                                  class="op"></a></li>
+
+        <li><a href="<%= current_user.name%>/2/トップ"
+        ><img src="/assets/templates_index/07.jpg" width="275" height="252" alt=""
+              class="op">
+        </a></li>
+           </ul>
+      
+    </article>
+  </section>
+
+
+</div><!-- container -->
+
+
+</body>
+</html>
+
+
+<!--<p><%#= link_to "テンプレート1", templates_1_path(current_user.name), class:"fa fa-clone"%></p>-->
+
+<!--<p><%#= link_to "テンプレート2", templates_2_path(current_user.name), class:"fa fa-clone"%></p>-->

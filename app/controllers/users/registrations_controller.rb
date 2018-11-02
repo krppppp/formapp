@@ -17,8 +17,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
     @user.encrypted_password = BCrypt::Password.create(pass_temp)
     @user.save
 
-    # for i in 1..3 do
-    i = 2
+    url =[]
+    for i in 1..2 do
 
     #doc = File.read('/app/views/templates/p1.html.erb')
     doc = File.read("#{Rails.root}/app/views/templates/p#{i}.html.erb")
@@ -72,20 +72,20 @@ class Users::RegistrationsController < Devise::RegistrationsController
                           :data => doc,
                           s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
                       })
-    #該当ディレクトリ下の必要なファイルをすべてアップロード
-    dir_name = Dir.open("#{Rails.root}/app/assets/images/template#{i}")
-    dir_name.each_with_index do |f, index|
-      if f == "." || f == ".."
-        next
-      end
-      data = File.read("#{Rails.root}/app/assets/images/template#{i}" + '/' + f)
-      client.put_object({
-                            :bucket_name => "#{bucket_name}",
-                            :key => "template#{i}/#{f}",
-                            :data => data,
-                            s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
-                        })
-    end
+    # #該当ディレクトリ下の必要なファイルをすべてアップロード
+    # dir_name = Dir.open("#{Rails.root}/app/assets/images/template#{i}")
+    # dir_name.each_with_index do |f, index|
+    #   if f == "." || f == ".."
+    #     next
+    #   end
+    #   data = File.read("#{Rails.root}/app/assets/images/template#{i}" + '/' + f)
+    #   client.put_object({
+    #                         :bucket_name => "#{bucket_name}",
+    #                         :key => "template#{i}/#{f}",
+    #                         :data => data,
+    #                         s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
+    #                     })
+    # end
     policy = {
         "Version": "2012-10-17",
         "Statement": [
@@ -107,9 +107,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
         policy: policy
     )
 
-    url = "https://s3.amazonaws.com/#{bucket_name}/index.html"
-    # end
-    SendMailer.send_when_update(current_user, pass_temp, url).deliver
+    u = "https://s3.amazonaws.com/#{bucket_name}/index.html"
+      url.push(u)
+
+    end
+
+    SendMailer.send_when_registration(current_user, pass_temp, url).deliver
   end
 
   # GET /resource/edit

@@ -81,6 +81,7 @@
   <header class="header">
     <div class="inner">
       <h1 class="logo"><a href="index.html">One Second</a></h1>
+      <% if false%>
       <div class="sp gnav-switch"></div>
       <nav class="gnav">
         <ul>
@@ -99,6 +100,7 @@
                             </div>
         -->
         <div class="gnav-close sp">×</div>
+      <% end %>
       </nav>
     </div>
   </header>
@@ -138,9 +140,9 @@
         <div class="btn btn-submit"><a href="/users/sign_in" target="_blank"
                                        onclick="ga('send', 'event', '会員登録', 'クリック', 'キービジュアル', 1);">ログイン</a>
         </div>
-        <div class="btn btn-search"><a href="#.jp/app/top" target="_blank"
+      <!--<div class="btn btn-search"><a href="#.jp/app/top" target="_blank"
                                        onclick="ga('send', 'event', 'STATION SEARCH', 'クリック', 'キービジュアル', 1);">活用事例を見てみる</a>
-        </div>
+      </div>-->
         <!-- <div class="apli-link" style="text-align: center; max-width: 250px; margin: 10px auto 0;">
           <a class="ios"
              href="https://itunes.apple.com/jp/app/hello-cycling-%E3%81%A9%E3%81%93%E3%81%A7%E3%82%82%E5%80%9F%E3%82%8A%E3%82%8C%E3%82%8B%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%82%B7%E3%82%A7%E3%82%A2/id1216653677?mt=8"
@@ -426,56 +428,56 @@
                   <div class="form-left">
                     <div class='form-team my-2'>
                       <%= f.label :Email, class: "text-white" %>
-                      <%= f.text_field :email, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :email, class: 'frame-none contact-form', placeholder:'例）email@example.com' %>
                     </div>
                     <br><br>
 
                     <div class='form-team my-2'>
                       <%= f.label :名前, class: "text-white" %>
-                      <%= f.text_field :name, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :name, class: 'frame-none contact-form', placeholder:'例）山田　太郎' %>
                     </div>
                     <br><br>
 
                     <div class='form-team my-2'>
                       <%= f.label :HPタイトル, class: "text-white" %>
-                      <%= f.text_field :title, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :title, class: 'frame-none contact-form', placeholder:'例）焼肉屋〇〇' %>
                     </div>
                     <br><br>
 
 
                     <div class='form-team my-2'>
                       <%= f.label :メニュー１, class: "text-white" %>
-                      <%= f.text_field :menu1, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :menu1, class: 'frame-none contact-form', placeholder:'例）トップ' %>
                     </div>
                     <br><br>
                     <div class='form-team my-2'>
                       <%= f.label :メニュー2, class: "text-white" %>
-                      <%= f.text_field :menu2, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :menu2, class: 'frame-none contact-form', placeholder:'例）メニュー'  %>
                     </div>
 
                     <br><br>
                     <div class='form-team my-2'>
                       <%= f.label :メニュー3, class: "text-white" %>
-                      <%= f.text_field :menu3, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :menu3, class: 'frame-none contact-form', placeholder:'例）店舗情報'  %>
                     </div>
 
                     <br><br>
 
                     <div class='form-team my-2'>
                       <%= f.label :メニュー4, class: "text-white" %>
-                      <%= f.text_field :menu4, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :menu4, class: 'frame-none contact-form', placeholder:'例）会社概要'  %>
                     </div>
                     <br><br>
 
                     <div class='form-team my-2'>
                       <%= f.label :メニュー5, class: "text-white" %>
-                      <%= f.text_field :menu5, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :menu5, class: 'frame-none contact-form', placeholder:'例）予約問い合わせ'  %>
                     </div>
                     <br><br>
 
                     <div class='form-team my-2'>
                       <%= f.label :見出し1, class: "text-white" %>
-                      <%= f.text_field :heading1, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :heading1, class: 'frame-none contact-form', placeholder:'例）最高ランク'  %>
                     </div>
                     <br><br>
 
@@ -485,56 +487,56 @@
                   <div class="form-right">
                     <div class='form-team my-2'>
                       <%= f.label :小見出し1, class: "text-white" %>
-                      <%= f.text_field :subheading1, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :subheading1, class: 'frame-none contact-form', placeholder:'例）当店では最高ランクの牛肉を全国各地から取り揃えております。'  %>
                     </div>
                     <br><br>
                     <div class='form-team my-2'>
                       <%= f.label :見出し2, class: "text-white" %>
-                      <%= f.text_field :heading2, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :heading2, class: 'frame-none contact-form', placeholder:'例）豊富な肉メニュー'  %>
                     </div>
                     <br><br>
 
                     <div class='form-team my-2'>
                       <%= f.label :小見出し2, class: "text-white" %>
-                      <%= f.text_field :subheading2, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :subheading2, class: 'frame-none contact-form', placeholder:'例）牛肉はもちろん、豚肉、鶏肉、羊肉まで扱ってますのでお肉好きは絶対に満足させてお帰りいただけると存じます'  %>
                     </div>
                     <br><br>
 
 
                     <div class='form-team my-2'>
                       <%= f.label :見出し3, class: "text-white" %>
-                      <%= f.text_field :heading3, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :heading3, class: 'frame-none contact-form', placeholder:'例）豊富なサイドメニュー'  %>
                     </div>
                     <br><br>
 
                     <div class='form-team my-2'>
                       <%= f.label :小見出し3, class: "text-white" %>
-                      <%= f.text_field :subheading3, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :subheading3, class: 'frame-none contact-form', placeholder:'例）お肉だけではなく、サイドメニューも充実！自家製キムチから締めの冷麺、最後にデザートまで、お任せあれ！'  %>
                     </div>
                     <br><br>
 
 
                     <div class='form-team my-2'>
                       <%= f.label :見出し4, class: "text-white" %>
-                      <%= f.text_field :heading4, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :heading4, class: 'frame-none contact-form', placeholder:'例）伝統の味'  %>
                     </div>
                     <br><br>
 
                     <div class='form-team my-2'>
                       <%= f.label :小見出し4, class: "text-white" %>
-                      <%= f.text_field :subheading4, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :subheading4, class: 'frame-none contact-form' , placeholder:'例）創業から１０年、変わらぬタレの味でお客様を魅了しています。' %>
                     </div>
                     <br><br>
 
                     <div class='form-team my-2'>
                       <%= f.label :見出し5, class: "text-white" %>
-                      <%= f.text_field :heading5, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :heading5, class: 'frame-none contact-form', placeholder:'例）豪華絢爛'  %>
                     </div>
                     <br><br>
 
                     <div class='form-team my-2'>
                       <%= f.label :小見出し5, class: "text-white" %>
-                      <%= f.text_field :subheading5, class: 'frame-none contact-form', id: 'last_name' %>
+                      <%= f.text_field :subheading5, class: 'frame-none contact-form', placeholder:'例）盛り付けにもこだわる職人魂！'   %>
                     </div>
                     <br><br>
                   </div>

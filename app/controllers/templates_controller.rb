@@ -3,6 +3,7 @@ class TemplatesController < ApplicationController
 
   def index
     @templates = Template.all
+
   end
 
   def p1
@@ -59,14 +60,25 @@ class TemplatesController < ApplicationController
   end
 
   def upload(user, id)
+
+
     doc = File.read("#{Rails.root}/app/views/templates/p#{id}.html.erb")
     doc.gsub!(/<%= @user.title %>/, "#{user.title}")
-    doc.sub!(/<%= @user.menu1 %>/, "#{user.menu1}")
-    doc.sub!(/<%= @user.menu2 %>/, "#{user.menu2}")
-    doc.sub!(/<%= @user.menu3 %>/, "#{user.menu3}")
-    doc.sub!(/<%= @user.menu4 %>/, "#{user.menu4}")
-    doc.sub!(/<%= @user.menu5 %>/, "#{user.menu5}")
-    doc.sub!(/<%= @user.subheading1 %>/, "#{user.subheading1}")
+    doc.gsub!(/<%= @user.menu1 %>/, "#{user.menu1}")
+    doc.gsub!(/<%= @user.menu2 %>/, "#{user.menu2}")
+    doc.gsub!(/<%= @user.menu3 %>/, "#{user.menu3}")
+    doc.gsub!(/<%= @user.menu4 %>/, "#{user.menu4}")
+    doc.gsub!(/<%= @user.menu5 %>/, "#{user.menu5}")
+    doc.gsub!(/<%= @user.heading1 %>/, "#{user.heading1}")
+    doc.gsub!(/<%= @user.heading2 %>/, "#{user.heading2}")
+    doc.gsub!(/<%= @user.heading3 %>/, "#{user.heading3}")
+    doc.gsub!(/<%= @user.heading4 %>/, "#{user.heading4}")
+    doc.gsub!(/<%= @user.heading5 %>/, "#{user.heading5}")
+    doc.gsub!(/<%= @user.subheading1 %>/, "#{user.subheading1}")
+    doc.gsub!(/<%= @user.subheading2 %>/, "#{user.subheading2}")
+    doc.gsub!(/<%= @user.subheading3 %>/, "#{user.subheading3}")
+    doc.gsub!(/<%= @user.subheading4 %>/, "#{user.subheading4}")
+    doc.gsub!(/<%= @user.subheading5 %>/, "#{user.subheading5}")
     doc.gsub!(/\/assets/, ".")
 
     client = AWS::S3::Client.new(

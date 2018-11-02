@@ -1,22 +1,56 @@
-<div class='container'>
-  <div class="oswald-font text-center"><h2>解約ページ</h2></div>
-  <div class='row'>
-    <div class='col-12 my-3 text-center'></div>
-    <div class="col-3 pr-0"></div>
-    <div class="col-6 pr-0">
-      <div class="mypage-gp p-3 rounded">
-        <p class="mx-2 mb-0 text4"></p>
-        <div class="text-center text7 py-2"></div>
-      </div>
-    </div>
-    <div class="col-3 pr-0"></div>
-    <div class='col-12 my-3 text-center'></div>
-
-    <% if @subscription&.!@subscription.canceled? %>
-      <div class="col-12 text-center mr-3 my-2">
-        <%= link_to '定額プランを解約', subscription_path(@subscription), method: :delete, class:'btn pera-button mx-1' %>
-      </div>
-    <% end %>
-
-  </div>
+<% if @subscription %>
+  <div style="    width: 80%;
+      height: 320px;
+      background:#d9e7f3 ;
+      margin: auto;padding: 20px;
+      margin-top: 100px;">
+    <div style="font-size: 25px;">Onesecond</div>
+    <div style="    color: #FF5722;">Onesecondは解約月の月末までは追加費用なしでつかえます!</br>なので月末までご使用頂いたほうがお得です！</div>
+<div style=" width: 50%;
+    background: orange;
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 1px white;
+    border-radius: 30px;
+    text-align: center;
+    ">
+    <%= link_to '定額プランを解約', subscription_path(@subscription), method: :delete, class: 'btn pera-button mx-1',
+    style:"color: white;" %>
 </div>
+    <div>※Onesecondのご利用を停止されると月末に希望ドメインのホームページのサービスは終了いたします。</div>
+    <div>※再度ご登録後に再度解約を希望される場合は、あらためて解約手続きが必要になります</div>
+  </div>
+
+  <% else %>
+  <div style="    width: 80%;
+      height: 320px;
+      background:#d9e7f3 ;
+      margin: auto;padding: 20px;
+      margin-top: 100px;">
+    <div style="font-size: 25px;">Onesecond</div>
+    <div style="    color: #FF5722;">Onesecondは解約月の月末までは追加費用なしでつかえます!</br>なので月末までご使用頂いたほうがお得です！</div>
+    <div style=" width: 50%;
+        margin: auto;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    ">  <%= form_tag(controller: :templates, action: :pay, method: :post, name: "#{@user.id}", template: "#{@id}") do %>
+        <script type="text/javascript"
+                src="https://checkout.pay.jp"
+                class="payjp-button"
+                style="font-size: 30px;"
+                data-key=<%= Rails.application.secrets.payjp_public_key %>
+                    data-text="月額１９８０円であなたのホームページを作成する">
+
+        </script>
+    <% end %></div>
+    <div>※Onesecondのご利用を停止されると月末に希望ドメインのホームページのサービスは終了いたします。</div>
+    <div>※再度ご登録後に再度解約を希望される場合は、あらためて解約手続きが必要になります</div>
+  </div>
+
+<% end %>
+
+
