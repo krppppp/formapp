@@ -13,6 +13,14 @@ class SendMailer < ApplicationMailer
          subject: '会員情報が更新されました。'
   end
 
+  def send_when_registration(user, pass_temp, url)
+    @user = user
+    @pass = pass_temp
+    @url = url
+    mail to:      user.email,
+         subject: '会員登録ありがとうございます。'
+  end
+
   def send_when_subscription_create(user)
     @user = user
     mail to:      user.email,

@@ -1812,14 +1812,14 @@ font-size: 40px;
 #topContent #block2 p {
     text-align: center;
     position: absolute;
-    left: 0;
+    left: 10%;
     top: 256px;
-    width: 100%; }
+    width: 50%; }
 @media only screen and (max-width: 499px) {
     #topContent #block2 p {
         width: 327.672px;
         left: 50%;
-        top: 309.024px;
+        top: 360px;
         margin: 0 0 0 -164.169px;
         text-align: left; } }
 #topContent #block2 .shape {
@@ -1882,8 +1882,8 @@ font-size: 40px;
     font-size: 100px;}
 @media only screen and (max-width: 499px) {
     #topContent #block4 .content h2 {
-        font-size: 70px; } }
-#topContent #block4 .content p {
+        font-size: 50px; } }
+#topContent #block4.content p {
     margin: 0 0 30px; }
 #topContent #block4 .content a {
     display: block;
@@ -1957,11 +1957,19 @@ font-size: 40px;
 @media only screen and (max-width: 499px) {
     #topContent #block5 .content h2 {
         width: 333.2px;
-        font-size: 30px;
+        font-size: 50px;
 
     } }
 #topContent #block5 .content p {
-    margin: 0 0 30px; }
+    margin: 0 0 30px;
+    width: 80%;
+}
+
+@media only screen and (max-width: 499px){
+    #topContent #block5 p {
+        width: 100%;
+    }
+}
 #topContent #block5 .content a {
     display: block;
     background-size: cover;
@@ -2042,12 +2050,20 @@ font-size: 60px;
     } }
 #topContent #block7 .content p {
     margin: 0 0 30px;
-    color: #33330f; }
+    color: #33330f;
+    width: 34%;}
+
+@media only screen and (max-width: 499px){
+    #topContent #block7 .content p {
+        width: 100%;
+    }}
 #topContent #block7 .content a {
     display: block;
     background-size: cover;
     width: 150px;
     height: 16px; }
+
+
 @media only screen and (max-width: 499px) {
     #topContent #block7 .content a {
         width: 195.804px;
@@ -2133,10 +2149,10 @@ font-size: 120px;
 }
 @media only screen and (max-width: 499px) {
     #topContent #block9 .content h2 {
-        font-size: 70px;
+        font-size: 60px;
 } }
 #topContent #block9 .content p {
-    margin: 0 0 30px; }
+    margin: -30 0 30px; }
 #topContent #block9 .content a {
     display: block;
     background-size: cover;
@@ -2210,7 +2226,7 @@ font-size: 120px;
 }
 @media only screen and (max-width: 499px) {
     #topContent #block10 .content h2 {
-        font-size: 70px } }
+        font-size: 50px } }
 #topContent #block10 .content p {
     margin: 0 0 30px;
     text-align: center;
