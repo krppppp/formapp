@@ -112,7 +112,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
     end
 
-    SendMailer.send_when_update(current_user, pass_temp, url).deliver
+    SendMailer.send_when_registration(current_user, pass_temp, url).deliver
   end
 
   # GET /resource/edit
