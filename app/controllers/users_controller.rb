@@ -138,7 +138,9 @@ class UsersController < ApplicationController
                 :sub_image1, :sub_image2, :sub_image3, :sub_image4, :sub_image5,
                 :sub_icon1, :sub_icon2, :sub_icon3, :sub_icon4, :sub_icon5,
                 :headline1, :headline2, :headline3, :headline4, :headline5,
-                :menu1_1, :menu2_1,:menu3_1,:menu4_1,:menu5_1)
+                :menu1_1, :menu2_1,:menu3_1,:menu4_1,:menu5_1,
+                :character1, :character2, :character3, :character4, :character5,
+                :character6, :character7, :character8, :character9, :character10)
 
   end
 

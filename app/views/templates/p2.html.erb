@@ -1,466 +1,181 @@
 <!doctype html>
-<html lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"
-      class="no-js notranslate">
+<html lang="en-GB" class="no-js">
 <head>
   <meta charset="UTF-8">
-  <title><%= @user.title %></title>
-  <meta name="description" itemprop="description"
-        content="園山真希絵 オフィシャルサイト"/>
-  <meta name="keywords" itemprop="keywords"
-        content="園山真希絵 オフィシャルサイト"/>
-
-  <meta property="og:title" content="園山真希絵 オフィシャルサイト"/>
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="AKI TENNIS不動産">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="園山真希絵 オフィシャルサイト"/>
-  <meta property="og:description" content="園山真希絵 オフィシャルサイト"/>
+  <meta property="og:url" content="">
+  <meta property="og:image" content="/assets/template2/icon_black.png">
+  <meta property="og:description"
+        content="AKI TENNIS不動産のオフィシャルサイトです。。">
+  <link rel="shortcut icon" href="/assets/template2/icon_black.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="https://d17zbv0kd7tyek.cloudfront.net/js/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="https://d17zbv0kd7tyek.cloudfront.net/js/slick/slick-theme.css"/>
-  <link rel="stylesheet" type="text/css" href="https://dx4hlv40u7fad.cloudfront.net/css/flexslider.v2.css"/>
-  <link rel='stylesheet' id='normalize-css' href='https://d17zbv0kd7tyek.cloudfront.net/css/normalize.css?ver=1.0'
+  <title><%= @user.title %></title>
+  <link rel='stylesheet' id='tej-all-css' href='/assets/template2/all.min.1526635475.css' type='text/css'
         media='all'/>
-  <link rel='stylesheet' id='html5blank-css' href='https://s3-ap-northeast-1.amazonaws.com/sonoyama2/style.v5.1.css' media='all'/>
-  <script type='text/javascript'
-          src='https://d17zbv0kd7tyek.cloudfront.net/js/lib/conditionizr-4.3.0.min.js?ver=4.3.0'></script>
-  <script type='text/javascript'
-          src='https://d17zbv0kd7tyek.cloudfront.net/js/lib/modernizr-2.7.1.min.js?ver=2.7.1'></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://d17zbv0kd7tyek.cloudfront.net/css/prettyPhoto.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="https://d17zbv0kd7tyek.cloudfront.net/js/jquery.prettyPhoto.v1.js"></script>
-  <script src="https://d17zbv0kd7tyek.cloudfront.net/js/slick/slick.min.js"></script>
-  <script src="https://d17zbv0kd7tyek.cloudfront.net/js/masonry.pkgd.min.js"></script>
-  <script src="https://dx4hlv40u7fad.cloudfront.net/js/jquery.flexslider.js"></script>
-  <script src="https://d17zbv0kd7tyek.cloudfront.net/js/scripts.v3.js"></script>
+  <script>
+  </script>
 </head>
+<body class="home page-template-default page page-id-77">
+<div id='wrapper' style='color: black'>
+  <header>
+    <a href='index.html'>
+      <h1><%= @user.title %></h1></a>
+    <div class=home-logo>
+      <h1 class=dt><%= @user.title %></h1>
+      <h1 class=phone><%= @user.title %></h1>
+    <span style='color: white; margin-top: 200px'><%= @user.subheading1 %></span>
+    </div>
+    <a href='index.html#' class='hamburger' style='color: #ffffff;'>o</a>
+  </header>
 
-<body class="home page-template page-template-homepage page-template-homepage-php page page-id-25">
-
-<div id="preheader">
-  <div class="rightSector divs_nav" style="visibility: hidden">
-    <div class="homeR">
-      <a href="index.html">TOP</a>
-    </div>
-    <div class="socialsR">
-      <a class="" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
-      <a class="" href="https://twitter.com"><i class="fa fa-twitter"></i></a>
-      <a class="" href="https://instagram.com"><i class="fa fa-instagram"></i></a>
-    </div>
-  </div>
-</div>
-<header id="header">
-  <div class="content">
-    <a class="homeLogo" href="index.html" title=""><p><%= @user.title %></p></a>
-    <div class="headmenu">
-      <div class="mobileMenu"><i class="fa fa-bars"></i></div>
-      <ul id="menu-top-menu" class="menu">
-        <li id="menu-item-386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-386"><a
-          href="#.com/films/"><%= @user.menu1 %></a></li>
-        <li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385"><a
-          href="#.com/news/"><%= @user.menu2 %></a></li>
-        <li id="menu-item-387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387"><a
-          href="#.com/biography/"><%= @user.menu3 %></a></li>
-        <li id="menu-item-387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387"><a
-          href="#.com/biography/"><%= @user.menu4 %></a></li>
-        <li id="menu-item-387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387"><a
-          href="#.com/biography/"><%= @user.menu5 %></a></li>
-        <li id="menu-item-387" style="display: none" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387"></li>
-      </ul>
-      <div class="closeMenu"><i class="fa fa-times"></i></div>
-    </div>
-  </div>
-  <div class="clearfix"></div>
-</header>
-<section id="first" class="mainpage">
-  <div class="flexslider" id="flexslider">
-    <ul class="slides">
-      <li class="slide" id="947"
-          style="background: url(/assets/template2/gazoのコピー.jpg);background-size: cover;background-position: center center">
-        <div class="slideText">
-          <a href="#.com/new-documentary-before-the-flood-to-air-globally-on-natgeo-on-october-30th-2/">
-            <h1><%= @user.heading1 %></h1></a>
-          <p><%= @user.subheading1 %></p>
-          <a class='sliderLink'
-             href='#.com/new-documentary-before-the-flood-to-air-globally-on-natgeo-on-october-30th-2/'>詳しくはこちら</a>
-        </div>
-        <p class="flex-caption"></p>
-      </li>
-      <li class="slide" id="925"
-          style="background: url(/assets/template2/main02のコピー.jpg);background-size: cover;background-position: center center">
-        <div class="slideText">
-          <a href="#.com/leonardo-calls-for-climate-action-at-mayors-summit-in-paris-3/">
-            <h1><%= @user.heading2 %></h1></a>
-          <p><%= @user.subheading2 %></p>
-          <a class='sliderLink'
-             href='#.com/leonardo-calls-for-climate-action-at-mayors-summit-in-paris-3/'>詳しくはこちら</a>
-        </div>
-        <p class="flex-caption"></p>
-      </li>
-      <li class="slide" id="453"
-          style="background: url(/assets/template2/main03のコピー.jpg);background-size: cover;background-position: center center">
-        <div class="slideText">
-          <a href="#.com/the-revenant-set-to-release-on-christmas-day-gallery/">
-            <h1><%= @user.heading3 %></h1></a>
-          <p><%= @user.subheading3 %></p>
-          <a class='sliderLink'
-             href='#.com/the-revenant-set-to-release-on-christmas-day-gallery/'>詳しくはこちら</a>
-        </div>
-      </li>
-      <li class="slide" id="485"
-          style="background: url(/assets/template2/gazo5のコピー.jpg);background-size: cover;background-position: center center">
-        <div class="slideText">
-          <a href="#.com/"><h1>
-            <%= @user.heading4 %></h1></a>
-          <p><%= @user.subheading4 %></p>
-          <a class='sliderLink'
-             href='#.com/'>詳しくはこちら</a>
-        </div>
-      </li>
-      <li class="slide" id="431"
-          style="background: url(/assets/template2/main02のコピー.jpg);background-size: cover;background-position: center center">
-        <div class="slideText">
-          <a href="#.com/leonardo-joins-artists-and-public-leaders-at-the-global-citizen-festival/">
-            <h1><%= @user.heading5 %></h1></a>
-          <p><%= @user.subheading5 %></p>
-          <a class='sliderLink'
-             href='#.com/leonardo-joins-artists-and-public-leaders-at-the-global-citizen-festival/'>詳しくはこちら</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-<section id="fourth" class="mainpage">
-  <div class="content">
-    <div class="right60">
-      <div class="sideContent" style="max-width:760px;float:left">
-        <div id="quoteslider" class="flexsliderq">
-          <ul class="slides">
+  <div id='content' class="home page-template-default page page-id-77">
+    <div id='splash'>
+      <div class='skip-splash'><a href='index.html#' class='hamburger'>o</a></div>
+      <div class=inner>
+        <section class=splash-slideshow>
+          <ul class=slides>
             <li>
-              <h3><p><%= @user.subheading1 %></p>
-              </h3>
-              <div class="quotecaption"><%= @user.title %>
-              </div>
+              <img src='/assets/template2/gazo1.jpg'/>
+              <span><%= @user.head_character1 %>/span>
             </li>
             <li>
-              <h3><p><%= @user.subheading4 %></p>
-              </h3>
-              <div class="quotecaption"><%= @user.title %>
-              </div>
+              <img src='/assets/template2/gazo2.jpg'/>
+              <span><%= @user.head_character2 %></span>
             </li>
             <li>
-              <h3><p><%= @user.subheading3 %></p>
-              </h3>
-              <div class="quotecaption"><%= @user.title %>
-              </div>
+              <img src='/assets/template2/gazo3.jpg'/>
+              <span<%= @user.head_character3 %></span>
             </li>
             <li>
-              <h3><p><%= @user.subheading2 %></p>
-              </h3>
-              <div class="quotecaption"><%= @user.title %>
-              </div>
+              <img src='/assets/template2/gazo4.jpg'/>
+              <span><%= @user.head_character4 %></span>
+            </li>
+            <li>
+              <img src='/assets/template2/gazo5.jpg'/>
+              <span><%= @user.head_character5 %></span>
+            </li>
+            <li>
+              <img src='/assets/template2/gazo6.jpg'/>
+              <span><%= @user.head_character6 %></span>
+            </li>
+            <li>
+              <img src='/assets/template2/gazo7.jpg'/>
+              <span><%= @user.head_character7 %></span>
+            </li>
+            <li>
+              <img src='/assets/template2/gazo8.jpg'/>
+              <span><%= @user.head_character8 %></span>
+            </li>
+            <li>
+              <img src='/assets/template2/gazo9.jpg'/>
+              <span><%= @user.head_character9 %></span>
+            </li>
+            <li>
+              <img src='/assets/template2/gazo10.jpg'/>
+              <span><%= @user.head_character10 %></span>
             </li>
           </ul>
-        </div>
-        <div class="custom-navigation">
-          <a href="index.html#" class="flex-prev quote-prev">&lt;</a>
-          <div class="custom-controls-container"></div>
-          <a href="index.html#" class="flex-next quote-next">&gt;</a>
-        </div>
+        </section>
       </div>
     </div>
-    <div class="threecols secondNumbers">
-      <div class="cont">
-        <div class="bigNumbers" style="padding-top: 54px"><h1>1993</h1>
-          <p>サンプル１</p></div>
-        <div class="bigNumbers" style="padding-top: 68px"><h1>2000</h1>
-          <p>サンプル２</p></div>
-        <div class="bigNumbers" style="padding-top: 68px"><h1>2018</h1>
-          <p>サンプル３</p></div>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-  </div>
-</section>
-<section id="third" class="mainpage"
-         style="background:url(/assets/template2/gazoのコピー.jpg);background-size:cover;background-position: center center">
-  <div class="videoPlayer">
-    <a rel="prettyPhoto" href="https://www.youtube.com/watch?v=QRfj1VCg16Y"></a></div>
-  <div class="readMoreVid">
-    <a rel="prettyPhoto" href="https://www.youtube.com/watch?v=QRfj1VCg16Y">
-      そのやま/恵比寿
-    </a>
-  </div>
-  <script type="text/javascript" charset="utf-8">
-      $(document).ready(function () {
-          $("a[rel^='prettyPhoto']").prettyPhoto({
-              social_tools: '',
-          });
-      });
-  </script>
-</section>
-<div id="fb-root"></div>
-<script>(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=317645471660466";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<section id="second" class="mainpage">
-  <div class="content">
-    <div class="threecols">
-      <div class="oneCont cont" style="min-height: 500px">
-        <h2>SNS</h2>
-        <div class="followRound">
-          <div class="followCont"><span class="followButtCircle facefoll"></span><br/>
-            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FLeonardoDiCaprio%2F&width=81&layout=button&action=like&size=large&show_faces=false&share=false&height=65&appId=124119977680899"
-                    width="81" height="65" style="border:none;overflow:hidden" scrolling="no"
-                    frameborder="0" allowTransparency="true"></iframe>
-          </div>
-        </div>
-        <div class="followRound">
-          <div class="followCont" style="text-align: center"><span class="followButtCircle twitfoll"></span>
-            <br/><a href="https://twitter.com/LeoDiCaprio" class="twitter-follow-button"
-                    data-show-count="false" data-size="large" data-show-screen-name="false">Follow
-            @LeoDiCaprio</a>
-            <script>!function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0],
-                    p = /^http:/.test(d.location) ? 'http' : 'https';
-                if (!d.getElementById(id)) {
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = p + '://platform.twitter.com/widgets.js';
-                    fjs.parentNode.insertBefore(js, fjs);
-                }
-            }(document, 'script', 'twitter-wjs');</script>
-          </div>
-        </div>
-        <div class="followRound">
-          <div class="followCont" style="text-align: right"><span
-            class="followButtCircle instafoll"></span><br/>
-            <a href="https://www.instagram.com/leonardodicaprio/" target="_blank"><img
-              src="/assets/template2/insta.png"
-              style="width: 29px;margin: 0 0% 0 55%;display: block;"></a>
-          </div>
-        </div>
-        <div class="clearfix" style="margin-bottom:45px"></div>
-        <p>snsをフローして最新情報をチェック！snsをフローして最新情報をチェック！snsをフローして最新情報をチェック！snsをフローして最新情報をチェック！snsをフローして最新情報をチェック！
-          snsをフローして最新情報をチェック！snsをフローして最新情報をチェック！snsをフローして最新情報をチェック！</p>
-      </div>
-    </div>
-    <div class="twoCols">
-      <div class=" cont">
-        <h2 style="color: #7b9199;"><%= @user.title %></h2>
-      </div>
-    </div>
-    <div class="threecols">
-      <div class="cont" style="    padding-top: 7px">
-        <p><%= @user.subheading2 %></p>
-        <div class="missionList">
-          <table width="100%" border="0">
-            <tr>
-              <td width="43" valign="middle" class="odd">
-                <img src="/assets/template2/コックアイコン.png" style="    height: 43px;
-                    border-radius: 50px;
-                    display: inline-block;
-                    border: 2px solid #fff;">
-                <!--<span class="biod"></span>-->
-              </td>
-              <td width="50%" valign="middle" style="padding-left:12px" class="even">和の心</td>
-              <td width="43" valign="middle" class="odd">
-                <img src="/assets/template2/ハートのマーク2.png" style="    height: 43px;
-                    border-radius: 50px;
-                    display: inline-block;
-                    border: 2px solid #fff;">
-              </td>
-              <td width="50%" valign="middle" style="padding-left:12px" class="even">おもてなし</td>
-            </tr>
-            <tr>
-              <td width="43" valign="middle" class="odd"><img src="/assets/template2/梅アイコン3.png" style="    height: 43px;
-                  border-radius: 50px;
-                  display: inline-block;
-                  border: 2px solid #fff;"></td>
-              <td width="50%" valign="middle" style="padding-left:12px" class="even">健康</td>
-              <td width="43" valign="middle" class="odd"><img src="/assets/template2/福助人形のフリーイラスト.png" style="    height: 43px;
-                  border-radius: 50px;
-                  display: inline-block;
-                  border: 2px solid #fff;"></td>
-              <td width="50%" valign="middle" style="padding-left:12px" class="even">食陰陽師</td>
-            </tr>
-          </table>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-    </div>
-    <div class="threecols">
-      <div class="lastCont cont">
-        <div class="left40">
-          <p>レストランそのやまで至福のひとときを...</p>
-
-          <div id="mc_embed_signup">
-            <div role="form" class="wpcf7" id="wpcf7-f967-o1" lang="en-US" dir="ltr">
-              <div class="screen-reader-response"></div>
-              <form action="index.html#wpcf7-f967-o1" method="post" class="wpcf7-form"
-                    novalidate="novalidate">
-                <div style="display: none;">
-                  <input type="hidden" name="_wpcf7" value="967"/>
-                  <input type="hidden" name="_wpcf7_version" value="4.8"/>
-                  <input type="hidden" name="_wpcf7_locale" value="en_US"/>
-                  <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f967-o1"/>
-                  <input type="hidden" name="_wpcf7_container_post" value="0"/>
-                  <input type="hidden" name="_wpcf7_nonce" value="f516ebe1e8"/>
-                </div>
-                <input type="hidden" name="source" value="websitecom"
-                       class="wpcf7-form-control wpcf7-hidden"/>
-                <p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name"
-                                                                          value="" size="40"
-                                                                          class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required namefield"
-                                                                          aria-required="true"
-                                                                          aria-invalid="false"
-                                                                          placeholder="姓"/></span><span
-                  class="wpcf7-form-control-wrap Lastname"><input type="text" name="Lastname"
-                                                                  value="" size="40"
-                                                                  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required lastnamefield"
-                                                                  aria-required="true"
-                                                                  aria-invalid="false"
-                                                                  placeholder="名"/></span><br/>
-                  <span class="wpcf7-form-control-wrap your-email"><input type="email"
-                                                                          name="your-email" value=""
-                                                                          size="40"
-                                                                          class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email emailnamefield"
-                                                                          aria-required="true"
-                                                                          aria-invalid="false"
-                                                                          placeholder="EMAIL"/></span>
-                  <input
-                    type="submit" value=ご予約お問い合わせ
-                    class="wpcf7-form-control wpcf7-submit subscribeButton"/></p>
-                <div class="wpcf7-response-output wpcf7-display-none"></div>
-              </form>
-            </div>
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="clearfix" style="margin-bottom:40px;padding-top:20px"></div>
-  </div>
-</section>
-<div class="relatedNews">
-  <div class="content">
-    <div class="">
-      <h4>More News</h4>
-    </div>
-  </div>
-</div>
-<section id="seventh" class="mainpage">
-  <div class="content">
-    <div id="postslider">
-      <div class="postSlide">
-        <div class="postSlideCont">
-          <a class="thumbIm"
-             href="#.com/new-documentary-before-the-flood-to-air-globally-on-natgeo-on-october-30th-2/"
-             style="background-image:url(/assets/template2/main02のコピー.jpg)"></a>
-          <span class="slidePostCont">
-<h4><a href="#.com/new-documentary-before-the-flood-to-air-globally-on-natgeo-on-october-30th-2/"><%= @user.heading1 %></a></h4>
-<p class="postDate">10 . 01 . 2016</p>
-<p><%= @user.subheading1 %></p>
-</span>
-        </div>
-      </div>
-      <div class="postSlide">
-        <div class="postSlideCont">
-          <a class="thumbIm"
-             href="#.com/leonardo-calls-for-climate-action-at-mayors-summit-in-paris-3/"
-             style="background-image:url(/assets/template2/main03のコピー.jpg)"></a>
-          <span class="slidePostCont">
-<h4><a href="#.com/leonardo-calls-for-climate-action-at-mayors-summit-in-paris-3/">
- <%= @user.heading2 %></a></h4>
-<p class="postDate">08 . 10 . 2016</p>
-<p><%= @user.subheading2 %></p>
-</span>
-        </div>
-      </div>
-
-      <div class="postSlide">
-        <div class="postSlideCont">
-          <a class="thumbIm"
-             href="#.com//"
-             style="background-image:url(/assets/template2/gazo5のコピー.jpg)"></a>
-          <span class="slidePostCont">
-<h4><a href="#.com//">
- <%= @user.heading3 %></a></h4>
-<p class="postDate">02 . 18 . 2016</p>
-<p><%= @user.subheading3 %></p>
-</span>
-        </div>
-      </div>
-      <div class="postSlide">
-        <div class="postSlideCont">
-          <a class="thumbIm"
-             href="#.com/"
-             style="background-image:url(/assets/template2/main02のコピー.jpg)"></a>
-          <span class="slidePostCont">
-<h4><a href="#.com/"><%= @user.heading4 %></a></h4>
-<p class="postDate">01 . 22 . 2016</p>
-<p><%= @user.subheading4 %></p>
-</span>
-        </div>
-      </div>
-      <div class="postSlide">
-        <div class="postSlideCont">
-          <a class="thumbIm"
-             href="#.com//"
-             style="background-image:url(/assets/template2/main02のコピー.jpg)"></a>
-          <span class="slidePostCont">
-<h4><a href="#.com//">
-   <%= @user.heading5 %></a></h4>
-<p class="postDate">12 . 18 . 2015</p>
-<p><%= @user.subheading5 %></p>
-</span>
-        </div>
-      </div>
 
 
+    <section class=slideshow>
+      <div class=tint></div>
+      <ul class=slides>
+        <li>
+          <img src='/assets/template2/gazo1.jpg'/>
+
+        </li>
+        <li>
+          <img src='/assets/template2/gazo2.jpg'/>
+
+        </li>
+        <li>
+          <img src='/assets/template2/gazo3.jpg'/>
+
+        </li>
+        <li>
+          <img src='/assets/template2/gazo4.jpg'/>
+
+        </li>
+        <li>
+          <img src='/assets/template2/gazo5.jpg'/>
+
+        </li>
+        <li>
+          <img src='/assets/template2/gazo6.jpg'/>
+
+        </li>
+        <li>
+          <img src='/assets/template2/gazo7.jpg'/>
+
+        </li>
+        <li>
+          <img src='/assets/template2/gazo8.jpg'/>
+
+        </li>
+      </ul>
+    </section>
+
+
+  </div><!-- /#content -->
+</div><!-- /#wrapper -->
+
+
+<nav>
+  <section class=nav-header>
+    <a href='index.html'>
+    <h1><%= @user.title %></h1></a>
+    <a href='index.html#' class='hamburger'>x</a>
+  </section>
+
+  <div class='nav-links vc'>
+    <div class=inner>
+      <a href='' class=about style="text-transform: uppercase"><%= @user.menu1 %></a>
+      <a href='' class=works style="text-transform: uppercase"><%= @user.menu2 %></a>
+      <a href='' class=journal style="text-transform: uppercase"><%= @user.menu3 %></a>
+      <a href='' class=studio style="text-transform: uppercase"><%= @user.menu4 %></a>
+      <a href='' class=studio style="text-transform: uppercase"><%= @user.menu5 %></a>
+
+      <div class=social-links>
+        <a class=icon-instagram href='https://www.instagram.com/#/' target='_blank'></a>
+        <a class=icon-twitter href='https://twitter.com/#' target='_blank'></a>
+        <a class=icon-facebook href='https://www.facebook.com/pg/#-342678315818602'
+           target='_blank'></a>
+      </div>
     </div>
   </div>
-</section>
+
+</nav>
+
 
 <footer>
-  <div class="bottomFooter">
-    <div class="clearfix"></div>
-    <div class="threecols">
-      <div class="cont" style="background: #fbb1b1;">
-        <p>Copyright &copy;&nbsp;<%= @user.title %> &nbsp;All rights reserved.</p>
-      </div>
-    </div>
-    <div class="threecols bottomSocials">
-      <div class="cont" style="  padding: 10px 0px; background: #fbb1b1;">
-        <a href="https://www.facebook.com" class="Facebook" title=""><i
-          class="fa fa-facebook"></i></a>
-        <a href="https://twitter.com" class="" title="Twitter"><i class="fa fa-twitter"></i></a>
-        <a href="https://instagram.com" class="" title="Instagram"><i
-          class="fa fa-instagram"></i></a>
-      </div>
-    </div>
-    <div class="threecols">
-      <div class="cont" style="width: 100%;max-width: inherit;">
-        <div class="footerMenu">
-          <ul id="menu-footer-menu" class="menu">
-            <li id="menu-item-388"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-388"><a
-              href="#.com/privacy-policy/">Privacy Policy</a></li>
-            <li id="menu-item-389"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"><a
-              href="#.com/terms-of-use/">Terms Of Use</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-  </div>
 </footer>
+
+<script type='text/javascript' src='/assets/template2/jquery.1.12.4.js'></script>
+<script type='text/javascript' src='/assets/template2/jquery-migrate.min.1.4.1.js'></script>
+<script type='text/javascript' src='/assets/template2/all.min.1504594696.js'></script>
+<script type='text/javascript' src='/assets/template2/wp-embed.min.4.9.8.js'></script>
+
+<div id='loading-indicator'></div>
+<div id='grid-overlay'>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 
 </body>
 </html>
+<!-- 60 queries in 0.610 seconds. -->

@@ -35,6 +35,17 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       t.text     "headline2"
       t.text     "headline3"
 
+      t.string   "character1"
+      t.string   "character2"
+      t.string   "character3"
+      t.string   "character4"
+      t.string   "character5"
+      t.string   "character6"
+      t.string   "character7"
+      t.string   "character8"
+      t.string   "character9"
+      t.string   "character10"
+
 
       # t.text     "main_image",                        limit: 65535
 

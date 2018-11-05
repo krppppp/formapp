@@ -1,7 +1,7 @@
 
 <%= yield %>
 
-
+<% if false %>
 <% if controller.controller_name == "templates" %>
   <% if controller.action_name != "index" %>
   <button style="display: none;" class = "btn" id="ClickMe" data-toggle='modal' data-target="#NewLoginModal"></button>
@@ -61,4 +61,6 @@
   </style>
 
 
-  <% end %><% end %>
+  <% end %>
+  <% end %>
+<% end %>

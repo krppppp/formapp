@@ -2,94 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d210315e-25a0-411f-a4df-cfdc48e0f0f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/images/template1/nisikori2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/templates/_popup.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/templates/yakiniku.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/config/ocr.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/template2/all.min.1504594696.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/template2/all.min.1526635475.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/template2/icon_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/template2/icon_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/template2/jquery-migrate.min.1.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/template2/jquery.1.12.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/template2/logo_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/template2/logo_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/template2/wp-embed.min.4.9.8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/templates/p4.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/20.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/21.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/52.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/52.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/53.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/53.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/54.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/54.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/55.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/55.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/a5_black.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/a5_black.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/a5_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/a5_white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/b1_bg_pc.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/b1_bg_pc.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/b1_bg_sp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/b1_bg_sp.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/b1_scroll_arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/b1_scroll_arrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/b1_scroll_text.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/b1_scroll_text.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/beef_black.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/beef_black.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/beef_black_sp.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/beef_black_sp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/checken_black.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/checken_black.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/chicken_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/chicken_white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/gazo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/gazo1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/gazo2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/gazo2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/gazo2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/gazo2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/gazo3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/gazo3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/gazo3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/gazo3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/gazo4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/gazo4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/gazo5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/gazo5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/globeee.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/globeeee.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/grade_black.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/grade_black.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/grade_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/grade_white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/icon_black.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/icon_black.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/icon_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/icon_white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/insta.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/insta.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/plugin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/pork_black.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/pork_black.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/pork_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/pork_white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/pork_white_sp.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/pork_white_sp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/sp_menu_trigger.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/sp_menu_trigger.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/top.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/top.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/にわとりのフリーアイコン1 (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/にわとりのフリーアイコン1 (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/にわとりのフリーアイコン1 (2).png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/にわとりのフリーアイコン1 (2).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/にわとりのフリーアイコン1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/にわとりのフリーアイコン1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/ステーキの無料アイコン3 (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/ステーキの無料アイコン3 (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/ステーキの無料アイコン3 (2).png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/ステーキの無料アイコン3 (2).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/ステーキの無料アイコン3 (3).png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/ステーキの無料アイコン3 (3).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/ステーキの無料アイコン3 (4).png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/ステーキの無料アイコン3 (4).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/ステーキの無料アイコン3 (5).png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/ステーキの無料アイコン3 (5).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/ステーキの無料アイコン3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/ステーキの無料アイコン3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/ハートのマーク2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/ハートのマーク2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/ホルスタインのイラスト (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/ホルスタインのイラスト (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/ホルスタインのイラスト (2).png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/ホルスタインのイラスト (2).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/ホルスタインのイラスト.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/ホルスタインのイラスト.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/マッチョアイコン5 (2).png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/マッチョアイコン5 (2).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/マッチョアイコン5.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/マッチョアイコン5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/豚肉の部位イラスト (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/豚肉の部位イラスト (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/豚肉の部位イラスト (2).png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/豚肉の部位イラスト (2).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template1/豚肉の部位イラスト.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/yakiniku/豚肉の部位イラスト.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/foobox.free.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/foobox.free.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/footer-bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/footer-bar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/jquery.easing.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/jquery.easing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/jquery.fullPage.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/jquery.fullPage.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/jquery.inview.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/jquery.inview.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/jscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/jscript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/nisikori1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/nisikori1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/nisikori2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/nisikori3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/nisikori3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/nisikori4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/nisikori4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/nisikori5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/nisikori5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/og_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/og_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/template3/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template1/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/templates_index/07.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/templates_index/07.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template2/Preloader_6のコピー.gif" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template4/Preloader_6のコピー.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template2/gazo5のコピー.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template4/gazo5のコピー.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template2/gazoのコピー.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template4/gazoのコピー.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template2/insta.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template4/insta.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template2/main02のコピー.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template4/main02のコピー.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template2/main03のコピー.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template4/main03のコピー.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template2/style.v5.1.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template4/style.v5.1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template2/コックアイコン.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template4/コックアイコン.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template2/ハートのマーク2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template4/ハートのマーク2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template2/梅アイコン3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template4/梅アイコン3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/template2/福助人形のフリーイラスト.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/template4/福助人形のフリーイラスト.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/templates_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/templates_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/templates/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/templates/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/templates/p1.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/templates/p1.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/templates/p3.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/templates/p3.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/templates/p2.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/templates/p2.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/users/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20181024041244_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20181024041244_devise_create_users.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
@@ -109,134 +50,170 @@
     <session id="1766249100">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="302" />
-          <entry key="erb" value="2681" />
-          <entry key="htm" value="14" />
+          <entry key="css" value="407" />
+          <entry key="erb" value="2895" />
+          <entry key="htm" value="216" />
           <entry key="html" value="58" />
-          <entry key="js" value="1" />
+          <entry key="js" value="12" />
           <entry key="pid" value="1" />
-          <entry key="rb" value="1083" />
+          <entry key="rb" value="1172" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="302" />
-          <entry key="HTML" value="72" />
-          <entry key="JavaScript" value="1" />
+          <entry key="CSS" value="407" />
+          <entry key="HTML" value="274" />
+          <entry key="JavaScript" value="12" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="RHTML" value="2680" />
-          <entry key="Ruby" value="1084" />
+          <entry key="RHTML" value="2894" />
+          <entry key="Ruby" value="1173" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Gemfile" value="2" />
-          <entry key="css" value="17" />
-          <entry key="erb" value="58" />
-          <entry key="htm" value="3" />
-          <entry key="html" value="3" />
+          <entry key="css" value="21" />
+          <entry key="erb" value="65" />
+          <entry key="gitignore" value="1" />
+          <entry key="htm" value="4" />
+          <entry key="html" value="4" />
           <entry key="jbuilder" value="1" />
-          <entry key="js" value="24" />
+          <entry key="js" value="26" />
           <entry key="pid" value="1" />
-          <entry key="rb" value="40" />
+          <entry key="png" value="2" />
+          <entry key="rb" value="49" />
           <entry key="ruby-version" value="1" />
           <entry key="scss" value="1" />
+          <entry key="template2" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="17" />
-          <entry key="HTML" value="6" />
-          <entry key="JavaScript" value="24" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="RHTML" value="58" />
-          <entry key="Ruby" value="43" />
+          <entry key="CSS" value="21" />
+          <entry key="HTML" value="8" />
+          <entry key="Image" value="2" />
+          <entry key="JavaScript" value="26" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="RHTML" value="65" />
+          <entry key="Ruby" value="52" />
           <entry key="SCSS" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20181024041244_devise_create_users.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="67" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/p2.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="400" column="20" selection-start-line="400" selection-start-column="20" selection-end-line="400" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/p1.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4695">
-              <caret line="313" selection-start-line="313" selection-end-line="313" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="vertical" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/templates/p3.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="71">
+                  <caret line="241" column="115" selection-start-line="241" selection-start-column="115" selection-end-line="241" selection-end-column="115" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="633">
+                  <caret line="61" selection-start-line="61" selection-end-line="61" />
+                  <folding>
+                    <element signature="e#122#144#0#HTML" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/views/templates/p2.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="479">
+                  <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#span#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#a#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/images/template2/all.min.1526635475.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="879" column="11" selection-start-line="879" selection-start-column="11" selection-end-line="879" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/db/migrate/20181024041244_devise_create_users.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="188">
+                  <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="164">
+                  <caret line="142" column="77" selection-start-line="142" selection-start-column="77" selection-end-line="142" selection-end-column="77" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/users/registrations_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="449">
+                  <caret line="108" column="29" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="294">
+                  <caret line="72" column="2" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="73">
+                  <caret line="175" selection-start-line="175" selection-end-line="175" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>scro</find>
-      <find>images</find>
-      <find>pork</find>
-      <find>.sub</find>
-      <find>css</find>
-      <find>navbar-ri</find>
-      <find>ima</find>
-      <find>../../images/top/</find>
-      <find>SLIDE</find>
-      <find>images/</find>
-      <find>medi</find>
-      <find>style/6/</find>
-      <find>style/9/</find>
       <find>icon_white</find>
       <find>hTx</find>
       <find>360.</find>
@@ -254,6 +231,19 @@
       <find>section</find>
       <find>template3</find>
       <find>control</find>
+      <find>loader</find>
+      <find>767</find>
+      <find>768</find>
+      <find>s-tablet</find>
+      <find>about</find>
+      <find>c-ma</find>
+      <find>世界遺産6のコピー</find>
+      <find>slides</find>
+      <find>js/</find>
+      <find>speed</find>
+      <find>heya</find>
+      <find>animationSpeed</find>
+      <find>pho</find>
     </findStrings>
     <replaceStrings>
       <replace>/assets/template1/</replace>
@@ -268,6 +258,9 @@
       <replace>nisikori</replace>
       <replace>/assets/template3/nisikori</replace>
       <replace>template1</replace>
+      <replace>main1</replace>
+      <replace>/assets/template2/</replace>
+      <replace>gazo</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -276,13 +269,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/send_mailer/send_when_subscription_create.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layout/application.html.erb" />
-        <option value="$USER_HOME$/テンプレ/園山5/index.html" />
-        <option value="$USER_HOME$/テンプレ/園山5/css/h6hvo.css" />
-        <option value="$PROJECT_DIR$/tmp/pids/server.pid" />
-        <option value="$USER_HOME$/RubymineProjects/AKI100/config/unicorn.conf.rb" />
-        <option value="$PROJECT_DIR$/app/assets/images/template1/global.css" />
         <option value="$PROJECT_DIR$/app/assets/images/top/activity-indicator.min.js" />
         <option value="$PROJECT_DIR$/app/models/template.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -299,7 +285,6 @@
         <option value="$PROJECT_DIR$/app/views/send_mailer/send_when_update.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/subscriptions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/subscriptions/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/templates_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/images/template1/globa.css" />
         <option value="$PROJECT_DIR$/app/mailers/send_mailer.rb" />
         <option value="$PROJECT_DIR$/app/assets/images/template1/glob.css" />
@@ -312,7 +297,6 @@
         <option value="$PROJECT_DIR$/app/assets/images/template3/jquery.inview.min.js" />
         <option value="$PROJECT_DIR$/app/assets/images/template3/bootstrap.min.js" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/templates/p3.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/images/template1/globeee.css" />
@@ -320,13 +304,22 @@
         <option value="$PROJECT_DIR$/app/views/templates/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/templates/popup.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/templates/p1.html.erb" />
         <option value="$PROJECT_DIR$/app/views/templates/_popup.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20181024041244_devise_create_users.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/config/ocr.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/templates_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/templates/p1.html.erb" />
+        <option value="$USER_HOME$/テンプレ/portfolio/assets/js/app.js" />
+        <option value="$USER_HOME$/テンプレ/portfolio/assets/css/application.css" />
+        <option value="$USER_HOME$/テンプレ/portfolio/portfolio.htm" />
+        <option value="$PROJECT_DIR$/app/views/templates/p4.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/images/template2/all.min.1504594696.js" />
+        <option value="$PROJECT_DIR$/app/assets/images/template2/all.min.1526635475.css" />
         <option value="$PROJECT_DIR$/app/views/templates/p2.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20181024041244_devise_create_users.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       </list>
     </option>
   </component>
@@ -341,9 +334,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -351,6 +345,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -363,6 +358,12 @@
               <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="loginapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loginapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
@@ -386,6 +387,44 @@
             <path>
               <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="loginapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loginapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loginapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loginapp" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loginapp" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loginapp" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="initializers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loginapp" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -398,7 +437,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -407,11 +445,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/images/template2" />
       <recent name="$PROJECT_DIR$/app/assets/images/templates_index" />
       <recent name="$PROJECT_DIR$/app/assets/images/template3" />
       <recent name="$PROJECT_DIR$/app/assets/images" />
       <recent name="$PROJECT_DIR$/app/assets/templates/top" />
-      <recent name="$PROJECT_DIR$/app/assets/templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -546,16 +584,19 @@
       <workItem from="1540967162246" duration="10053000" />
       <workItem from="1540987074517" duration="9147000" />
       <workItem from="1541132299583" duration="2394000" />
+      <workItem from="1541229744600" duration="4006000" />
+      <workItem from="1541378951475" duration="4367000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49148000" />
+    <option name="totallyTimeSpent" value="59098000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="878" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20314735" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13876967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -617,126 +658,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/images/templates_index/common.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/templates_index/jquery-1.8.1.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/templates_index/owl.carousel.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/templates_index/imagesLoaded.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/templates_index/jquery.sublimeSlideshow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="831">
-          <caret line="65" column="33" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/テンプレ/洋食/kandokoro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="244" column="26" selection-start-line="244" selection-start-column="26" selection-end-line="244" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/templates_index/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="1203" column="19" lean-forward="true" selection-start-line="1203" selection-start-column="19" selection-end-line="1203" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tops/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/subscriptions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/subscriptions/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/send_mailer/send_when_update.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="28" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/admin/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11595">
-          <caret line="773" column="14" selection-start-line="773" selection-start-column="14" selection-end-line="773" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/mailers/send_mailer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/top/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="771" column="22" selection-start-line="771" selection-start-column="22" selection-end-line="771" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/テンプレ/スポーツ選手のコピー/saitou_index1017.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="37" lean-forward="true" selection-end-line="454" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/template3/japanese.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/template3/jquery.fullpage.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="146" column="35" lean-forward="true" selection-end-line="235" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/template3/styles(1).css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" selection-end-line="6" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/template3/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="100" column="20" selection-end-line="116" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/template3/japanese.css" />
+    <entry file="file://$PROJECT_DIR$/app/assets/images/template3/jquery.fullpage.min.css" />
+    <entry file="file://$PROJECT_DIR$/app/assets/images/template3/styles(1).css" />
+    <entry file="file://$PROJECT_DIR$/app/assets/images/template3/styles.css" />
     <entry file="file://$PROJECT_DIR$/app/assets/images/template1/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="811">
@@ -744,29 +669,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/template3/jquery.newsticker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" lean-forward="true" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/template3/scrolloverflow.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/template3/menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/template3/jquery.newsticker.js" />
+    <entry file="file://$PROJECT_DIR$/app/assets/images/template3/scrolloverflow.min.js" />
+    <entry file="file://$PROJECT_DIR$/app/assets/images/template3/menu.js" />
     <entry file="file://$PROJECT_DIR$/app/assets/images/template1/jquery.inview.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="899">
@@ -785,9 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="695" column="34" selection-start-line="695" selection-start-column="34" selection-end-line="695" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -795,13 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="174" column="14" selection-start-line="174" selection-start-column="14" selection-end-line="174" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -814,13 +709,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/images/templates_index/top.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -840,47 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
           <caret line="145" column="47" lean-forward="true" selection-start-line="145" selection-start-column="47" selection-end-line="145" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#h1#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#nav#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#section#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#2;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#2;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#2;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#4;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#4;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#4;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#6;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#6;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#6;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#8;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#8;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#8;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#9;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#9;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#9;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#section#9;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#article#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users/registrations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1079">
-          <caret line="108" column="29" lean-forward="true" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20181024041101_create_tops.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -895,20 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="66" column="46" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/p3.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="241" column="115" selection-start-line="241" selection-start-column="115" selection-end-line="241" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/templates_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -943,12 +776,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/top/logo_blackのコピー.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/admin/placeholder.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
@@ -957,31 +789,194 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/p1.html.erb">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4695">
-          <caret line="313" selection-start-line="313" selection-end-line="313" />
+        <state relative-caret-position="420">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/config/ocr.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/templates_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/p1.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="69" selection-end-line="315" />
+          <folding>
+            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/template4/style.v5.1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/subscriptions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/テンプレ/portfolio/portfolio.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/テンプレ/portfolio/assets/css/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="1306" column="19" selection-start-line="1306" selection-start-column="19" selection-end-line="1306" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/テンプレ/portfolio/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="4871" column="35" selection-start-line="4871" selection-start-column="32" selection-end-line="4871" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/テンプレ/部屋のコピー2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="11" selection-end-line="185" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/template1/template2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/template2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/template2/all.min.1504594696.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5011">
+          <caret line="441" column="25" selection-start-line="441" selection-start-column="25" selection-end-line="441" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/p4.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/p3.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="241" column="115" selection-start-line="241" selection-start-column="115" selection-end-line="241" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/template2/all.min.1526635475.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="879" column="11" selection-start-line="879" selection-start-column="11" selection-end-line="879" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181024041101_create_tops.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="175" selection-start-line="175" selection-end-line="175" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20181024041244_devise_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        <state relative-caret-position="188">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#122#144#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/p2.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="400" column="20" selection-start-line="400" selection-start-column="20" selection-end-line="400" selection-end-column="20" />
+        <state relative-caret-position="479">
+          <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="142" column="77" selection-start-line="142" selection-start-column="77" selection-end-line="142" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/registrations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="108" column="29" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="72" column="2" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
         </state>
       </provider>
     </entry>
