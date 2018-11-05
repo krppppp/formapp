@@ -14,6 +14,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     super
     @user = User.find(current_user.id)
     pass_temp = Devise.friendly_token.first(8)
+    puts pass_temp
     @user.encrypted_password = BCrypt::Password.create(pass_temp)
     @user.save
 

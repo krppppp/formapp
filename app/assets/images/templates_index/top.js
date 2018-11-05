@@ -20,7 +20,7 @@ $(function() {
       }
       return array;
     };
-    var arr = [4,7];
+    var arr = [1,7];
     shuffle(arr);
 
     for(var i = 0; i < arr.length; i++){

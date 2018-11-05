@@ -12,7 +12,7 @@
   <link rel="shortcut icon" href="/assets/template2/icon_black.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= @user.title %></title>
-  <link rel='stylesheet' id='tej-all-css' href='/assets/template2/all.min.1526635475.css' type='text/css'
+  <link rel='stylesheet' id='tej-all-css' href='/assets/template2/a.min.1526635475.css' type='text/css'
         media='all'/>
   <script>
   </script>
@@ -25,7 +25,13 @@
     <div class=home-logo>
       <h1 class=dt><%= @user.title %></h1>
       <h1 class=phone><%= @user.title %></h1>
-    <span style='color: white; margin-top: 200px'><%= @user.subheading1 %></span>
+    <span style='color: white; margin-top: 200px'>
+      <%= @user.subheading1 %><br>
+      <%= @user.subheading2 %><br>
+      <%= @user.subheading3 %><br>
+      <%= @user.subheading4 %><br>
+      <%= @user.subheading5 %><br>
+    </span>
     </div>
     <a href='index.html#' class='hamburger' style='color: #ffffff;'>o</a>
   </header>
@@ -38,43 +44,45 @@
           <ul class=slides>
             <li>
               <img src='/assets/template2/gazo1.jpg'/>
-              <span><%= @user.head_character1 %>/span>
+              <span><%= @user.character1 %></span>
             </li>
             <li>
               <img src='/assets/template2/gazo2.jpg'/>
-              <span><%= @user.head_character2 %></span>
+              <span><%= @user.character2 %></span>
             </li>
             <li>
               <img src='/assets/template2/gazo3.jpg'/>
-              <span<%= @user.head_character3 %></span>
+              <span><%= @user.character3 %></span>
             </li>
             <li>
               <img src='/assets/template2/gazo4.jpg'/>
-              <span><%= @user.head_character4 %></span>
+              <span><%= @user.character4 %></span>
             </li>
             <li>
               <img src='/assets/template2/gazo5.jpg'/>
-              <span><%= @user.head_character5 %></span>
+              <span><%= @user.character5 %></span>
             </li>
             <li>
               <img src='/assets/template2/gazo6.jpg'/>
-              <span><%= @user.head_character6 %></span>
+              <span><%= @user.character6 %></span>
             </li>
             <li>
               <img src='/assets/template2/gazo7.jpg'/>
-              <span><%= @user.head_character7 %></span>
+              <span><%= @user.character7 %></span>
             </li>
             <li>
               <img src='/assets/template2/gazo8.jpg'/>
-              <span><%= @user.head_character8 %></span>
+              <span><%= @user.character8 %></span>
             </li>
             <li>
               <img src='/assets/template2/gazo9.jpg'/>
-              <span><%= @user.head_character9 %></span>
+
+              <span><%= @user.character9 %></span>
             </li>
             <li>
               <img src='/assets/template2/gazo10.jpg'/>
-              <span><%= @user.head_character10 %></span>
+
+              <span><%= @user.character10 %></span>
             </li>
           </ul>
         </section>
@@ -155,10 +163,10 @@
 <footer>
 </footer>
 
-<script type='text/javascript' src='/assets/template2/jquery.1.12.4.js'></script>
-<script type='text/javascript' src='/assets/template2/jquery-migrate.min.1.4.1.js'></script>
-<script type='text/javascript' src='/assets/template2/all.min.1504594696.js'></script>
-<script type='text/javascript' src='/assets/template2/wp-embed.min.4.9.8.js'></script>
+<script type='text/javascript' src='https://s3.amazonaws.com/aki-hudousan/js/jquery.1.12.4.js'></script>
+<script type='text/javascript' src='https://s3.amazonaws.com/aki-hudousan/js/jquery-migrate.min.1.4.1.js'></script>
+<script type='text/javascript' src='https://s3.amazonaws.com/aki-hudousan/js/al.min.1504594696.js'></script>
+<script type='text/javascript' src='https://s3.amazonaws.com/aki-hudousan/js/wp-embed.min.4.9.8.js'></script>
 
 <div id='loading-indicator'></div>
 <div id='grid-overlay'>

@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.update(user_params)
       # for i in 1..2 do
-        i = 1
+        i = 2
         #doc = File.read('/app/views/templates/p1.html.erb')
         doc = File.read("#{Rails.root}/app/views/templates/p#{i}.html.erb")
         doc.gsub!(/<%= @user.title %>/, "#{@user.title}")
@@ -44,6 +44,16 @@ class UsersController < ApplicationController
         doc.gsub!(/<%= @user.headline1 %>/, "#{@user.headline1}")
         doc.gsub!(/<%= @user.headline2 %>/, "#{@user.headline2}")
         doc.gsub!(/<%= @user.headline3 %>/, "#{@user.headline3}")
+        doc.gsub!(/<%= @user.character1 %>/, "#{@user.character1}")
+        doc.gsub!(/<%= @user.character2 %>/, "#{@user.character2}")
+        doc.gsub!(/<%= @user.character3 %>/, "#{@user.character3}")
+        doc.gsub!(/<%= @user.character4 %>/, "#{@user.character4}")
+        doc.gsub!(/<%= @user.character5 %>/, "#{@user.character5}")
+        doc.gsub!(/<%= @user.character6 %>/, "#{@user.character6}")
+        doc.gsub!(/<%= @user.character7 %>/, "#{@user.character7}")
+        doc.gsub!(/<%= @user.character8 %>/, "#{@user.character8}")
+        doc.gsub!(/<%= @user.character9 %>/, "#{@user.character9}")
+        doc.gsub!(/<%= @user.character10 %>/, "#{@user.character10}")
         doc.gsub!(/\/assets/, ".")
 
         client = AWS::S3::Client.new(
