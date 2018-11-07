@@ -21,6 +21,11 @@ class TemplatesController < ApplicationController
 
   end
 
+  def p4
+    @user =User.find_by(name: params[:name])
+    @id = 4
+  end
+
   def pay
     user = User.find(params[:name])
     card_token = params["payjp-token"]

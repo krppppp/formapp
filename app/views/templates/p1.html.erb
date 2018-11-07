@@ -1,231 +1,315 @@
 <!DOCTYPE html>
-<!-- saved from url=(0028)# -->
-<html class="no-js" lang="ja"><!--<![endif]-->
+<!-- saved from url=(0025)http://www.ginjiro37.com/ -->
+<html class="pc fp-enabled" lang="ja" style="overflow: visible; height: initial;">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title><%= @user.title %></title>
-  <meta property="og:site_name" content="#{}">
-  <meta property="og:title" content="<%= @user.title %>">
-  <meta property="og:description"
-        content="<%= @user.title %>で至福のディナー">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="#">
-  <meta property="og:image" content="/assets/template1/icon_black.png">
-  <meta name="description" content="<%= @user.title %>で至福のディナー">
-  <meta content="width=414" name="viewport">
-  <link type="text/css" rel="stylesheet" href="https://s3.amazonaws.com/yakiniku-aki/%E7%84%BC%E8%82%89AKI_files/globeee.css">
-  <link rel="shortcut icon" href="/assets/template1/icon_black.png">
+  <meta name="description" content="<%= @user.title %>">
 
-  <style type="text/css">.fancybox-margin {
-    margin-right: 15px;
-  }</style>
+  <link rel="stylesheet" id="bootstrap.min-css" href="/assets/template1/bootstrap.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="style-css" href="/assets/template1/style.css" type="text/css" media="screen">
+  <link rel="stylesheet" id="responsive-css" href="/assets/template1/responsive.css" type="text/css" media="screen and (max-width:1024px)">
+  <script type="text/javascript" src="/assets/template1/jquery.js"></script>
+  <script type="text/javascript" src="/assets/template1/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/template1/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/template1/jquery.fullPage.min.js"></script>
+  <script type="text/javascript" src="/assets/template1/jquery.inview.min.js"></script>
+  <script src="/assets/template1/jquery.easing.js"></script>
+  <script src="/assets/template1/jscript.js"></script>
+  <script>
+      jQuery(document).ready(function($){
+
+          var $container = $('#index_product_list');
+
+          $(window).load(function () {
+              $container.imagesLoaded( function() {
+                  $container.masonry({
+                      itemSelector: '.box',
+                      columnWidth: '.box-sizer',
+                      percentPosition: true,
+                      transitionDuration: 0
+                  });
+              });
+          });
+
+      });
+  </script>
+
+  <script>
+      $(document).ready(function() {
+          if($(window).width() >= 992) {
+              $('#fullpage').fullpage({
+                  //anchors: ['Page0', 'Page1', 'Page2', 'Page3', 'Page4', 'Page5', 'Page6', 'Page7', 'Page8'],
+                  lockAnchors: false,
+                  sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF', ],
+                  scrollBar: true,
+                  scrollingSpeed: 1200,
+                  normalScrollElements: '#section8',
+                  fitToSection: false,
+                  easing: 'easeInOutQuart'
+              });
+          } else {
+              $('#fullpage').fullpage({
+                  //anchors: ['Page0', 'Page1', 'Page2', 'Page3', 'Page4', 'Page5', 'Page6', 'Page7', 'Page8'],
+                  lockAnchors: false,
+                  sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF', '#FFF', ],
+                  scrollBar: true,
+                  scrollingSpeed: 1000,
+                  autoScrolling: false,
+                  fitToSection: false
+              });
+          }
+      });
+  </script>
+  <style type="text/css">
+
+
+    .pc #logo_text .logo{font-size:21px; }
+    .pc #logo_text .desc { font-size:12px; }
+
+    .mobile #logo_text .logo{font-size:18px; }
+
+    #footer_logo .logo { font-size:40px; }
+    #footer_logo .desc { font-size:12px; }
+
+    .pc #global_menu li a:hover, .pc #global_menu > ul > li.active > a, .post_list li.type1 .meta li a:hover, .post_list li.type2 .meta li a:hover, #footer_menu li a:hover, #home_slider .info_inner .title_link:hover, #post_meta_top a:hover, #bread_crumb li a:hover, #comment_header ul li a:hover, #template1_header .product_cateogry a:hover, #archive_product_list .no_image:hover .title a
+    { color:#193D5D; }
+
+    #side_col, #main_content{ background-color: #262c30;}
+
+    #global_menu .sub-menu{background: none;}
+    #global_menu .sub-menu li{background: rgba(0,0,0, 0.5);}
+    #global_menu .sub-menu li a{color:#FFFFFF !important;}
+    #global_menu .sub-menu li a:hover{color:#FFFFFF !important; background: #FF0000 !important;}
+
+    .post_content a { color:#FF0000; }
+    #edit-area .headline, .footer_headline, .widget-title, a:hover, .menu_category { color:#193D5D; }
+    #return_top a:hover, .next_page_link a:hover, .page_navi a:hover, #index_news_list .archive_link:hover, .pc #index_news_list .news_title a:hover, .box_list_headline .archive_link a:hover, .previous_next_post .previous_post a:hover, .previous_next_post .next_post a:hover,
+    #single_product_list .slick-prev:hover, #single_product_list .slick-next:hover, #previous_next_page a:hover, .mobile .template1_content_list .caption a.link:hover, #archive_product_cateogry_menu li a:hover, .pc #archive_product_cateogry_menu li.active > a, .pc #archive_product_cateogry_menu li ul,
+    #wp-calendar td a:hover, #wp-calendar #prev a:hover, #wp-calendar #next a:hover, .widget_search #search-btn input:hover, .widget_search #searchsubmit:hover, .side_widget.google_search #searchsubmit:hover,
+    #submit_comment:hover, #post_pagination a:hover, #post_pagination p, .mobile a.category_menu_button:hover, .mobile a.category_menu_button.active, .user_sns li a:hover
+    { background-color:#193D5D; }
+
+    .mobile #global_menu a:hover { background-color:#193D5D !important; }
+
+    /*#edit-area .top-blog-list .headline{ color:#193D5D; }*/
+    .page-title, .headline, #edit-area .headline, .header-title, .blog-title, .related-posts-title, .widget-title{
+      font-family: Segoe UI, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;}
+    .blog-title{ font-size: 30px; }
+    .page-title{ font-size: 18px; }
+    .post_content{ font-size: 15px; }
+
+    .store-information01 { background-color:#193D5D; }
+    .page_navi li .current { background-color:#193D5D; }
+
+    #comment_textarea textarea:focus, #guest_info input:focus
+    { border-color:#193D5D; }
+
+    .pc #archive_product_cateogry_menu li ul a:hover
+    { background-color:#193D5D; color:#999999; }
+
+    #previous_next_post .prev_post:hover, #previous_next_post .next_post:hover { background-color:#193D5D;}
+    .related-posts-title { color:#193D5D;}
+
+    /*.btn_gst:hover { color:#193D5D!important;}*/
+
+    .footer_menu li.no_link a { color:#193D5D; }
+    #global_menu ul li.no_link > a { color:#193D5D; }
+
+    .blog-title a:hover, .blog-meta a:hover, .entry-meta a:hover, #post_meta_bottom a:hover { color: #193D5D; }
+
+    #global_menu a, .store-information, .store-information02, .store-information a, .store-information02 a,
+    .store-information .store-tel, .store-information02 .store-tel, .store-information .store-tel a, .store-information02 .store-tel a
+    {color:#FFFFFF !important;}
+
+    @media screen and (min-width:1025px) {
+      .store-information01 .store-tel, .store-information01 .store-tel a { color:#ffffff !important; }
+    }
+
+    #page_header .title { font-size:18px; }
+    #article .post_content { font-size:15px; }
+
+
+    .store-information .store-name, .store-information02 .store-name{ font-size:16px; }
+    .store-address{ font-size:12px; }
+    .store-information .store-tel, .store-information02 .store-tel{ font-size:30px; }
+    .store-information .store-tel span, .store-information02 .store-tel span{ font-size:12px; }
+
+    .store-information01{ font-size:12px; }
+    .store-information01 .store-name{ font-size:14px; }
+    .store-information01 .store-tel{ font-size:24px; }
+
+    @media screen and (max-width: 1024px) {
+      #main_col {top: auto !important;}
+    }
+
+    @media screen and (min-width: 1025px) {
+      #global_menu .sub-menu { left: -100%; }
+    }
+
+    #site_loader_spinner { border:4px solid rgba(25,61,93,0.2); border-top-color:#193D5D; }
+
+
+
+    .hvr_ef2 .img-wrap{ background-color: #193D5D}
+    .hvr_ef2 .img-wrap:hover img{
+      opacity: 0.5}
+
+
+
+
+    #section0 .fp-tableCell{ background-color:rgba(0,0,0, 0.3); }#section0 .btn_def{background-color:rgba(255,0,0,0.5); border:solid 1px #FFFFFF;}#section0 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(2,128,255,0.5);}#section1 .fp-tableCell{ background-color:rgba(0,0,0, 0.3); }#section1 .btn_def{background-color:rgba(0,0,0,0.5); border:solid 1px #FFFFFF;}#section1 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(255,0,0,0.5);}#section2 .fp-tableCell{ background-color:rgba(0,0,0, 0.4); }#section2 .btn_def{background-color:rgba(0,113,191,0.5); border:solid 1px #FFFFFF;}#section2 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(0,0,0,0.5);}#section3 .fp-tableCell{ background-color:rgba(0,0,0, 0.5); }#section3 .btn_def{background-color:rgba(255,10,10,0.5); border:solid 1px #FFFFFF;}#section3 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(0,0,0,0.5);}#section4 .fp-tableCell{ background-color:rgba(0,0,0, 0.4); }#section4 .btn_def{background-color:rgba(0,0,0,0.5); border:solid 1px #FFFFFF;}#section4 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(255,0,0,0.5);}#section5 .fp-tableCell{ background-color:rgba(0,0,0, 0.3); }#section5 .btn_def{background-color:rgba(0,0,0,0.5); border:solid 1px #FFFFFF;}#section5 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(255,0,0,0.5);}#section6 .fp-tableCell{ background-color:rgba(0,0,0, 0.3); }#section6 .btn_def{background-color:rgba(0,0,0,0.5); border:solid 1px #FFFFFF;}#section6 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(255,0,0,0.5);}#section7 .fp-tableCell{ background-color:rgba(0,0,0, 0.5); }#section7 .btn_def{background-color:rgba(253,106,0,0.5); border:solid 1px #FFFFFF;}#section7 .btn_def:hover{color:#FFFFFF !important; background-color:rgba(0,0,0,0.5);}
+  </style>
+
 </head>
-<body>
-
-<div id="container" class="container">
-  <header id="header">
-    <div class="inner">
-      <div id="headerBar">
-        <!--<h1 class="logo"><a href="#">焼肉AKI</a></h1>-->
+<body class="home blog index font_meiryo fp-viewing-0" style="overflow: visible; height: initial;">
+<div id="site_loader_overlay" style="display: none;"><div id="site_loader_spinner" style="display: none;"></div></div>
+<div id="site_wrap" style="display: block;">
+  <div id="main_content" class="clearfix row no-gutters">
+    <!-- side col -->
+    <div id="side_col" class="col-md-2 side_col_right">
+      <!-- logo -->
+      <div id="logo_image">
         <h1 class="logo">
-          <div style="color: white !important; font-size: 24px;"><%= @user.title %></div>
+          <a href="#">
+            <img class="h_logo" src="/assets/template1/og_logo.png"></a>
         </h1>
-        <div id="menuTrigger"></div>
       </div>
-      <nav id="globalNav" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-        <ul class="nav navbar-nav">
-          <li class="active"><a id="nav_top" href="#"><%= @user.menu1 %>　</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                  aria-expanded="false" id="nav_beef"
-                                  href="#beef/"><%= @user.menu2 %>　<span class="caret"></span></a>
 
-          </li>
-          <li><a id="nav_pork" href="#pork/"><%= @user.menu3 %>　　</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                  aria-expanded="false" id="nav_chicken"
-                                  href="#chicken/"><%= @user.menu4 %>　　<span class="caret"></span></a>
-
-          </li>
-          <li><a id="nav_contact" href="#contact/"><%= @user.menu5 %>　</a></li>
-          <li class="sp"><a href="#privacypolicy.html">プライバシーポリシー</a></li>
-          <li class="sp"><a href="#company.html">利用規約</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <article id="topContent">
-
-    <nav>
-      <ul>
-        <li class="block1 cur"></li>
-        <li class="block2"></li>
-        <li class="block4"></li>
-        <li class="block5"></li>
-        <li class="block7"></li>
-        <li class="block9"></li>
-        <li class="block10"></li>
+      <a href="#" class="menu_button pc-none" style="display: none;"><span>menu</span></a>
+      <div id="global_menu" class="clearfix">
+        <ul id="menu-%e3%81%94%e5%85%a5%e4%bc%9a%e6%a1%88%e5%86%85" class="menu"><li id="menu-item-6574" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6574"><a href="#section1" style="visibility: visible;"><%= @user.menu1 %></a></li>
+          <li id="menu-item-6494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6494"><a href="#section2" style="visibility: visible;"><%= @user.menu2 %></a></li>
+          <li id="menu-item-6495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6495"><a href="#section3" style="visibility: visible;"><%= @user.menu3 %></a></li>
+          <li id="menu-item-6497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6497"><a href="#section4" style="visibility: visible;"><%= @user.menu4 %></a></li>
+          <li id="menu-item-6515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6515"><a href="#section5" style="visibility: visible;"><%= @user.menu5 %></a></li>
+        </ul>			</div>
+      <!-- social button -->
+      <ul class="user_sns clearfix sp-none">
       </ul>
-    </nav>
-
-    <section id="block1" class="scene fs" style="height: 858px;">
-      <div class="bg" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-        <div class="inner" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
-      </div>
-      <h1 class="hTxt">aaaaaaaaaaaaaaaa</h1>
-      <img id="scrT" src="/assets/template1/b1_scroll_text.png" alt="" style="visibility: inherit; opacity: 1;">
-      <div id="scrA" style="visibility: inherit; opacity: 1;"><img src="/assets/template1/b1_scroll_arrow.png" alt=""
-                                                                   style="visibility: inherit; opacity: 0.4356;">
-      </div>
-    </section>
-
-    <section id="block2" class="scene">
-      <img class="shape" src="/assets/template1/ホルスタインのイラスト.png" alt="">
-      <h2 class="hTxt"><%= @user.heading1 %></h2>
-
-      <p><%= @user.subheading1 %></p>
-    </section>
-
-    <section id="block3" class="fs" style="height: 930px;">
-      <div class="bg" style="transform: matrix(1, 0, 0, 1, 0, 930);">
-        <div class="inner" style="transform: matrix(1, 0, 0, 1, 0, -775);"></div>
-      </div>
-    </section>
-
-    <section id="block4" class="scene">
-      <img class="shape" src="/assets/template1/豚肉の部位イラスト (2).png" alt="">
-      <div class="content">
-        <strong>SCENE1</strong>
-        <h2 class="hTxt"><%= @user.heading2 %></h2>
-        <p><%= @user.subheading2 %>
-        </p>
-      </div>
-    </section>
-
-    <section id="block5" class="scene fs" style="height: 930px;">
-      <div class="bg" style="transform: matrix(1, 0, 0, 1, 0, 930);">
-        <div class="inner" style="transform: matrix(1, 0, 0, 1, 0, -775);"></div>
-      </div>
-      <div class="content">
-        <img class="shape" src="/assets/template1/にわとりのフリーアイコン1 (1).png" alt="">
-        <strong>SCENE2</strong>
-        <h2 class="hTxt"><%= @user.heading3 %></h2>
-
-        <p><%= @user.subheading3 %> </p>
-      </div>
-    </section>
-
-    <section id="block6">
-    </section>
-
-    <section id="block7" class="scene fs" style="height: 930px;">
-      <div class="bg" style="transform: matrix(1, 0, 0, 1, 0, 930);">
-        <div class="inner" style="transform: matrix(1, 0, 0, 1, 0, -775);"></div>
-      </div>
-      <div class="content">
-        <img class="shape" src="/assets/template1/ホルスタインのイラスト (1).png" alt="">
-        <strong>SCENE3</strong>
-        <h2 class="hTxt"><%= @user.heading4 %></h2>
-
-        <p><%= @user.subheading4 %> </p>
-      </div>
-    </section>
-
-    <section id="block8">
-    </section>
-
-    <section id="block9" class="scene fs" style="height: 930px;">
-      <div class="bg" style="transform: matrix(1, 0, 0, 1, 0, 930);">
-        <div class="inner" style="transform: matrix(1, 0, 0, 1, 0, -441.667);"></div>
-      </div>
-      <div class="bottom">
-        <div class="content">
-          <img class="shape" src="/assets/template1/マッチョアイコン5.png" alt="">
-          <strong>SCENE4</strong>
-          <h2 class="hTxt"><%= @user.heading5 %></h2>
-
-          <p><%= @user.subheading5 %> </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="block10" class="scene fs" style="height: 930px;">
-      <div class="bg" style="transform: matrix(1, 0, 0, 1, 0, 930);">
-        <div class="inner" style="transform: matrix(1, 0, 0, 1, 0, -775);"></div>
-      </div>
-      <div class="bottom">
-        <div class="content">
-          <img class="shape" src="/assets/template1/マッチョアイコン5 (2).png" alt="">
-          <h2 class="hTxt"><%= @user.heading5 %></h2>
-          <p style="color: aliceblue;"><%= @user.subheading5 %></p>
-          <a class="hTxt" href="#company/">COMPANY</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="block11">
-      <div class="content">
-        <h2 class="hTxt">商品一覧</h2>
-        <div class="topItems">
-          <div class="item"><a href="#buy/detail/HIRAYA3/">
-            <div class="thumb"><img src="/assets/template1/55.jpg"></div>
-            <p class="text"></p>
-            <div class="status cnFULL"></div>
-          </a></div>
-          <div class="item"><a href="#buy/detail/mmh/">
-            <div class="thumb"><img src="/assets/template1/53.jpg"></div>
-            <p class="text"></p>
-            <div class="status icnFULL"></div>
-          </a></div>
-          <div class="item"><a href="#buy/detail/shouse/">
-            <div class="thumb"><img src="/assets/template1/54.jpg"></div>
-            <p class="text"></p>
-            <div class="status icnFULL"></div>
-          </a></div>
-          <div class="item"><a href="#buy/detail/asoko/">
-            <div class="thumb"><img src="/assets/template1/54.jpg"></div>
-            <p class="text"></p>
-            <div class="status icnFULL"></div>
-          </a></div>
-          <div class="item"><a href="#rent/detail/WMH/">
-            <div class="thumb"><img src="/assets/template1/52.jpg"></div>
-            <p class="text"></p>
-            <div class="status icnFULL"></div>
-          </a></div>
-          <div class="item"><a href="#rent/detail/taitoustyle/">
-            <div class="thumb"><img src="/assets/template1/20.jpg"></div>
-            <p class="text"></p>
-            <div class="status icnFULL"></div>
-          </a></div>
-        </div>
-      </div>
-    </section>
-
-    <div id="coverWhite" style="visibility: hidden; opacity: 0;"></div>
-
-  </article>
-  <footer id="footer">
-    <div class="inner">
-      <nav>
-        <ul>
-          <li><a href="#privacypolicy.html">プライバシーポリシー</a></li>
-          <li><a href="#company.html">COMPANY</a></li>
-          <li><a href="#contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-      <small class="copyright">Copyright 2018 <%= @user.title %> All Rights Reserved.</small>
+      <div class="store-information sp-none">
+        <p class="store-address"><%= @user.title %><br>
+        </p>			</div>
     </div>
-  </footer>
-</div>
-<script type="text/javascript" src="https://s3.amazonaws.com/yakiniku-aki/%E7%84%BC%E8%82%89AKI_files/jquery.min.js"></script>
-<script>
-    window.jQuery || document.write('<script src="https://s3.amazonaws.com/yakiniku-aki/%E7%84%BC%E8%82%89AKI_files/jquery.min.js">\x3C/script>')
-</script>
-<script type="text/javascript" src="https://s3.amazonaws.com/yakiniku-aki/%E7%84%BC%E8%82%89AKI_files/plugin.min.js"></script>
-<script type="text/javascript" src="https://s3.amazonaws.com/yakiniku-aki/%E7%84%BC%E8%82%89AKI_files/common.js"></script>
-<script type="text/javascript" src="https://s3.amazonaws.com/yakiniku-aki/%E7%84%BC%E8%82%89AKI_files/top.js"></script>
+    <!-- main col -->
+    <div id="main_col" class="col-md-10 main_col_left">
+      <div id="edit-area" class="mt0">
+        <div id="index_news">
+          <div id="newsticker">
+            <div class="row no-gutters">
+              <div class="ticker col-md-9" rel="fade" style="height: 60px;">
+                <ul>
+
+                  <li class="showlist" style="top: 0px; left: 0px; position: absolute; display: block; opacity: 0.254439; z-index: 99;">
+                    <time class="date"></time>
+                    <span class="title"><a href=" #" style="visibility: visible;"><%= @user.headline1 %></a></span>
+                  </li>
+                  <li style="top: 0px; left: 0px; position: absolute;">
+                    <time class="date"></time>
+                    <span class="title"><a href="#" style="visibility: visible;"><%= @user.headline2 %></a></span>
+                  </li>
+                  <li style="top: 0px; left: 0px; position: absolute;">
+                    <time class="date"></time>
+                    <span class="title"><a href="#" style="visibility: visible;"><%= @user.headline3 %></a></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="archive_link col-md-3">
+                <a href="#"><%= @user.title %></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="fullpage" class="fullpage-wrapper" style="height: 100%; position: relative;">
+          <div class="section fp-section fp-table" id="section1" style="background: url(/assets/template1/nisikori2.jpg) center center / cover no-repeat rgb(255, 255, 255); "><div class="fp-tableCell" style="">
+            <div class="container">
+              <div class="row">
+                <div class="top-container col-md-8 fr">
+                  <h2 class="headline movein" style="color:#FF0A0A;font-size:30px;text-shadow:1px 1px 5px #444444;"><%= @user.menu1 %></h2>
+                  <p class="disc movein" style="color:#FFFFFF !important;font-size:16px;text-shadow:1px 1px 0px #444444;">
+                    <%= @user.menu1_1 %>
+                  </p>
+                  <!--                  <p class="movein"><a href="#" class="btn_def" style="color:#FFFFFF;">プロフィール</a></p>-->
+                </div>
+              </div>
+            </div>
+          </div></div>
+          <div class="section fp-section fp-table" id="section2" style="background: url(/assets/template1/nisikori5.jpg) center center / cover no-repeat rgb(255, 255, 255); "><div class="fp-tableCell" style="">
+            <div class="container">
+              <div class="row">
+                <div class="top-container col-md-8">
+                  <h2 class="headline movein" style="color:#FF0A0A;font-size:30px;text-shadow:1px 1px 5px #444444;"><%= @user.menu2 %></h2>
+                  <p class="disc movein" style="color:#FFFFFF !important;font-size:16px;text-shadow:1px 1px 0px #444444;">
+                    <%= @user.menu2_1 %></p>
+                  <!--                <p class="movein"><a href="#" class="btn_def" style="color:#FFFFFF;">プロフィール</a></p>-->
+                </div>
+              </div>
+            </div>
+          </div></div>
+          <div class="section fp-section fp-table fp-completely" id="section3" style="background: url(/assets/template1/nisikori3.jpg) center center / cover no-repeat rgb(255, 255, 255); "><div class="fp-tableCell" style="">
+            <div class="container">
+              <div class="row">
+                <div class="top-container col-md-8">
+                  <h2 class="headline movein" style="color:#FF0000;font-size:30px;text-shadow:1px 1px 5px #444444;"><%= @user.menu3 %></h2>
+                  <p class="disc movein" style="color:#FFFFFF !important;font-size:16px;text-shadow:1px 1px 0px #444444;">
+                    <%= @user.menu3_1 %>
+                  </p>
 
 
-</body>
-</html>
+                </div>
+              </div>
+            </div>
+          </div></div>		<div class="section fp-section fp-table active" id="section4" style="background: url(/assets/template1/nisikori4.jpg) center center / cover no-repeat rgb(255, 255, 255); "><div class="fp-tableCell" style="">
+          <div class="container">
+            <div class="row">
+              <div class="top-container col-md-8">
+                <h2 class="headline movein movein_ef" style="color:#FF0A0A;font-size:30px;text-shadow:0px 0px 0px #444444;"><%= @user.menu4 %></h2>
+                <p class="disc movein movein_ef" style="color:#FFFFFF !important;font-size:16px;text-shadow:1px 1px 1px #444444;">
+                  <%= @user.menu4_1 %></p>
+                <!--                <p class="movein movein_ef"><a href="#" class="btn_def" style="color:#FFFFFF;">Biography</a></p>-->
+              </div>
+            </div>
+          </div>
+        </div></div>
+          <div class="section fp-section fp-table" id="section5" style="background: url(/assets/template1/nisikori1.jpg) center center / cover no-repeat rgb(255, 255, 255); "><div class="fp-tableCell" style="">
+            <div class="container">
+              <div class="row">
+                <div class="top-container col-md-8 fr">
+                  <h2 class="headline movein" style="color:#FF0000;font-size:30px;text-shadow:3px 3px 1px #000000;"><%= @user.menu5 %></h2>
+                  <p class="disc movein" style="color:#FFFFFF !important;font-size:16px;text-shadow:1px 1px 0px #444444;"><%= @user.menu5_1 %> </p>
+                  <!--                  <p class="movein"><a href="#" class="btn_def" style="color:#FFFFFF;">LIKE</a></p>-->
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div><!-- / #fullpage -->
+      </div><!-- / #edit-area -->
+      <script>
+          $(function() {
+              $('.movein').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+                  if(isInView){
+                      $(this).stop().addClass('movein_ef');
+                  }
+                  else{
+                      $(this).stop().removeClass('movein_ef');
+                  }
+              });
+          });
+      </script>
+
+      <div id="footer">
+        <ul class="pc-none clearfix">
+        </ul>
+        <p id="copyright">©&nbsp;<%= @user.title %> All Rights Reserved.</p>
+      </div><!-- / #footer -->
+
+
+    </div><!-- / #main_col -->
+  </div><!-- / #main_content -->
+</div><!-- / #site_wrap -->
+
+
+</body></html>

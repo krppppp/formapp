@@ -6,7 +6,9 @@ class ApplicationController < ActionController::Base
 
     def configure_permitted_parameters
       devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :title, :menu1, :menu2, :menu3, :menu4, :menu5,
-          :heading1, :heading2, :heading3, :heading4, :heading5,
-          :subheading1, :subheading2, :subheading3, :subheading4, :subheading5,])
+                                                         :heading1, :heading2, :heading3, :heading4, :heading5,
+                                                         :subheading1, :subheading2, :subheading3, :subheading4, :subheading5,
+                                                         :headline1, :headline2, :headline3,
+                                                         :menu1_1, :menu2_1, :menu3_1, :menu4_1, :menu5_1])
     end
 end

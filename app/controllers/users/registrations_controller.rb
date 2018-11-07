@@ -14,12 +14,13 @@ class Users::RegistrationsController < Devise::RegistrationsController
     super
     @user = User.find(current_user.id)
     pass_temp = Devise.friendly_token.first(8)
+    puts pass_temp
     @user.encrypted_password = BCrypt::Password.create(pass_temp)
     @user.save
 
-    url =[]
-    for i in 1..2 do
-
+    url = []
+    # for i in 1..2 do
+    i = 1
     #doc = File.read('/app/views/templates/p1.html.erb')
     doc = File.read("#{Rails.root}/app/views/templates/p#{i}.html.erb")
     doc.gsub!(/<%= @user.title %>/, "#{@user.title}")
@@ -28,6 +29,15 @@ class Users::RegistrationsController < Devise::RegistrationsController
     doc.gsub!(/<%= @user.menu3 %>/, "#{@user.menu3}")
     doc.gsub!(/<%= @user.menu4 %>/, "#{@user.menu4}")
     doc.gsub!(/<%= @user.menu5 %>/, "#{@user.menu5}")
+    doc.gsub!(/<%= @user.menu1_1 %>/, "#{@user.menu1_1}")
+    doc.gsub!(/<%= @user.menu2_1 %>/, "#{@user.menu2_1}")
+    doc.gsub!(/<%= @user.menu3_1 %>/, "#{@user.menu3_1}")
+    doc.gsub!(/<%= @user.menu4_1 %>/, "#{@user.menu4_1}")
+    doc.gsub!(/<%= @user.menu5_1 %>/, "#{@user.menu5_1}")
+    doc.gsub!(/<%= @user.headline1 %>/, "#{@user.headline1}")
+    doc.gsub!(/<%= @user.headline2 %>/, "#{@user.headline2}")
+    doc.gsub!(/<%= @user.headline3 %>/, "#{@user.headline3}")
+
     doc.gsub!(/<%= @user.heading1 %>/, "#{@user.heading1}")
     doc.gsub!(/<%= @user.heading2 %>/, "#{@user.heading2}")
     doc.gsub!(/<%= @user.heading3 %>/, "#{@user.heading3}")
@@ -37,6 +47,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     doc.gsub!(/<%= @user.subheading2 %>/, "#{@user.subheading2}")
     doc.gsub!(/<%= @user.subheading3 %>/, "#{@user.subheading3}")
     doc.gsub!(/<%= @user.subheading4 %>/, "#{@user.subheading4}")
+    doc.gsub!(/<%= @user.subheading5 %>/, "#{@user.subheading5}")
     doc.gsub!(/<%= @user.subheading5 %>/, "#{@user.subheading5}")
     doc.gsub!(/\/assets/, ".")
 
@@ -108,9 +119,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
     )
 
     u = "https://s3.amazonaws.com/#{bucket_name}/index.html"
-      url.push(u)
+    url.push(u)
 
-    end
+    # end
 
     SendMailer.send_when_registration(current_user, pass_temp, url).deliver
   end
@@ -168,7 +179,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
                                  :heading1, :heading2, :heading3, :heading4, :heading5,
                                  :subheading1, :subheading2, :subheading3, :subheading4, :subheading5,
                                  :sub_image1, :sub_image2, :sub_image3, :sub_image4, :sub_image5,
-                                 :sub_icon1, :sub_icon2, :sub_icon3, :sub_icon4, :sub_icon5
+                                 :sub_icon1, :sub_icon2, :sub_icon3, :sub_icon4, :sub_icon5,
+                                 :headline1, :headline2, :headline3,
+                                 :menu1_1, :menu2_1, :menu3_1, :menu4_1, :menu5_1,
     )
   end
 end
