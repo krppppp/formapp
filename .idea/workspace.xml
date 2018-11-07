@@ -2,11 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d210315e-25a0-411f-a4df-cfdc48e0f0f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/images/top/style1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/blogs_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter-kv-sp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter-kv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter03-pc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter03.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter04-pc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter04.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter05-pc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter05.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter06-pc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter06.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter07-pc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter07.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter08-pc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter08.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter09-pc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter09.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/top/glitter10-pc.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/images/top/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/top/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/templates/p1.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/templates/p1.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -24,30 +43,30 @@
     <session id="1766249100">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="771" />
-          <entry key="erb" value="3707" />
+          <entry key="css" value="792" />
+          <entry key="erb" value="3753" />
           <entry key="htm" value="250" />
           <entry key="html" value="2138" />
           <entry key="js" value="14" />
           <entry key="pid" value="1" />
-          <entry key="rb" value="1234" />
+          <entry key="rb" value="1273" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="771" />
+          <entry key="CSS" value="792" />
           <entry key="HTML" value="2388" />
           <entry key="JavaScript" value="14" />
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="RHTML" value="3706" />
-          <entry key="Ruby" value="1214" />
+          <entry key="RHTML" value="3752" />
+          <entry key="Ruby" value="1253" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Gemfile" value="2" />
+          <entry key="Gemfile" value="3" />
           <entry key="css" value="25" />
-          <entry key="erb" value="69" />
+          <entry key="erb" value="70" />
           <entry key="gitignore" value="1" />
           <entry key="htm" value="5" />
           <entry key="html" value="14" />
@@ -56,7 +75,7 @@
           <entry key="js" value="28" />
           <entry key="pid" value="1" />
           <entry key="png" value="2" />
-          <entry key="rb" value="53" />
+          <entry key="rb" value="54" />
           <entry key="ruby-version" value="1" />
           <entry key="scss" value="1" />
           <entry key="template2" value="2" />
@@ -69,8 +88,8 @@
           <entry key="Image" value="5" />
           <entry key="JavaScript" value="28" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="RHTML" value="69" />
-          <entry key="Ruby" value="54" />
+          <entry key="RHTML" value="70" />
+          <entry key="Ruby" value="56" />
           <entry key="SCSS" value="1" />
         </counts>
       </usages-collector>
@@ -96,17 +115,36 @@
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="797">
-                  <caret line="502" column="12" selection-start-line="502" selection-start-column="12" selection-end-line="502" selection-end-column="12" />
+                <state relative-caret-position="594">
+                  <caret line="66" column="61" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="61" />
                   <folding>
                     <element signature="n#style#0;n#h1#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#1;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#2;n#section#6;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#section#5;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/config/routes.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/templates/p1.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="177" selection-start-line="177" selection-end-line="177" />
                 </state>
               </provider>
             </entry>
@@ -145,8 +183,17 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/assets/images/top/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="356" lean-forward="true" selection-start-line="356" selection-end-line="356" />
+                <state relative-caret-position="803">
+                  <caret line="3088" column="57" selection-start-line="3088" selection-start-column="50" selection-end-line="3088" selection-end-column="57" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Gemfile">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="10" selection-start-line="10" selection-end-line="11" />
                 </state>
               </provider>
             </entry>
@@ -157,9 +204,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>border-radius</find>
-      <find>border-radius: 200px;</find>
-      <find>border-radius: 300px;</find>
       <find>icon</find>
       <find>copy</find>
       <find>アイデア</find>
@@ -187,6 +231,9 @@
       <find>ログ</find>
       <find>アイコン2</find>
       <find>こん</find>
+      <find>glitter</find>
+      <find>logo</find>
+      <find>こんな</find>
     </findStrings>
     <replaceStrings>
       <replace>/assets/template1/</replace>
@@ -212,7 +259,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/subscriptions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/subscriptions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/images/template1/globa.css" />
         <option value="$PROJECT_DIR$/app/mailers/send_mailer.rb" />
@@ -234,7 +280,6 @@
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/config/ocr.rb" />
         <option value="$PROJECT_DIR$/app/controllers/templates_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/templates/p1.html.erb" />
         <option value="$USER_HOME$/テンプレ/portfolio/assets/js/app.js" />
         <option value="$USER_HOME$/テンプレ/portfolio/assets/css/application.css" />
         <option value="$USER_HOME$/テンプレ/portfolio/portfolio.htm" />
@@ -261,8 +306,10 @@
         <option value="$PROJECT_DIR$/app/controllers/blogs_controller.rb" />
         <option value="$USER_HOME$/HPコピー/エンドユーザー用ペラ/index.html" />
         <option value="$USER_HOME$/HPコピー/アバウトウィズ/index.html" />
+        <option value="$PROJECT_DIR$/app/views/templates/p1.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/images/top/style.css" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -305,6 +352,27 @@
               <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="loginapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loginapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loginapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loginapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -312,6 +380,18 @@
               <item name="loginapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loginapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loginapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loginapp" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -469,12 +549,12 @@
       <workItem from="1541229744600" duration="4006000" />
       <workItem from="1541378951475" duration="16830000" />
       <workItem from="1541432344792" duration="11239000" />
-      <workItem from="1541480114768" duration="13656000" />
+      <workItem from="1541480114768" duration="16068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96456000" />
+    <option name="totallyTimeSpent" value="98868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1080" y="-1063" width="1080" height="1920" extended-state="0" />
@@ -542,16 +622,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/templates/_popup.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/top/logo_blackのコピー.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/images/admin/placeholder.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -587,13 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/p1.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="69" selection-end-line="315" />
         </state>
       </provider>
     </entry>
@@ -836,23 +899,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/p1.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/images/top/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="356" lean-forward="true" selection-start-line="356" selection-end-line="356" />
+        <state relative-caret-position="803">
+          <caret line="3088" column="57" selection-start-line="3088" selection-start-column="50" selection-end-line="3088" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="797">
-          <caret line="502" column="12" selection-start-line="502" selection-start-column="12" selection-end-line="502" selection-end-column="12" />
+        <state relative-caret-position="594">
+          <caret line="66" column="61" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="61" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#section#6;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#section#5;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
         </state>
       </provider>
     </entry>

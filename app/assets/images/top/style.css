@@ -1445,7 +1445,6 @@ strong {
     .kv .glitter {
         width: 1126px;
         height: 426px;
-        background: url(glitter-kv.svg) no-repeat center;
         position: absolute;
         top: 50%;
         left: 0;
@@ -1603,7 +1602,6 @@ strong {
         left: 568px;
         width: 171px;
         height: 143px;
-        background: url(glitter01.svg) no-repeat center;
         background-size: 171px auto;
     }
 
@@ -1638,7 +1636,6 @@ strong {
         left: -3px;
         width: 500px;
         height: 121px;
-        background: url(glitter02.svg) no-repeat center;
         background-size: 500px auto;
     }
 
@@ -1673,7 +1670,6 @@ strong {
         right: 33px;
         width: 525px;
         height: 285px;
-        background: url(glitter03-pc.svg) no-repeat center;
         background-size: 525px auto;
     }
 
@@ -1750,7 +1746,6 @@ strong {
         left: -82px;
         width: 357px;
         height: 151px;
-        background: url(glitter04-pc.svg) no-repeat center;
         background-size: 357px auto;
     }
 
@@ -1766,7 +1761,6 @@ strong {
         left: -50px;
         width: 357px;
         height: 159px;
-        background: url(glitter05-pc.svg) no-repeat center;
         background-size: 357px auto;
     }
 
@@ -1782,7 +1776,6 @@ strong {
         left: -17px;
         width: 364px;
         height: 195px;
-        background: url(glitter06-pc.svg) no-repeat center;
         background-size: 364px auto;
     }
 
@@ -2283,7 +2276,6 @@ strong {
         left: -82px;
         width: 359px;
         height: 357px;
-        background: url(glitter07-pc.svg) no-repeat center;
         background-size: 359px auto;
     }
 
@@ -2336,7 +2328,6 @@ strong {
         left: -100px;
         width: 353px;
         height: 300px;
-        background: url(glitter08-pc.svg) no-repeat center;
         background-size: 353px auto;
     }
 
@@ -2383,7 +2374,6 @@ strong {
         left: -61px;
         width: 369px;
         height: 285px;
-        background: url(glitter09-pc.svg) no-repeat center;
         background-size: 369px auto;
     }
 
@@ -2409,7 +2399,6 @@ strong {
         left: -57px;
         width: 309px;
         height: 356px;
-        background: url(glitter10-pc.svg) no-repeat center;
         background-size: 309px auto;
     }
 
@@ -2918,7 +2907,6 @@ strong {
     .kv .glitter {
         width: 356px;
         height: 331.5px;
-        background: url(glitter-kv-sp.svg) no-repeat right center;
         background-size: auto 331.5px;
         position: absolute;
         top: 50%;
@@ -3211,7 +3199,6 @@ strong {
         margin-left: -187px;
         width: 336px;
         height: 150.5px;
-        background: url(glitter04.svg) no-repeat center;
         background-size: 336px auto;
     }
 
@@ -3240,7 +3227,6 @@ strong {
         margin-left: -182px;
         width: 357px;
         height: 159px;
-        background: url(glitter05.svg) no-repeat center;
         background-size: 357px auto;
     }
 
@@ -3269,7 +3255,6 @@ strong {
         margin-left: -151px;
         width: 338.5px;
         height: 193.5px;
-        background: url(glitter06.svg) no-repeat center;
         background-size: 338.5px auto;
     }
 
@@ -3756,7 +3741,6 @@ strong {
         left: 12px;
         width: 70.5px;
         height: 101.5px;
-        background: url(glitter07.svg) no-repeat center;
         background-size: 70.5px auto;
     }
 
@@ -3788,7 +3772,6 @@ strong {
         left: 20px;
         width: 58px;
         height: 218.5px;
-        background: url(glitter08.svg) no-repeat center;
         background-size: 58px auto;
     }
 
@@ -3822,7 +3805,6 @@ strong {
     left: 12px;
     width: 70.5px;
     height: 101.5px;
-    background: url(glitter09.svg) no-repeat center;
     background-size: 70.5px auto;
 }
 
