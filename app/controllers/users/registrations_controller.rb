@@ -83,20 +83,20 @@ class Users::RegistrationsController < Devise::RegistrationsController
                           :data => doc,
                           s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
                       })
-    # #該当ディレクトリ下の必要なファイルをすべてアップロード
-    # dir_name = Dir.open("#{Rails.root}/app/assets/images/template#{i}")
-    # dir_name.each_with_index do |f, index|
-    #   if f == "." || f == ".."
-    #     next
-    #   end
-    #   data = File.read("#{Rails.root}/app/assets/images/template#{i}" + '/' + f)
-    #   client.put_object({
-    #                         :bucket_name => "#{bucket_name}",
-    #                         :key => "template#{i}/#{f}",
-    #                         :data => data,
-    #                         s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
-    #                     })
-    # end
+     #該当ディレクトリ下の必要なファイルをすべてアップロード
+     dir_name = Dir.open("#{Rails.root}/app/assets/images/template#{i}")
+    dir_name.each_with_index do |f, index|
+      if f == "." || f == ".."
+        next
+      end
+      data = File.read("#{Rails.root}/app/assets/images/template#{i}" + '/' + f)
+      client.put_object({
+                            :bucket_name => "#{bucket_name}",
+                            :key => "template#{i}/#{f}",
+                            :data => data,
+                            s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
+                        })
+    end
     policy = {
         "Version": "2012-10-17",
         "Statement": [

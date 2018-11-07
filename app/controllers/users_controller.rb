@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.update(user_params)
       # for i in 1..2 do
-        i = 2
+        i = 1
         #doc = File.read('/app/views/templates/p1.html.erb')
         doc = File.read("#{Rails.root}/app/views/templates/p#{i}.html.erb")
         doc.gsub!(/<%= @user.title %>/, "#{@user.title}")
