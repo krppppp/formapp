@@ -66,20 +66,13 @@
   <script type="text/javascript" src="/assets/top/common.js"></script>
   <script type="text/javascript" src="/assets/top/top.js"></script>
 
-  <meta name="google-site-verification" content="J5DdloWFXFB6L7yHtZkNI7p7u6FWP-A7PW3A_ruQqwQ"/>
-  <meta name="google-site-verification" content="wuW2wlEGvuWQ29F2z-fCmNDi0awzpNCLTBA2Mkp2pEA"/>
 </head>
 <body id="top-body">
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JPGDVQ"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
+
 <div class="wrapper">
   <header class="header">
     <div class="inner">
-      <h1 class="logo"><a href="index.html">One Second</a></h1>
+      <h1 class="logo" style="margin:0px;"><a href="index.html">One Second</a></h1>
       <% if false %>
         <div class="sp gnav-switch"></div>
         <nav class="gnav">
@@ -104,6 +97,24 @@
       </nav>
     </div>
   </header>
+  <nav class="top-navbar navbar fixed-top responsive-none" id="bottom-nav">
+
+    <div class="icon-text"><a>記事一覧</a></div>
+    <div class="icon-text"><a>HTML/CSS</a></div>
+    <div class="icon-text"><a>サーバー<br>とは?</a></div>
+    <div class="icon-text"><a>ホームページ<br>講座</a></div>
+    <div class="icon-text"><a>お問い合わせ</a></div>
+  </nav>
+  <style>
+    .pc-nav {
+      width: 60%;
+    }
+  </style>
+  <% if false %>
+    <nav class="bottom-navbar navbar fixed-bottom responsive-none" id="bottom-nav">
+      <div class="icon-text">バナー</div>
+    </nav>
+  <% end %>
   <div class="kv">
     <div class="inner">
       <div class="kv-title">
@@ -137,8 +148,7 @@
       </div>
       <div class="glitter"></div>
       <div class="action kv-vertical-motion">
-        <div class="btn btn-submit"><a href="/users/sign_in" target="_blank"
-                                       onclick="ga('send', 'event', '会員登録', 'クリック', 'キービジュアル', 1);">ログイン</a>
+        <div class="btn btn-submit" style="display: block"><a href="/users/sign_in" target="_blank">ログイン</a>
         </div>
         <!--<div class="btn btn-search"><a href="#.jp/app/top" target="_blank"
                                          onclick="ga('send', 'event', 'STATION SEARCH', 'クリック', 'キービジュアル', 1);">活用事例を見てみる</a>
@@ -163,6 +173,110 @@
     <div id="bg-cover"></div>
   </div>
   <main>
+    <section class="section-wrap" id="howitworks">
+      <div class="section-title vertical-title-motion">
+        <p>コンセプト</p>
+      </div>
+      <div class="section-title vertical-title-motion" style="background: none; padding: 0px;">
+        <h1>フリーランス時代のための<br>
+          1秒で作れるブランディングWEBサイトサービス</h1>
+      </div>
+
+      <div class="section-content">
+        <div class="inner">
+          <ul class="flow-list">
+            <li class="flow01 vertical-motion">
+              <div class="left">
+                <div class="image1">
+                  <div class="glitter"></div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="illust"></div>
+                <p class="flow-headline">Quality</p>
+                <p class="flow-title">
+                  名刺では伝わりきらないあなたの実績や魅力ををWEBサイトでおしゃれに表現
+                </p>
+                <p class="flow-text">
+                  豊富なデザインから用意されたテンプレートの中からあなた好みのWEBサイトを作成。<br>
+                  Onesecondのホームページ制作はデザイン力不要！！<br>簡単にブログ開設やSNSと連携が可能です。
+                </p>
+              </div>
+            </li>
+            <li class="flow02 vertical-motion">
+              <div class="left">
+                <div class="image1">
+                  <div class="glitter"></div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="illust"></div>
+                <p class="flow-headline">Speed</p>
+                <p class="flow-title">
+                  フォーム送信から最速1秒でホームページを納品します
+                </p>
+                <p class="flow-text">One Secondの特徴は制作スピード。他者とは比較にならないスピードでホームページを作成・納品します
+                </p>
+              </div>
+            </li>
+            <li class="flow03 vertical-motion">
+              <div class="left">
+                <div class="image1">
+                  <div class="glitter"></div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="illust"></div>
+                <p class="flow-headline">Reasonable</p>
+                <p class="flow-title">初期費用０円、月額1980円でサポート受け放題
+                </p>
+                <p class="flow-text">一般的な制作会社よりも圧倒的に安い値段であなたのことをサポートします。<br>
+                  レイアウト修正やコンテンツの悩み相談からドメインの取得まで一律料金で行います。
+                </p>
+              </div>
+            </li>
+            <!-- <li class="flow04 vertical-motion">
+            <div class="left">
+            <div class="image">
+            <div class="glitter"></div>
+            </div>
+            </div>
+            <div class="right">
+            <div class="illust"></div>
+            <p class="flow-headline">SUPPORT</p>
+            <p class="flow-title">運用もサポート<br class="sp">いたします。</p>
+            <p class="flow-text">運営に関わるご相談も受け付けております。</p>
+            </div>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap" id="links">
+      <div class="inner">
+        <h2 class="subtitle">参加企業</h2>
+        <ul class="link-list">
+          <li class="link-nakano"><a href="" class="hover" target="_blank">AKI OPEN</a></li>
+          <li class="link-lacool"><a href="" class="hover" target="_blank">かんどころ</a></li>
+          <!--<li class="link-ecomobi"><a href="https://ecomobi.hellocycling.jp/" class="hover" target="_blank"></a>-->
+          <!--</li>-->
+          <!--<li class="link-norisuke"><a href="https://norisuke.hellocycling.jp/" class="hover" target="_blank">のりすけ　さくらシェアリング</a>-->
+          <!--</li>-->
+          <!--<li class="link-bellsharing"><a href="https://bellsharing.hellocycling.jp/" class="hover"-->
+          <!--target="_blank">Bell Sharing</a></li>-->
+          <!--<li class="link-ecobike"><a href="https://ecobike.hellocycling.jp/" class="hover" target="_blank">エコバイク</a>-->
+          <!--</li>-->
+          <!--<li class="link-daichari"><a href="https://daichari.hellocycling.jp/" class="hover" target="_blank">ダイチャリ</a>-->
+          <!--</li>-->
+          <!--<li class="link-clover"><a href="https://clover.hellocycling.jp/" class="hover" target="_blank">CLOVER</a>-->
+          <!--</li>-->
+          <!--<li class="link-anabuki"><a href="https://anabuki.hellocycling.jp/" class="hover" target="_blank">anabuki</a>-->
+          <!--</li>-->
+        </ul>
+      </div>
+    </section>
+
     <section class="section-wrap" id="service">
       <div class="section-title vertical-title-motion">
         <h1></h1>
@@ -270,8 +384,7 @@
     <section class="section-wrap" id="search">
       <p class="search-text">AKI HPのテンプレ<br class="sp"><span class="pc"> </span> Gallery</p>
       <div class="action">
-        <div class="btn btn-search"><a href="#.jp/app/top" target="_blank"
-                                       onclick="ga('send', 'event', 'STATION SEARCH', 'クリック', 'ハローサイクル ボディ', 1);">SEARCH</a>
+        <div class="btn btn-search"><a href="#contact">SEARCH</a>
         </div>
       </div>
     </section>
@@ -303,7 +416,7 @@
     <section class="section-wrap" id="howitworks">
       <div class="section-title vertical-title-motion">
         <!-- <span class="before">企業の方へ</span> -->
-        <h1> こんな悩みの方にオススメです。</h1>
+        <h1> 個人でビジネス活動をする方へ</h1>
         <!-- <p>運営について</p> -->
       </div>
       <div class="section-content">
@@ -356,15 +469,14 @@
               </div>
               <div class="right">
                 <div class="illust"></div>
-                <p class="flow-headline">DESIGN</p>
+                <p class="flow-headline">BRANDING</p>
                 <p class="flow-title">
-                  WEBサイトを作るサービスを利用したけれども<br>
-                  デザインが上手くいかないし、使い方も分からない。
+                  SNSに貼れるおしゃれなセルフブランディングになるサイトが欲しい
                 </p>
                 <p class="flow-text">
-                  せっかく制作会社に依頼しても、気に入ったデザインがなかなか上がってこないので<br>
-                  時間もお金も膨れ上がっていくなんてこともあります。<br>
-                  One Second独自のノウハウを活かしたデザインで、サポート体制も万全。
+                  SNSページをWEBサイト代わりにしてしまっている<br>
+                  名刺ではアピールしきれない実績や経歴をwebサイトでおしゃれに表現したい<br>
+                  LINEで紹介されることが増えた。このときに文章で自己紹介するのをやめたい
                 </p>
               </div>
             </li>
@@ -383,6 +495,11 @@
             </li> -->
           </ul>
         </div>
+      </div>
+      <div class="section-title vertical-title-motion" style="padding-top: 0px; background:none;">
+        <!-- <span class="before">企業の方へ</span> -->
+        <h1>これらを1秒で解決！</h1>
+        <!-- <p>運営について</p> -->
       </div>
     </section>
 
