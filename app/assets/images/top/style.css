@@ -2164,18 +2164,18 @@ strong {
     }
 
     #howitworks .section-title span.before {
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        background: #a1d1e4;
-        border-radius: 20px;
-        width: 213px;
-        height: 40px;
-        line-height: 40px;
-        display: block;
-        color: #fff;
-        margin: 0 auto 16px;
-    }
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+          background: #a1d1e4;
+          border-radius: 20px;
+          width: 213px;
+          height: 40px;
+          line-height: 40px;
+          display: block;
+          color: #fff;
+          margin: 0 auto 16px;
+      }
 
     #howitworks ul.flow-list {
         margin-top: 15px;
@@ -2401,6 +2401,266 @@ strong {
         height: 356px;
         background-size: 309px auto;
     }
+
+
+
+
+
+
+
+
+
+
+    #concept .section-title span.before {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        background: #a1d1e4;
+        border-radius: 20px;
+        width: 213px;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        color: #fff;
+        margin: 0 auto 16px;
+    }
+
+    #concept ul.flow-list {
+        margin-top: 15px;
+    }
+
+    #concept ul.flow-list li {
+        position: relative;
+    }
+
+    #concept ul.flow-list li:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    #concept ul.flow-list li .left {
+        float: left;
+    }
+
+    #concept ul.flow-list li .right {
+        margin-left: 306px;
+    }
+
+    #concept ul.flow-list li .flow-headline {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 20px;
+        color: #a1d1e4;
+        font-weight: 900;
+        letter-spacing: .1em;
+        position: relative;
+    }
+
+    #concept ul.flow-list li .flow-headline:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background: #a1d1e4;
+        width: 66px;
+        height: 5px;
+    }
+
+    #concept ul.flow-list li .flow-title {
+        margin-top: 20px;
+        font-size: 26px;
+        line-height: 40px;
+        font-weight: bold;
+    }
+
+    #concept ul.flow-list li .flow-text {
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    #concept ul.flow-list li.flow01 {
+        margin-left: 60px;
+        padding-bottom: 54px;
+    }
+
+    #concept ul.flow-list li.flow01:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 208px;
+        height: 313px;
+        background-size: 208px 313px;
+        left: 91px;
+        top: 89px;
+        z-index: -1;
+    }
+
+    #concept ul.flow-list li.flow01 .right {
+        padding-top: 20px;
+    }
+
+    #concept ul.flow-list li.flow01 .image {
+        width: 236px;
+        height: 236px;
+        border-radius: 118px;
+        background: #fdebb2 url() no-repeat center;
+        background-size: 188px 133px;
+    }
+
+    #concept ul.flow-list li.flow01 .image1 {
+        width: 236px;
+        height: 236px;
+        border-radius: 118px;
+        background: #fdebb2 url(アイコン3.png) no-repeat center;
+        background-size: 188px 133px;
+    }
+
+    #concept ul.flow-list li.flow01 .image .glitter {
+        position: absolute;
+        top: -75px;
+        left: -82px;
+        width: 359px;
+        height: 357px;
+        background-size: 359px auto;
+    }
+
+    #concept ul.flow-list li.flow02 {
+        margin-left: 260px;
+        padding-bottom: 63px;
+    }
+
+    #concept ul.flow-list li.flow02:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 208px;
+        height: 313px;
+        background-size: 208px 313px;
+        left: -69px;
+        top: 89px;
+        z-index: -1;
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+    }
+
+    #concept ul.flow-list li.flow02 .right {
+        padding-top: 30px;
+    }
+
+    #concept ul.flow-list li.flow02 .left {
+        padding-top: 10px;
+    }
+
+    #concept ul.flow-list li.flow02 .image {
+        width: 236px;
+        height: 236px;
+        border-radius: 118px;
+        background: #fdebb2 url() no-repeat center;
+        background-size: 159px 129px;
+    }
+
+    #concept ul.flow-list li.flow02 .image1 {
+        width: 236px;
+        height: 236px;
+        border-radius: 118px;
+        background: #fdebb2 url(アイコン1.png) no-repeat center;
+        background-size: 159px 129px;
+    }
+
+    #concept ul.flow-list li.flow02 .image .glitter {
+        position: absolute;
+        top: -10px;
+        left: -100px;
+        width: 353px;
+        height: 300px;
+        background-size: 353px auto;
+    }
+
+    #concept ul.flow-list li.flow03 {
+        margin-left: 60px;
+        padding-bottom: 64px;
+    }
+
+    #concept ul.flow-list li.flow03:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 208px;
+        height: 313px;
+        background-size: 208px 313px;
+        left: 91px;
+        top: 89px;
+        z-index: -1;
+    }
+
+    #concept ul.flow-list li.flow03 .right {
+        padding-top: 22px;
+    }
+
+    #concept ul.flow-list li.flow03 .image {
+        width: 236px;
+        height: 236px;
+        border-radius: 118px;
+        background: #fdebb2 url() no-repeat center;
+        background-size: 172px 151px;
+    }
+
+    #concept ul.flow-list li.flow03 .image1 {
+        width: 236px;
+        height: 236px;
+        border-radius: 118px;
+        background: #fdebb2 url(アイコン2.png) no-repeat center;
+        background-size: 172px 151px;
+    }
+
+    #concept ul.flow-list li.flow03 .image .glitter {
+        position: absolute;
+        top: -45px;
+        left: -61px;
+        width: 369px;
+        height: 285px;
+        background-size: 369px auto;
+    }
+
+    #concept ul.flow-list li.flow04 {
+        margin-left: 260px;
+    }
+
+    #concept ul.flow-list li.flow04 .right {
+        padding-top: 22px;
+    }
+
+    #concept ul.flow-list li.flow04 .image {
+        width: 236px;
+        height: 236px;
+        border-radius: 118px;
+        background: #fdebb2 url() no-repeat center;
+        background-size: 172px 151px;
+    }
+
+    #concept ul.flow-list li.flow04 .image .glitter {
+        position: absolute;
+        top: -77px;
+        left: -57px;
+        width: 309px;
+        height: 356px;
+        background-size: 309px auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
     #contact {
         /* form parts 	********************************/
@@ -3645,17 +3905,17 @@ strong {
     }
 
     #howitworks .section-title span.before {
-        font-size: 12px;
-        font-weight: bold;
-        text-align: center;
-        background: #a1d1e4;
-        border-radius: 11px;
-        width: 115px;
-        height: 22px;
-        display: block;
-        color: #fff;
-        margin: 0 auto 15px;
-    }
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      background: #a1d1e4;
+      border-radius: 11px;
+      width: 115px;
+      height: 22px;
+      display: block;
+      color: #fff;
+      margin: 0 auto 15px;
+  }
 
     #howitworks ul.flow-list {
         margin-top: 15px;
@@ -3777,45 +4037,230 @@ strong {
 
 
 
-#howitworks ul.flow-list li.flow03 {
-    background: url(flow-bg.svg) repeat-y 45px top;
-    background-size: 4px auto;
-    padding-bottom: 45px;
+    #howitworks ul.flow-list li.flow03 {
+        background: url(flow-bg.svg) repeat-y 45px top;
+        background-size: 4px auto;
+        padding-bottom: 45px;
+    }
+
+    #howitworks ul.flow-list li.flow03 .image {
+        width: 95px;
+        height: 95px;
+        border-radius: 48px;
+        background: #fdebb2 url() no-repeat center;
+        background-size: 62px auto;
+    }
+
+    #howitworks ul.flow-list li.flow03 .image1 {
+        width: 95px;
+        height: 95px;
+        border-radius: 48px;
+        background: #fdebb2 url(アイコン2.png) no-repeat center;
+        background-size: 62px auto;
+    }
+
+    #howitworks ul.flow-list li.flow03 .glitter {
+        position: absolute;
+        top: 100px;
+        left: 12px;
+        width: 70.5px;
+        height: 101.5px;
+        background-size: 70.5px auto;
+    }
+
+    #howitworks ul.flow-list li.flow04 .image {
+        width: 95px;
+        height: 95px;
+        border-radius: 48px;
+        background: #fdebb2 url() no-repeat center;
+        background-size: 55px auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    #concept .section-title span.before {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        background: #a1d1e4;
+        border-radius: 11px;
+        width: 115px;
+        height: 22px;
+        display: block;
+        color: #fff;
+        margin: 0 auto 15px;
+    }
+
+    #concept ul.flow-list {
+        margin-top: 15px;
+    }
+
+    #concept ul.flow-list li {
+        position: relative;
+    }
+
+    #concept ul.flow-list li:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    #concept ul.flow-list li .left {
+        float: left;
+    }
+
+    #concept ul.flow-list li .right {
+        margin-left: 115px;
+    }
+
+    #concept ul.flow-list li .flow-headline {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        line-height: 20px;
+        padding-bottom: 16px;
+        color: #a1d1e4;
+        font-weight: 900;
+        letter-spacing: .1em;
+        position: relative;
+    }
+
+    #concept ul.flow-list li .flow-headline:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background: #a1d1e4;
+        width: 33px;
+        height: 3px;
+    }
+
+    #concept ul.flow-list li .flow-title {
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: bold;
+    }
+
+    #concept ul.flow-list li .flow-text {
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    #concept ul.flow-list li.flow01 {
+        background: url(flow-bg.svg) repeat-y 45px top;
+        background-size: 4px auto;
+        padding-bottom: 45px;
+    }
+
+    #concept ul.flow-list li.flow01 .image {
+        width: 95px;
+        height: 95px;
+        border-radius: 48px;
+        background: #fdebb2 url() no-repeat center;
+        background-size: 71.5px auto;
+    }
+
+    #concept ul.flow-list li.flow01 .image1 {
+        width: 95px;
+        height: 95px;
+        border-radius: 48px;
+        background: url(アイコン3.png) no-repeat center;
+        background-size: 71.5px auto;
+    }
+
+    #concept ul.flow-list li.flow01 .image .glitter {
+        position: absolute;
+        top: 100px;
+        left: 12px;
+        width: 70.5px;
+        height: 101.5px;
+        background-size: 70.5px auto;
+    }
+
+    #concept ul.flow-list li.flow02 {
+        background: url(flow-bg.svg) repeat-y 45px top;
+        background-size: 4px auto;
+        padding-bottom: 45px;
+    }
+
+    #concept ul.flow-list li.flow02 .image {
+        width: 95px;
+        height: 95px;
+        border-radius: 48px;
+        background: #fdebb2 url() no-repeat center;
+        background-size: 61.5px auto;
+    }
+
+    #concept ul.flow-list li.flow02 .image1 {
+        width: 95px;
+        height: 95px;
+        border-radius: 48px;
+        background: #fdebb2 url(アイコン1.png) no-repeat center;
+        background-size: 61.5px auto;
+    }
+
+    #concept ul.flow-list li.flow02 .image .glitter {
+        position: absolute;
+        top: 109px;
+        left: 20px;
+        width: 58px;
+        height: 218.5px;
+        background-size: 58px auto;
+    }
+
+
+
+    #concept ul.flow-list li.flow03 {
+        background: url(flow-bg.svg) repeat-y 45px top;
+        background-size: 4px auto;
+        padding-bottom: 45px;
+    }
+
+    #concept ul.flow-list li.flow03 .image {
+        width: 95px;
+        height: 95px;
+        border-radius: 48px;
+        background: #fdebb2 url() no-repeat center;
+        background-size: 62px auto;
+    }
+
+    #concept ul.flow-list li.flow03 .image1 {
+        width: 95px;
+        height: 95px;
+        border-radius: 48px;
+        background: #fdebb2 url(アイコン2.png) no-repeat center;
+        background-size: 62px auto;
+    }
+
+    #concept ul.flow-list li.flow03 .glitter {
+        position: absolute;
+        top: 100px;
+        left: 12px;
+        width: 70.5px;
+        height: 101.5px;
+        background-size: 70.5px auto;
+    }
+
+    #howitworks ul.flow-list li.flow04 .image {
+        width: 95px;
+        height: 95px;
+        border-radius: 48px;
+        background: #fdebb2 url() no-repeat center;
+        background-size: 55px auto;
+    }
 }
 
-#howitworks ul.flow-list li.flow03 .image {
-    width: 95px;
-    height: 95px;
-    border-radius: 48px;
-    background: #fdebb2 url() no-repeat center;
-    background-size: 62px auto;
-}
 
-#howitworks ul.flow-list li.flow03 .image1 {
-    width: 95px;
-    height: 95px;
-    border-radius: 48px;
-    background: #fdebb2 url(アイコン2.png) no-repeat center;
-    background-size: 62px auto;
-}
-
-#howitworks ul.flow-list li.flow03 .glitter {
-    position: absolute;
-    top: 100px;
-    left: 12px;
-    width: 70.5px;
-    height: 101.5px;
-    background-size: 70.5px auto;
-}
-
-#howitworks ul.flow-list li.flow04 .image {
-    width: 95px;
-    height: 95px;
-    border-radius: 48px;
-    background: #fdebb2 url() no-repeat center;
-    background-size: 55px auto;
-}
-}
 #contact {
     /* form parts 	********************************/
 }

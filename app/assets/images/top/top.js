@@ -349,7 +349,130 @@ $(function () {
 		})
 		.setTween(howitworkscnt4Tween).addTo(controller);
 
-		//CONTACTタイトル
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //HOW IT WORKSタイトル
+        var concepttitleTween = TweenMax.staggerFrom($("#concept .vertical-title-motion"), .78, {
+            y:50,
+            //rotationY:'45deg',
+            //rotationX:'45deg',
+            //transformOrigin:'50% 50%',
+            opacity:0,
+            scale: 0.8,
+            ease:Elastic.easeOut.config(1.5, 1)
+            /*bezier:{
+	            values: 1
+            }*/
+        },0.05);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#concept",
+            //duration: organicH, //
+            //offset :-200 //スタート位置を変更
+            //reverse:false //逆戻りの時の効果なし
+            //triggerHook : "onLeave" //発火位置を上部へ変更　onEnter は設定すると画面内に入った時
+        })
+            .setTween(concepttitleTween)
+            .addTo(controller);
+
+        //HOW IT WORKSコンテンツ1
+        var conceptcnt1Tween = TweenMax.staggerFrom($("#concept .flow-list .flow01.vertical-motion>*"), .78, {
+            y:50, opacity:0, scale: 0.8,
+            ease:Elastic.easeOut.config(1.5, 1)
+        },0.1);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#concept .flow-list .flow01",
+            offset :-halfH
+        })
+            .setTween(conceptcnt1Tween).addTo(controller);
+
+        //HOW IT WORKSコンテンツ2
+        var conceptcnt2Tween = TweenMax.staggerFrom($("#concept .flow-list .flow02.vertical-motion>*"), .78, {
+            y:50, opacity:0, scale: 0.8,
+            ease:Elastic.easeOut.config(1.5, 1)
+        },0.1);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#concept .flow-list .flow02",
+            offset :-halfH
+        })
+            .setTween(conceptcnt2Tween).addTo(controller);
+
+        //HOW IT WORKSコンテンツ3
+        var conceptcnt3Tween = TweenMax.staggerFrom($("#concept .flow-list .flow03.vertical-motion>*"), .78, {
+            y:50, opacity:0, scale: 0.8,
+            ease:Elastic.easeOut.config(1.5, 1)
+        },0.1);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#concept .flow-list .flow03",
+            offset :-halfH
+        })
+            .setTween(conceptcnt3Tween).addTo(controller);
+
+        //HOW IT WORKSコンテンツ4
+        var conceptcnt4Tween = TweenMax.staggerFrom($("#concept .flow-list .flow04.vertical-motion>*"), .78, {
+            y:50, opacity:0, scale: 0.8,
+            ease:Elastic.easeOut.config(1.5, 1)
+        },0.1);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#concept .flow-list .flow04",
+            offset :-halfH
+        })
+            .setTween(conceptcnt4Tween).addTo(controller);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //CONTACTタイトル
         var contacttitleTween = TweenMax.from($("#contact .vertical-title-motion"), .78, {
         	y:50, opacity:0, scale: 0.8,
             ease:Elastic.easeOut.config(1.5, 1)
