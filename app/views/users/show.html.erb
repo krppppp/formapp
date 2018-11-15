@@ -1,82 +1,121 @@
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="/assets/admin/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/admin/font-awesome.min.css" rel="stylesheet">
-  <link href="/assets/admin/datepicker3.css" rel="stylesheet">
-  <link href="/assets/admin/styles.css" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<p style="margin: 30px"><%= @user.name %>様<br>
+  担当者：黒岩雄弥 <br>
+  TEL:080-7898-6436
+</p>
 
-</head>
-<body>
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span></button>
-      <a class="navbar-brand" href="#"><span>One</span>Second</a>
+<div class="form-center">
 
 
+  <%= form_for @user do |f| %>
+    <div class='form-team my-2' style="    margin-top: 100px;">
+      <%= f.label :業種, class: "text-white" %>
+      <%= f.text_field :business, class: 'frame-none contact-form', placeholder: '例) 飲食業（焼肉）' %>
     </div>
-  </div><!-- /.container-fluid -->
-</nav>
-<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-  <div class="profile-sidebar">
-    <div class="profile-userpic">
-      <img src="http://placehold.it/50/30a5ff/fff" class="img-responsive" alt="">
+    <br><br>
+    <div class='form-team my-2'>
+      <%= f.label :HPタイトル, class: "text-white" %>
+      <%= f.text_field :title, class: 'frame-none contact-form', placeholder: '例）焼肉黒岩' %>
     </div>
-    <div class="profile-usertitle">
-      <div class="profile-usertitle-name"><%= current_user.name %></div>
-      <div class="profile-usertitle-status"><span class="indicator label-success"></span>決済済み</div>
+    <br><br>
+
+    <div class='form-team my-2'>
+      <%= f.label :設立年月日, class: "text-white" %>
+      <%= f.text_field :establishment_date, class: 'frame-none contact-form', placeholder: '例）２０１８年' %>
     </div>
-    <div class="clear"></div>
-  </div>
-  <div class="divider"></div>
-   <ul class="nav menu">
-    <li class="active"><a href="index.html"><em class="fa fa-dashboard">&nbsp;</em> ダッシュボード</a></li>
-    <li><%= link_to "編集", edit_user_path(@user), class: "fa fa-gears" %></li>
-    <li><%= link_to "テンプレート一覧", templates_path, class: "fa fa-clone" %></li>
-    <li><%= link_to "決済", subscription_path, class: "fa fa-credit-card" %></li>
-    <li><%= link_to "ログアウト", destroy_user_session_path, class: "fa fa-power-off" %></li>
-    </li>
-  </ul>
+    <br><br>
+
+    <p>ホームページ内で伝えたいこと<br><br>
+      キャッチコピーやセールスポイント、実績、<br>
+      「トップページ」において貴社の伝えたいこと<br><br>
+      を最大１０個(順位にしてください)まで記入してください</p><br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン1, class: "text-white" %>
+      <%= f.text_area :headline1, class: 'frame-none contact-form', placeholder: '例）オフィシャルサイト作成しました！' %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン2, class: "text-white" %>
+      <%= f.text_area :headline2, class: 'frame-none contact-form', placeholder: '例）次の全国大会出場予定です！応援お願いします！' %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン3, class: "text-white" %>
+      <%= f.text_area :headline3, class: 'frame-none contact-form', placeholder: '例）お気軽にお問い合わせからメールください' %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン4, class: "text-white" %>
+      <%= f.text_area :headline4, class: 'frame-none contact-form', placeholder: '例）オフィシャルサイト作成しました！' %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン5, class: "text-white" %>
+      <%= f.text_area :headline5, class: 'frame-none contact-form', placeholder: '例）次の全国大会出場予定です！応援お願いします！' %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン6, class: "text-white" %>
+      <%= f.text_area :headline6, class: 'frame-none contact-form', placeholder: '例）お気軽にお問い合わせからメールください' %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン7, class: "text-white" %>
+      <%= f.text_area :headline7, class: 'frame-none contact-form', placeholder: '例）オフィシャルサイト作成しました！' %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン8, class: "text-white" %>
+      <%= f.text_area :headline8, class: 'frame-none contact-form', placeholder: '例）次の全国大会出場予定です！応援お願いします！' %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン9, class: "text-white" %>
+      <%= f.text_area :headline9, class: 'frame-none contact-form', placeholder: '例）お気軽にお問い合わせからメールください' %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン10, class: "text-white" %>
+      <%= f.text_area :headline10, class: 'frame-none contact-form', placeholder: '例）オフィシャルサイト作成しました！' %>
+    </div>
+    <br><br>
+
+    <% if @user.amount == 30 %>
+      <%= render '30form', f: f %>
+
+    <% elsif @user.amount == 50 %>
+      <%= render '50form', f: f %>
+    <% else %>
+      <%= render '100form', f: f %>
+    <% end %>
+
+
+    <div class='form-team my-2'>
+      <%= f.label "メインテーマ色" %>
+      <%= f.text_field :main_color %>
+    </div>
+    <br><br>
+    <div class='form-team my-2'>
+      <%= f.label "サブテーマ色" %>
+      <%= f.text_field :sub_color %>
+    </div>
+    <br><br>
+    <div class='form-team my-2'>
+      <%= f.label "サブテーマ色２" %>
+      <%= f.text_field :sub2_color %>
+    </div>
+    <br><br>
+    <div class='form-team my-2'>
+      <%= f.label "備考" %>
+      <%= f.text_area :self, class: 'menu_content contact-form', placeholder: '例）オフィシャルサイト作成しました！' %>
+    </div>
+    <br><br>
+
+    <div class='form-team my-2'>
+      <%= f.submit '更新する', class: "send-button", data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, id: 'formButton' %>
+    </div>
+
+
+  <% end %>
+
+
 </div>
-
-<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
-  <div class="row">
-    <div class="col-lg-12">
-      <% bucket_name = "#{@user.email.split("@").first}-#{@template}" %>
-      <iframe id="inlineFrameExample"
-              title="Inline Frame Example"
-              width="100%"
-              height="100%"
-              src="https://s3.amazonaws.com/<%= bucket_name %>/index.html">
-      </iframe>
-    </div>
-  </div>
-
-  <script src="/assets/admin/jquery-1.11.1.min.js"></script>
-  <script src="/assets/admin/bootstrap.min.js"></script>
-  <script src="/assets/admin/chart.min.js"></script>
-  <script src="/assets/admin/chart-data.js"></script>
-  <script src="/assets/admin/easypiechart.js"></script>
-  <script src="/assets/admin/easypiechart-data.js"></script>
-  <script src="/assets/admin/bootstrap-datepicker.js"></script>
-  <script src="/assets/admin/custom.js"></script>
-  <script>
-      window.onload = function () {
-          var chart1 = document.getElementById("line-chart").getContext("2d");
-          window.myLine = new Chart(chart1).Line(lineChartData, {
-              responsive: true,
-              scaleLineColor: "rgba(0,0,0,.2)",
-              scaleGridLineColor: "rgba(0,0,0,.05)",
-              scaleFontColor: "#c5c7cc"
-          });
-      };
-  </script>
-
-</body>

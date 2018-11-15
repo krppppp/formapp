@@ -3,178 +3,73 @@ class UsersController < ApplicationController
   require "aws-sdk-core"
 
   before_action :authenticate_user?
-  before_action :set_user
+  before_action :update_info, except: [:show, :p1, :pay, :pay2]
 
   def show
-    @template = @user.template
+    @user = User.find(params[:id])
+    if @user.amount.nil?
+      redirect_to users_p1_path(@user.id)
+    end
+  end
+
+  def p0
+  end
+
+  def p1
+    @user = User.find(params[:id])
+    @subscription = @user.subscriptions.last
 
   end
 
-  def edit
+  def p2
+  end
+
+  def p3
+  end
+
+  def p4
+  end
+
+  def p5
+  end
+
+  def p6
+  end
+
+  def p7
+  end
+
+  def p8
+  end
+
+  def p9
+  end
+
+  def p10
+  end
+
+  def p11
+    SendMailer.send_to_creator_new_record(@user).deliver
+    redirect_to user_path(@user.id)
+
   end
 
   def update
-    @user = User.find(params[:id])
-    if @user.update(user_params)
-      # for i in 1..2 do
-        i = 1
-        #doc = File.read('/app/views/templates/p1.html.erb')
-        doc = File.read("#{Rails.root}/app/views/templates/p#{i}.html.erb")
-        doc.gsub!(/<%= @user.title %>/, "#{@user.title}")
-        doc.gsub!(/<%= @user.menu1 %>/, "#{@user.menu1}")
-        doc.gsub!(/<%= @user.menu2 %>/, "#{@user.menu2}")
-        doc.gsub!(/<%= @user.menu3 %>/, "#{@user.menu3}")
-        doc.gsub!(/<%= @user.menu4 %>/, "#{@user.menu4}")
-        doc.gsub!(/<%= @user.menu5 %>/, "#{@user.menu5}")
-        doc.gsub!(/<%= @user.heading1 %>/, "#{@user.heading1}")
-        doc.gsub!(/<%= @user.heading2 %>/, "#{@user.heading2}")
-        doc.gsub!(/<%= @user.heading3 %>/, "#{@user.heading3}")
-        doc.gsub!(/<%= @user.heading4 %>/, "#{@user.heading4}")
-        doc.gsub!(/<%= @user.heading5 %>/, "#{@user.heading5}")
-        doc.gsub!(/<%= @user.subheading1 %>/, "#{@user.subheading1}")
-        doc.gsub!(/<%= @user.subheading2 %>/, "#{@user.subheading2}")
-        doc.gsub!(/<%= @user.subheading3 %>/, "#{@user.subheading3}")
-        doc.gsub!(/<%= @user.subheading4 %>/, "#{@user.subheading4}")
-        doc.gsub!(/<%= @user.subheading5 %>/, "#{@user.subheading5}")
-        doc.gsub!(/<%= @user.menu1_1 %>/, "#{@user.menu1_1}")
-        doc.gsub!(/<%= @user.menu2_1 %>/, "#{@user.menu2_1}")
-        doc.gsub!(/<%= @user.menu3_1 %>/, "#{@user.menu3_1}")
-        doc.gsub!(/<%= @user.menu4_1 %>/, "#{@user.menu4_1}")
-        doc.gsub!(/<%= @user.menu5_1 %>/, "#{@user.menu5_1}")
-        doc.gsub!(/<%= @user.headline1 %>/, "#{@user.headline1}")
-        doc.gsub!(/<%= @user.headline2 %>/, "#{@user.headline2}")
-        doc.gsub!(/<%= @user.headline3 %>/, "#{@user.headline3}")
-        doc.gsub!(/<%= @user.character1 %>/, "#{@user.character1}")
-        doc.gsub!(/<%= @user.character2 %>/, "#{@user.character2}")
-        doc.gsub!(/<%= @user.character3 %>/, "#{@user.character3}")
-        doc.gsub!(/<%= @user.character4 %>/, "#{@user.character4}")
-        doc.gsub!(/<%= @user.character5 %>/, "#{@user.character5}")
-        doc.gsub!(/<%= @user.character6 %>/, "#{@user.character6}")
-        doc.gsub!(/<%= @user.character7 %>/, "#{@user.character7}")
-        doc.gsub!(/<%= @user.character8 %>/, "#{@user.character8}")
-        doc.gsub!(/<%= @user.character9 %>/, "#{@user.character9}")
-        doc.gsub!(/<%= @user.character10 %>/, "#{@user.character10}")
-        doc.gsub!(/\/assets/, ".")
-
-        client = AWS::S3::Client.new(
-            access_key_id: "AKIAJXOOQX7JR6MEO5IQ",
-            secret_access_key: "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"
-        )
-        s3 = AWS::S3.new(
-            access_key_id: "AKIAJXOOQX7JR6MEO5IQ",
-            secret_access_key: "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"
-        )
-
-        bucket_name = "#{@user.email.split("@").first}-" + "#{i}"
-
-        #バケット作成
-        client.create_bucket(bucket_name: "#{bucket_name}") unless s3.buckets[bucket_name].exists?
-
-        #indexをアップロード
-        client.put_object({
-                              # :bucket_name => "#{@user.email}-"+"#{i}",
-                              :bucket_name => "#{bucket_name}",
-                              :key => 'index.html',
-                              :data => doc,
-                              s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
-                          })
-        #
-        # #空のtemplate#{i}フォルダ作成
-        #
-        # client.put_object({
-        #                       # :bucket_name => "#{@user.email}-"+"#{i}",
-        #                       :bucket_name => "#{bucket_name}",
-        #                       :key => "template#{i}/",
-        #                       :data => doc,
-        #                       s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
-        #                   })
-        # #該当ディレクトリ下の必要なファイルをすべてアップロード
-        # dir_name = Dir.open("#{Rails.root}/app/assets/images/template#{i}")
-        # dir_name.each_with_index do |f, index|
-        #   if f == "." || f == ".."
-        #     next
-        #   end
-        #   data = File.read("#{Rails.root}/app/assets/images/template#{i}" + '/' + f)
-        #   client.put_object({
-        #                         :bucket_name => "#{bucket_name}",
-        #                         :key => "template#{i}/#{f}",
-        #                         :data => data,
-        #                         s3_endpoint: "s3-ap-northeast-1.amazonaws.com"
-        #                     })
-        # end
-        # policy = {
-        #     "Version": "2012-10-17",
-        #     "Statement": [
-        #         {
-        #             "Sid": "AddPerm",
-        #             "Effect": "Allow",
-        #             "Principal": "*",
-        #             "Action": [
-        #                 "s3:GetObject"
-        #             ],
-        #             "Resource": [
-        #                 "arn:aws:s3:::#{bucket_name}/*"
-        #             ]
-        #         }
-        #     ]
-        # }.to_json
-        # client.set_bucket_policy(
-        #     bucket_name: bucket_name,
-        #     policy: policy
-        # )
-
-
-      # end
-      redirect_to user_path(current_user)
-    else
-      redirect_to edit_user_path(current_user)
-    end
-  end
-
-  def destroy
-
-  end
-
-  private
-
-  def user_params
-    params
-        .require(:user)
-        .permit(:id, :email, :password, :latitude, :first_name, :last_name,
-                :main_image, :title, :template,
-                :city, :self, :name, :menu1, :menu2, :menu3, :menu4, :menu5,
-                :heading1, :heading2, :heading3, :heading4, :heading5,
-                :subheading1, :subheading2, :subheading3, :subheading4, :subheading5,
-                :sub_image1, :sub_image2, :sub_image3, :sub_image4, :sub_image5,
-                :sub_icon1, :sub_icon2, :sub_icon3, :sub_icon4, :sub_icon5,
-                :headline1, :headline2, :headline3, :headline4, :headline5,
-                :menu1_1, :menu2_1,:menu3_1,:menu4_1,:menu5_1,
-                :character1, :character2, :character3, :character4, :character5,
-                :character6, :character7, :character8, :character9, :character10)
-
-  end
-
-  def authenticate_user?
-    unless current_user
-      redirect_to new_user_registration_path
-    end
+    SendMailer.send_to_creator_updated(@user).deliver
+    redirect_to user_path(@user.id)
   end
 
 
-  def set_user
-
-    @user = User.find(params[:id])
-  end
 
   def pay
-    user = User.find(params[:name])
+    user = User.find(params[:id])
     card_token = params["payjp-token"]
     create_payjp_customer(user, card_token) if user.payjp_id.blank?
     Payjp.api_key = Rails.application.secrets.payjp_private_key
     sub = Payjp::Subscription.create(
-        plan: 'pln_a4aac1a3a0bd2474baa9f69d00da',
+        plan: 'pln_2807910c89867be3bdf5374f1a70',
         customer: user.payjp_id,
-    )
+        )
     Subscription.create!(
         payjp_id: sub.id,
         user: user,
@@ -184,8 +79,61 @@ class UsersController < ApplicationController
         trial_start: sub.trial_start,
         trial_end: sub.trial_end
     )
-    redirect_to user_path(user)
+    redirect_to users_p1_path(user)
   end
+
+  def pay2
+    user = User.find(params[:id])
+    card_token = params["payjp-token"]
+    create_payjp_customer(user, card_token) if user.payjp_id.blank?
+    Payjp.api_key = Rails.application.secrets.payjp_private_key
+    sub = Payjp::Subscription.create(
+        plan: 'pln_972d979ccfa3f23acce1bbc10d29',
+        customer: user.payjp_id,
+        )
+    Subscription.create!(
+        payjp_id: sub.id,
+        user: user,
+        status: sub.status,
+        current_period_start: sub.current_period_start,
+        current_period_end: sub.current_period_end,
+        trial_start: sub.trial_start,
+        trial_end: sub.trial_end
+    )
+    redirect_to users_p1_path(user)
+  end
+
+  private
+
+  def update_info
+    @user = User.find(params[:id])
+    @user.update(user_params)
+  end
+
+  def user_params
+    params
+        .require(:user)
+        .permit(:id, :email, :password, :amount, :tel,:address,
+                :title, :main_color, :sub_color, :sub2_color,
+                :city, :self, :name, :business, :establishment_date,
+                :menu1, :menu2, :menu3, :menu4, :menu5,
+                :image1, :image2, :image3, :image4, :image5,
+                :headline1, :headline2, :headline3, :headline4, :headline5,
+                :headline6, :headline7, :headline8, :headline9, :headline10,
+                :menu1_1, :menu2_1, :menu3_1, :menu4_1, :menu5_1,
+                :domain1, :domain2, :domain3
+        )
+
+  end
+
+
+
+  def authenticate_user?
+    unless current_user
+      redirect_to new_user_registration_path
+    end
+  end
+
 
   private
 

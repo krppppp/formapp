@@ -1,0 +1,130 @@
+<div class="form-center">
+
+  <p style="color:red">記入事項を確認して問題なければ送信ボタンを押してください</p>
+  <p>修正も可能です。</p>
+
+  <%= form_for(@user, url: users_p9_path, method: :get) do |f| %>
+
+    <div class='form-team my-2'>
+      <%= f.label :業種, class: "text-white" %>
+      <%= f.text_field :business, class: 'frame-none contact-form', placeholder:'例) 飲食業（焼肉）' %>
+    </div>
+    <br><br>
+    <div class='form-team my-2'>
+      <%= f.label :HPタイトル, class: "text-white" %>
+      <%= f.text_field :title, class: 'frame-none contact-form', placeholder:'例）焼肉黒岩' %>
+    </div>
+    <br><br>
+
+    <div class='form-team my-2'>
+      <%= f.label :設立年月日, class: "text-white" %>
+      <%= f.text_field :establishment_date, class: 'frame-none contact-form', placeholder:'例）２０１８年' %>
+    </div>
+    <br><br>
+    <div class='form-team my-2'>
+      <%= f.label :住所, class: "text-white" %>
+      <%= f.text_field :address, class: 'frame-none contact-form', placeholder:'郵便番号から' %>
+    </div>
+    <br><br>
+
+    <p>ホームページ内で伝えたいこと<br><br>
+      キャッチコピーやセールスポイント、実績、<br>
+      「トップページ」において貴社の伝えたいこと<br><br>
+      を最大１０個(順位にしてください)まで記入してください</p><br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン1, class: "text-white" %>
+      <%= f.text_area :headline1, class: 'frame-none contact-form', placeholder:'例）オフィシャルサイト作成しました！'  %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン2, class: "text-white" %>
+      <%= f.text_area :headline2, class: 'frame-none contact-form', placeholder:'例）次の全国大会出場予定です！応援お願いします！'  %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン3, class: "text-white" %>
+      <%= f.text_area :headline3, class: 'frame-none contact-form', placeholder:'例）お気軽にお問い合わせからメールください'  %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン4, class: "text-white" %>
+      <%= f.text_area :headline4, class: 'frame-none contact-form', placeholder:'例）オフィシャルサイト作成しました！'  %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン5, class: "text-white" %>
+      <%= f.text_area :headline5, class: 'frame-none contact-form', placeholder:'例）次の全国大会出場予定です！応援お願いします！'  %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン6, class: "text-white" %>
+      <%= f.text_area :headline6, class: 'frame-none contact-form', placeholder:'例）お気軽にお問い合わせからメールください'  %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン7, class: "text-white" %>
+      <%= f.text_area :headline7, class: 'frame-none contact-form', placeholder:'例）オフィシャルサイト作成しました！'  %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン8, class: "text-white" %>
+      <%= f.text_area :headline8, class: 'frame-none contact-form', placeholder:'例）次の全国大会出場予定です！応援お願いします！'  %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン9, class: "text-white" %>
+      <%= f.text_area :headline9, class: 'frame-none contact-form', placeholder:'例）お気軽にお問い合わせからメールください'  %>
+    </div>
+    <br><br>
+    <div class='form-headline my-2'>
+      <%= f.label :ヘッドライン10, class: "text-white" %>
+      <%= f.text_area :headline10, class: 'frame-none contact-form', placeholder:'例）オフィシャルサイト作成しました！'  %>
+    </div>
+    <br><br>
+
+    <% if @user.amount == 30 %>
+      <%= render '30form' , f: f%>
+
+    <% elsif @user.amount == 50 %>
+      <%= render '50form' , f: f%>
+    <% else %>
+      <%= render '100form' , f: f%>
+    <% end %>
+
+
+    <div class='form-team my-2'>
+      <%=f.label "メインテーマ色" %>
+      <%= f.text_field :main_color, placeholder:'黒' %>
+    </div>
+    <br><br>
+    <div class='form-team my-2'>
+      <%=f.label "サブテーマ色1" %>
+      <%= f.text_field :sub_color, placeholder:'白' %>
+    </div>
+    <br><br>
+    <div class='form-team my-2'>
+      <%=f.label "サブテーマ色2" %>
+      <%= f.text_field :sub2_color, placeholder:'灰色' %>
+    </div>
+    <br><br>
+
+    <div class='form-team my-2'>
+      <%=f.label "備考" %>
+      <%= f.text_area :self, class: 'menu_content contact-form', placeholder:'例）お肉の写真を映やしたいので、項目は文字の色はモノクロを希望します。
+            参考URL：
+            １,http://~~~~~.com
+            2,http://~~~~~.com
+            3,http://~~~~~.com'  %>
+    </div>
+    <br><br>
+
+    <div class='form-team my-2'>
+      <%= f.submit '登録する', class: "send-button", data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'} %>
+    </div>
+
+
+
+<% end %>
+
+
+    </div>

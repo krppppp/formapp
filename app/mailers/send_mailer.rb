@@ -6,27 +6,17 @@ class SendMailer < ApplicationMailer
   #   en.send_mailer.send_when_update.subject
   #
   
-  def send_when_registration(user, pass_temp, url)
+  def send_when_registration(user, pass_temp)
     @user = user
     @pass = pass_temp
-    @url = url
     mail to:      user.email,
          subject: '会員登録ありがとうございます。'
   end
-  def send_when_update(user, pass_temp, url)
+  def send_when_update(user, pass_temp)
     @user = user
     @pass = pass_temp
-    @url = url
     mail to:      user.email,
          subject: '会員情報が更新されました。'
-  end
-
-  def send_when_registration(user, pass_temp, url)
-    @user = user
-    @pass = pass_temp
-    @url = url
-    mail to:      user.email,
-         subject: '会員登録ありがとうございます。'
   end
 
   def send_when_subscription_create(user)
@@ -34,4 +24,17 @@ class SendMailer < ApplicationMailer
     mail to:      user.email,
          subject: '会員情報が更新されました。'
   end
+
+  def send_to_creator_new_record(user)
+    @user = user
+    mail to:      "black@akitennis.co.jp",
+         subject: 'ホームページ情報を新しく受信しました'
+  end
+
+  def send_to_creator_updated(user)
+    @user = user
+    mail to:      "black@akitennis.co.jp",
+         subject: 'ホームページ情報を更新しました'
+  end
+
 end

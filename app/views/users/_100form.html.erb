@@ -1,0 +1,88 @@
+
+<p>ホームページ上部やサイドにおけるメニューを５つおけます。</p>
+<p>またそれぞれのメニューを押したときに遷移したページで表示する内容を<br>
+  できる限り細かくご記入ください。<br>
+※下は飲食業（焼肉）のホームページ作成を想定した例です
+</p>
+
+<img src="/assets/gazo2.jpg" style="height: 400px">
+<br><br>
+
+<div class='form-team my-2'>
+  <%= f.label :メニュー１, class: "text-white" %>
+  <%= f.text_field :menu1, class: 'frame-none contact-form', placeholder:'例）トップ' %>
+</div>
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :詳細１, class: "text-white" %>
+  <%= f.text_field :menu1_1, class: 'menu_content contact-form', placeholder:'例）トップページまでのリンクにしたいです。'  %>
+</div>
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :メニュー2, class: "text-white" %>
+  <%= f.text_area :menu2, class: 'frame-none contact-form', placeholder:'例）メニュー'  %>
+</div>
+
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :詳細2, class: "text-white" %>
+  <%= f.text_area :menu2_1, class: 'menu_content contact-form', placeholder:'例）焼肉メニューを載せたいです。
+  主要な食べ物メニューを６種類、色鮮やかなドリンクを２種類
+  写真とともにメニュー名と値段を載せているページにしたいです。
+
+  以下
+  メニュー名、値段一覧
+  '  %>
+
+</div>
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :メニュー3, class: "text-white" %>
+  <%= f.text_field :menu3, class: 'frame-none contact-form', placeholder:'例）会社概要'  %>
+</div>
+
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :詳細3, class: "text-white" %>
+  <%= f.text_area :menu3_1, class: 'menu_content contact-form', placeholder:'例）会社情報をのせたいです。下記が会社情報になるので１ページに整えてのせたいです。
+ 以下
+ 株式会社◯◯
+
+代表取締役	〇〇
+住所	東京都豊島区〜〜〜
+総従業員数	◯名
+取引先金融機関	〇〇金融公庫/〇〇支店
+〇〇銀行/〇〇支店
+設立日	昭和◯年◯月◯日
+資本金	○○万円
+企業情報 〜〜〜〜〜〜〜〜〜
+'  %>
+</div>
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :メニュー4, class: "text-white" %>
+  <%= f.text_field :menu4, class: 'frame-none contact-form', placeholder:'例）店舗情報'  %>
+</div>
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :詳細4, class: "text-white" %>
+  <%= f.text_area :menu4_1, class: 'menu_content contact-form', placeholder:'例）複数点営業しているのでそれぞれへのアクセス、地図をのせたページにしたいです
+ 以下
+ 店舗住所一覧、詳しいアクセス情報など
+  '  %>
+</div>
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :メニュー5, class: "text-white" %>
+  <%= f.text_field :menu5, class: 'frame-none contact-form', placeholder:'例）採用情報'  %>
+</div>
+<br><br>
+
+
+<div class='form-team my-2'>
+  <%= f.label :詳細5, class: "text-white" %>
+  <%= f.text_area :menu5_1, class: 'menu_content contact-form', placeholder:'例）アルバイトから正社員まで募集を掛けてるページにしたいです。
+  以下
+  墓重要項、勤務地'  %>
+</div>
+<br><br>

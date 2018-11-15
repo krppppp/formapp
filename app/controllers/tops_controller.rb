@@ -5,79 +5,37 @@ class TopsController < ApplicationController
   # GET /tops
   # GET /tops.json
   def index
-    if current_user
+    if current_user.amount.nil?
+      redirect_to users_p0_path(current_user.id)
+    else
       redirect_to user_path(current_user.id)
     end
   end
 
-  # GET /tops/1
-  # GET /tops/1.json
-  def show
-  end
 
-  # GET /tops/new
-  def new
-    @user = User.new
-  end
 
-  # GET /tops/1/edit
-  def edit
-  end
 
-  # POST /tops
-  # POST /tops.json
-  def create
-    @top = User.new(user_params)
-
-    respond_to do |format|
-      if @top.save
-        format.html { redirect_to @top, notice: 'Top was successfully created.' }
-        format.json { render :show, status: :created, location: @top }
-      else
-        format.html { render :new }
-        format.json { render json: @top.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # PATCH/PUT /tops/1
-  # PATCH/PUT /tops/1.json
-  def update
-    respond_to do |format|
-      if @top.update(top_params)
-        format.html { redirect_to @top, notice: 'Top was successfully updated.' }
-        format.json { render :show, status: :ok, location: @top }
-      else
-        format.html { render :edit }
-        format.json { render json: @top.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # DELETE /tops/1
-  # DELETE /tops/1.json
-  def destroy
-    @top.destroy
-    respond_to do |format|
-      format.html { redirect_to tops_url, notice: 'Top was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_top
-      @top = Top.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def user_params
-      params.require(:top).permit(:name, :id, :email)
-    end
 
-  def authenticate_user?
-    unless current_user
-      redirect_to new_user_registration_path
-    end
+  def set_user
+    @user = User.find(params[:id])
+  end
+
+  def user_params
+    params
+        .require(:user)
+        .permit(:id, :email, :password, :latitude, :first_name, :last_name, :amount,
+                :main_image, :title, :template, :theme_color,
+                :city, :self, :name, :menu1, :menu2, :menu3, :menu4, :menu5,
+                :heading1, :heading2, :heading3, :heading4, :heading5,
+                :subheading1, :subheading2, :subheading3, :subheading4, :subheading5,
+                :image1, :image2, :image3, :image4, :image5,
+                :headline1, :headline2, :headline3, :headline4, :headline5,
+                :menu1_1, :menu2_1, :menu3_1, :menu4_1, :menu5_1,
+                :character1, :character2, :character3, :character4, :character5,
+                :character6, :character7, :character8, :character9, :character10)
+
   end
 end

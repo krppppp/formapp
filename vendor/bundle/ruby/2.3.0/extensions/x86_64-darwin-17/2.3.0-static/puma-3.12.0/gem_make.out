@@ -1,0 +1,25 @@
+current directory: /Users/krppppp/form_app/vendor/bundle/ruby/2.3.0/gems/puma-3.12.0/ext/puma_http11
+/Users/krppppp/.rbenv/versions/2.3.2/bin/ruby -r ./siteconf20181112-36001-f7jfui.rb extconf.rb
+checking for BIO_read() in -lcrypto... yes
+checking for SSL_CTX_new() in -lssl... yes
+checking for openssl/bio.h... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/krppppp/form_app/vendor/bundle/ruby/2.3.0/extensions/x86_64-darwin-17/2.3.0-static/puma-3.12.0/mkmf.log
+
+current directory: /Users/krppppp/form_app/vendor/bundle/ruby/2.3.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR=" clean
+
+current directory: /Users/krppppp/form_app/vendor/bundle/ruby/2.3.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR="
+compiling io_buffer.c
+compiling mini_ssl.c
+compiling puma_http11.c
+compiling http11_parser.c
+linking shared-object puma/puma_http11.bundle
+
+current directory: /Users/krppppp/form_app/vendor/bundle/ruby/2.3.0/gems/puma-3.12.0/ext/puma_http11
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20181112-36001-14omubh/puma

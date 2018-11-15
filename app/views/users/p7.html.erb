@@ -1,0 +1,66 @@
+<div id="form_content_wrap">
+  <section class="form_step form_step1 on">
+    <%= form_for(@user, url: users_p8_path, method: :get) do |f| %>
+      <div class='container pb-5'>
+        <div class="form-center">
+          <p></p>
+          <small>ホームページに関することを記入してください</small>
+          <p>最後にホームーページのデザインに関してご記入お願いします。</p>
+          <p>基本デザインは弊社にお任せいただきますが<br><%= @user.name %>様の考えるホームページのテーマ色をきめてください。<br>下は３つの例です</p>
+          <p></p>
+          <br><br>
+          <img src="/assets/gazo3.png" style="height: 400px">
+          <p>メインテーマ色：白　サブテーマ色：薄い灰色　サブテーマ色：茶色</p><br>
+
+          <img src="/assets/gazo4.png" style="height: 400px">
+          <p>メインテーマ色：緑　サブテーマ色：青　サブテーマ色：黒</p><br>
+
+
+          <img src="/assets/gazo5.png" style="height: 400px">
+          <p>メインテーマ色：薄ピンク　サブテーマ色：濃いピンク　サブテーマ色：白</p><br>
+
+
+          <p>主に<br>
+            背景：メインテーマ色<br>
+            強調したい項目：サブカラー色１<br>
+            差し色や別の項目：サブカラー色２<br>
+            となります。<br>
+            難しいところでありますが必要になりますのでご記入お願いします。<br>
+            また参考にしましたホームページがありましたら備考にURLをペーストしていただきますよう</br>宜しくおねがいします。
+          </p>
+
+
+
+          <div class='form-team my-2'>
+            <%=f.label "メインテーマ色" %>
+            <%= f.text_field :main_color, placeholder:'黒' %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%=f.label "サブテーマ色1" %>
+            <%= f.text_field :sub_color, placeholder:'白' %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%=f.label "サブテーマ色2" %>
+            <%= f.text_field :sub2_color, placeholder:'灰色' %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%=f.label "備考" %>
+            <%= f.text_area :self, class: 'menu_content contact-form', placeholder:'例）写真を映やしたいので、項目や文字の色、全体で気にモノクロを希望します。
+            参考URL：
+            １,http://~~~~~.com
+            2,http://~~~~~.com
+            3,http://~~~~~.com' %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.submit '確認画面へ', class: "send-button", data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, id: 'formButton' %>
+          </div>
+        </div>
+    <% end %>
+  </section>
+</div>

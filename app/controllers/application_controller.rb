@@ -11,4 +11,10 @@ class ApplicationController < ActionController::Base
                                                          :headline1, :headline2, :headline3,
                                                          :menu1_1, :menu2_1, :menu3_1, :menu4_1, :menu5_1])
     end
+  def authenticate_user?
+    unless current_user
+      redirect_to new_user_registration_path
+    end
+  end
 end
+

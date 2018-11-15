@@ -1,0 +1,117 @@
+<div id="form_content_wrap">
+  <section class="form_step form_step1 on">
+    <%= form_for(@user, url: users_p4_path, method: :get) do |f| %>
+      <div class='container pb-5'>
+        <div class="form-center">
+          <p><%= @user.name %>様</p>
+          <p>事前にお知らせさせていただきましたとおり、<br>お聞きししたい事項が大きく2つ（ホームページの内容、デザイン）あります。</p>
+
+          <p>まずホームページの内容に関する項目の入力を宜しくおねがいします。</p>
+          <p>尚、埋められない項目は空のままでも送信可能です。</p>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :業種, class: "text-white" %><br>
+            <%= f.text_field :business, class: 'frame-none contact-form', placeholder:'例) 飲食業（焼肉）、士業（弁護士）、建築業' %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%= f.label :ホームページタイトル, class: "text-white" %><br>
+            <%= f.text_field :title, class: 'frame-none contact-form', placeholder:'例）店名、会社名、ホームページ名' %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :設立年月日, class: "text-white" %><br>
+            <%= f.text_field :establishment_date, class: 'frame-none contact-form', placeholder:'例）２０１８年１月１日' %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :住所, class: "text-white" %><br>
+            <%= f.text_field :address, class: 'frame-none contact-form', placeholder:'郵便番号から' %>
+          </div>
+          <br><br>
+
+
+          <p>ホームページ内で伝えたいこと<br><br></p>
+            <p style="    font-size: 20px;">キャッチコピーやセールスポイント、実績、<br>
+            「トップページ」において貴社の伝えたいこと<br><br>
+            を最大１０個(順位にしてください)まで, 細かいことでもできるだけ多くを記入してください<br><br>※下記の例では飲食業（焼肉）を想定しています</p><br><br>
+          <div class='form-headline my-2'>
+            <%= f.label :ヘッドライン1, class: "text-white" %>
+            <%= f.text_area :headline1, class: 'menu_content contact-form', placeholder:'例）事業内容・企業理念：おしゃれな焼肉・りーズナブルな焼肉・身近な焼肉　
+おしゃれでかつ安く、駅ビル内なので通いやすい、そんなお店にしたい'  %>
+          </div>
+          <br><br>
+          <div class='form-headline my-2'>
+            <%= f.label :ヘッドライン2, class: "text-white" %>
+            <%= f.text_area :headline2, class: 'menu_content contact-form', placeholder:'例）セールスポイント：
+1. A5ではなくA4のお肉をおしゃれに、リーズナブルに提供
+2. 落ちついた店内(個室あり)
+3. 盛り付けにもこだわっている
+4. ワインが充実している
+・
+・
+  9,深夜０時まで営業している
+10,駅から近い'  %>
+          </div>
+          <br><br>
+          <div class='form-headline my-2'>
+            <%= f.label :ヘッドライン3, class: "text-white" %>
+            <%= f.text_area :headline3, class: 'menu_content contact-form', placeholder:'例）実績：
+1. 食べログのレビュー数５０超え、評価３以上
+2. ２年前店内リニューアル'  %>
+          </div>
+          <br><br>
+          <div class='form-headline my-2'>
+            <%= f.label :ヘッドライン4, class: "text-white" %>
+            <%= f.text_area :headline4, class: 'menu_content contact-form', placeholder:'例）・貴社が考える、お客様が貴社をご利用する利点
+どうしても高いイメージが一般に浸透している焼肉をもっと気軽に、かつインスタ映えするような盛り付けで提供、
+デートでも接待でも至福の時間を過ごせる。'  %>
+          </div>
+          <br><br>
+          <div class='form-headline my-2'>
+            <%= f.label :ヘッドライン5, class: "text-white" %>
+            <%= f.text_area :headline5, class: 'menu_content contact-form', placeholder:'例）「トップページ」において貴社の伝えたいこと
+1. A4のお肉をおしゃれに、リーズナブルに提供
+2. 内装にこだわりがある（写真を載せたい）
+3. 盛り付けにもこだわっている
+4. デートでも接待でも至福の時間を過ごせる
+5. ワインが充実している'   %>
+          </div>
+          <br><br>
+          <div class='form-headline my-2'>
+            <%= f.label :ヘッドライン6, class: "text-white" %>
+            <%= f.text_area :headline6, class: 'menu_content contact-form' %>
+          </div>
+          <br><br>
+          <div class='form-headline my-2'>
+            <%= f.label :ヘッドライン7, class: "text-white" %>
+            <%= f.text_area :headline7, class: 'menu_content contact-form', placeholder:''  %>
+          </div>
+          <br><br>
+          <div class='form-headline my-2'>
+            <%= f.label :ヘッドライン8, class: "text-white" %>
+            <%= f.text_area :headline8, class: 'menu_content contact-form', placeholder:''  %>
+          </div>
+          <br><br>
+          <div class='form-headline my-2'>
+            <%= f.label :ヘッドライン9, class: "text-white" %>
+            <%= f.text_area :headline9, class: 'menu_content contact-form', placeholder:''  %>
+          </div>
+          <br><br>
+          <div class='form-headline my-2'>
+            <%= f.label :ヘッドライン10, class: "text-white" %>
+            <%= f.text_area :headline10, class: 'menu_content contact-form', placeholder:''  %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.submit '登録する', class: "send-button", data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, id: 'formButton' %>
+          </div>
+        </div>
+    <% end %>
+  </section>
+</div>
+

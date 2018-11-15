@@ -1,0 +1,36 @@
+<p>ホームページ上部やサイドにおけるメニューを３つおけます。</p>
+
+<p>またそれぞれのメニューを押したときに遷移したページで表示する内容を<br>できるだけ細かくご記入ください。<br>
+  ※下は飲食業（ワインバル）のホームページ作成を想定した例です<br>
+</p>
+<img src="/assets/gazo6.png" style="height: 400px">
+
+<div class='form-team my-2'>
+  <%= f.label :メニュー１, class: "text-white" %>
+  <%= f.text_field :menu1, class: 'frame-none contact-form', placeholder:'例）DESIGN' %>
+</div>
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :詳細１, class: "text-white" %>
+  <%= f.text_area :menu1_1, class: 'menu_content contact-form', placeholder:'例）内装にこだわりがあるので内装の写真を複数枚と説明をのせたいです。
+  以下
+  説明文全文をご記入ください'  %>
+</div>
+<br><br>
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :メニュー2, class: "text-white" %>
+  <%= f.text_field :menu2, class: 'frame-none contact-form', placeholder:'例）MENU'  %>
+</div>
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :詳細2, class: "text-white" %>
+  <%= f.text_area :menu2_1, class: 'menu_content contact-form', placeholder:'例）メニューを載せたいです。
+  主要な食べ物メニューを６種類、色鮮やかなドリンクを２種類
+  写真とともにメニュー名と値段を載せているページにしたいです。
+
+  以下
+  メニュー名、値段一覧
+  '   %>
+</div>
+<br><br>

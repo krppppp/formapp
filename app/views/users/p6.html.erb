@@ -1,0 +1,28 @@
+<div id="form_content_wrap">
+  <section class="form_step form_step1 on">
+    <%= form_for(@user, url: users_p6_path, method: :get) do |f| %>
+      <div class='container pb-5'>
+        <div class="form-center">
+          <p><%= @user.name %>様</p>
+          <small>ホームページに関することを記入してください</small>
+          <p>先程アップロードした画像に問題なければ次へを押してください。<br>
+          変更する場合はサイド画像を選んでアップロードを押してください。</p>
+          <br><br>
+
+          <%= @user.image1.url %>
+          <div class='form-team my-2'>
+            <%=f.label "画像1" %>
+            <%= f.file_field :image1 %>
+          </div>
+          <br><br>
+
+
+
+          <div class='form-team my-2'>
+            <%= f.submit 'アップロードする', class: "send-button", data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, id: 'formButton' %>
+          </div>
+        </div>
+    <% end %>
+    <%= link_to "次へ", users_p7_path(@user), class:"btn-login", style:"float:right" %>
+  </section>
+</div>

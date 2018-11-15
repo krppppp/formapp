@@ -1,66 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <title>ホームページ制作フォーム</title>
+  <meta name="description" itemprop="description"
+        content="ホームページ制作フォーム"/>
+  <meta name="keywords" itemprop="keywords"
+        content="AKI HP,AKI HP"/>
+  <meta property="og:title" content="ホームページ制作フォーム"/>
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+        content="icon_black.png"/>
+  <meta property="og:site_name" content="AKI HP"/>
+  <meta property="og:description"
+        content="ホームページ制作フォーム"/>
+  <link href="/Users/krppppp/form_app/app/assets/stylesheets/application.css" type="text/css">
 
+</head>
+<body>
 <%= yield %>
 
-<% if false %>
-<% if controller.controller_name == "templates" %>
-  <% if controller.action_name != "index" %>
-  <button style="display: none;" class = "btn" id="ClickMe" data-toggle='modal' data-target="#NewLoginModal"></button>
-  <%= render "templates/popup.html.erb" %>
-  <script>
-      //無料会員へ有料会員への誘導ポップアップ
-      window.onload = function () {
-          $(function(){
-                  var click = document.getElementById("ClickMe");
-                  click.click();
-          });
-      };
+<style>
+  .form-center {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 25px;
+  }
+  .send-button {
+    padding: 20px;
+    position: absolute;
+    background: #FF5722;
+    border-radius: 40px;
+    color: white;
+    width: 30%;
+    float: right;
+    font-size: 20px;
+    left: 34%;
+  }
+  .btn-login {
+    display: block;
+    background: cadetblue;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 100px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 40px;
+  }
+  .contact-form {
+    height: 50px;
+    width: 550px;
+    border: 1px solid black;
+  }
+  select {
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+  }
 
-  </script>
-  <style>
-    .modal-open .modal{
-      opacity: 1.0;
+    .form-headline {
+      border-bottom: 1px solid black;
+      padding-bottom: 50px;
+      width: 70%;
+      margin: auto;
     }
 
-    .modal {
-      width: 310px;
-      top: -100px !important;
-      left: 50% !important;
-      transform: translate(-50%);
+    .menu_content {
+      height: 200px;
     }
 
-    .modal-content {
-      background-color: black;
-    }
+</style>
+</body>
+</html>
 
-    .modal::-webkit-scrollbar{
-      display:none;
-    }
-
-    .modal-order-show {
-      width: 100%;
-    }
-
-    .modal-order-body {
-      position: relative;
-      flex: 1 1 auto;
-      padding: 1rem;
-    }
-
-    .modal-content-order-show {
-      display: flex;
-      background : rgba(255, 255, 255, 1);
-      opacity: 1.0;
-      border-radius : 20px;
-      -moz-border-radius : 20px;
-      -webkit-border-radius : 20px;
-      box-shadow : 6px 6px 15px rgba(0, 0, 0, 0.5);
-      flex-direction: column;
-      pointer-events: auto;
-    }
-
-  </style>
-
-
-  <% end %>
-  <% end %>
-<% end %>

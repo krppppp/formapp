@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem "unicorn"
 gem 'aws-sdk-s3', '~> 1'
 gem 'aws-sdk', '~>1'
+gem 'carrierwave'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 #
 gem 'rails', '~> 5.2.1'
@@ -38,6 +39,8 @@ gem 'jp_prefecture'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+
+gem 'bootstrap-sass', '~> 3.2.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

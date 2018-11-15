@@ -1,0 +1,34 @@
+<div id="form_content_wrap">
+  <section class="form_step form_step1 on">
+    <%= form_for(@user, url: users_p3_path, method: :get) do |f| %>
+      <div class='container pb-5'>
+        <div class="form-center">
+          <p><%= @user.name %>様</p>
+          <p>下から一つお選びください</p>
+
+          <% if @user.amount == 30 %>
+            <div class='form-team my-2'>
+              <%= f.label :３０万円テンプレート, class: "text-white" %>
+              <%= f.select :template, [[1, 1], [2, 2], [3, 3],[4, 4],[5, 5]], class: 'frame-none contact-form', placeholder: '例）080-9898-9898' %>
+            </div>
+            <br><br>
+          <% elsif @user.amount == 50 %>
+            <div class='form-team my-2'>
+              <%= f.label :５０万円テンプレート, class: "text-white" %>
+              <%= f.select :template, [[1, 1], [2, 2], [3, 3],[4, 4],[5, 5]], class: 'frame-none contact-form', placeholder: '例）080-9898-9898' %>
+            </div>
+          <% else %>
+            <div class='form-team my-2'>
+              <%= f.label :１００万円テンプレート, class: "text-white" %>
+              <%= f.select :template, [[1, 1], [2, 2], [3, 3],[4, 4],[5, 5]], class: 'frame-none contact-form', placeholder: '例）080-9898-9898' %>
+            </div>
+          <% end %>
+
+          <div class='form-team my-2'>
+            <%= f.submit '登録する', class: "send-button", data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, id: 'formButton' %>
+          </div>
+        </div>
+    <% end %>
+  </section>
+</div>
+

@@ -1,0 +1,34 @@
+<%= form_for(@user, url: users_p10_path, method: :get) do |f| %>
+    <div class="form-center">
+      <p>最後にご使用になりたいドメイン名を３つ記入してください<br></p>
+      <p>ドメインとはURLになる、ホームページの”名前”と思ってもらって構いません。<br><br>
+        例
+        　<br>　希望ドメイン："yakiniku.com"<br></p>
+
+
+      <br>
+
+      <br>
+
+      <div class='form-team my-2'>
+        <%= f.label "希望ドメイン１" %>
+        <%= f.text_field :domain1, class: "frame-none contact-form" %>
+      </div>
+      <br><br>
+      <div class='form-team my-2'>
+        <%= f.label "希望ドメイン2" %>
+        <%= f.text_field :domain2, class: "frame-none contact-form" %>
+      </div>
+      <br><br>
+      <div class='form-team my-2'>
+        <%= f.label "希望ドメイン3" %>
+        <%= f.text_field :domain3, class: "frame-none contact-form" %>
+      </div>
+      <br><br>
+
+      <div class='form-team my-2'>
+        <%= f.submit '登録する', class: "send-button", data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, id: 'formButton' %>
+      </div>
+
+    </div>
+<% end %>

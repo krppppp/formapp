@@ -1,0 +1,19 @@
+current directory: /Users/krppppp/form_app/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.2/ext/byebug
+/Users/krppppp/.rbenv/versions/2.3.2/bin/ruby -r ./siteconf20181112-36001-1q9ca9e.rb extconf.rb
+creating Makefile
+
+current directory: /Users/krppppp/form_app/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/krppppp/form_app/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR="
+compiling locker.c
+compiling byebug.c
+compiling context.c
+compiling breakpoint.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/krppppp/form_app/vendor/bundle/ruby/2.3.0/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20181112-36001-f0tnn7/byebug

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   devise_for :users, :controllers => {
       :registrations => 'users/registrations',
@@ -19,10 +20,10 @@ Rails.application.routes.draw do
   end
 
   get "/index", to:"templates#index", as:"templates"
-
   for i in 0..32 do
-    get ":name/#{i}/トップ", to: "templates#p#{i}", as: "templates_#{i}"
+    get ":id/#{i}", to: "users#p#{i}", as: "users_p#{i}"
   end
+
 
   resources :tops
 
@@ -30,6 +31,7 @@ Rails.application.routes.draw do
   #
   resources :subscriptions, only: %i(new create index destroy show), controller: 'subscriptions'
 
-  post "pay", to: "templates#pay"
+  post "pay", to: "users#pay"
+  post "pay2", to: "users#pay2"
 
 end

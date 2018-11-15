@@ -1,0 +1,82 @@
+<div id="form_content_wrap">
+  <section class="form_step form_step1 on">
+    <%= form_for(@user, url: users_p7_path, method: :get) do |f| %>
+      <div class='container pb-5'>
+        <div class="form-center">
+          <p><%= @user.name %>様</p>
+          <small>ホームページに関することを記入してください</small>
+          <p>ホームページ内で使用したい画像<br>
+            （トップページのメインとなる画像やその他背景となる画像、
+            <%= @user.name %>様の使用したいイメージに近い画像など）<br>
+            をこちらのリンクから<br>
+            <a target="_blank"  href="https://stock.adobe.com/jp/search/images?load_type=search&native_visual_search=&similar_content_id=&is_recent_search=&k=<%= @user.business %>">Adobe Stock</a><br>
+
+            検索してください。
+            お決まりになりましたら下記フォームにファイルIDを入力してください</p>
+          <br>
+
+          <br>
+
+          <img src="/assets/gazo1.png" style="height: 500px;">
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class='form-team my-2'>
+            <%=f.label "画像1" %>
+              <%= f.text_field :image1,  class:"frame-none contact-form", placeholder:"ファイル番号をペーストしてください" %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%=f.label "画像2" %>
+            <%= f.text_field :image2,  class:"frame-none contact-form", placeholder:"ファイル番号" %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%=f.label "画像3" %>
+            <%= f.text_field :image3,  class:"frame-none contact-form", placeholder:"ファイル番号" %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%=f.label "画像4" %>
+            <%= f.text_field :image4,  class:"frame-none contact-form", placeholder:"ファイル番号" %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%=f.label "画像5" %>
+            <%= f.text_field :image5,  class:"frame-none contact-form", placeholder:"ファイル番号" %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%=f.label "画像6" %>
+            <%= f.text_field :image6,  class:"frame-none contact-form", placeholder:"ファイル番号" %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%=f.label "画像7" %>
+            <%= f.text_field :image7,  class:"frame-none contact-form", placeholder:"ファイル番号" %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%=f.label "画像8" %>
+            <%= f.text_field :image8,  class:"frame-none contact-form", placeholder:"ファイル番号" %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%=f.label "画像9" %>
+            <%= f.text_field :image9,  class:"frame-none contact-form", placeholder:"ファイル番号" %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%=f.label "画像10" %>
+            <%= f.text_field :image10,  class:"frame-none contact-form", placeholder:"ファイル番号" %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%= f.submit '登録する', class: "send-button" %>
+          </div>
+        </div>
+    <% end %>
+  </section>
+</div>
+

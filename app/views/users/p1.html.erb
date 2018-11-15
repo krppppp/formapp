@@ -1,0 +1,97 @@
+<% if @subscription %>
+  <%= form_for(@user, url: users_p3_path, method: :get) do |f| %>
+    <div class='container pb-5'>
+      <div class="form-center">
+        <p><%= @user.name %>様</p>
+        <p>カード情報の入力ありがとうございます。</p>
+        <p>これからホームページ作成に必要な項目の情報をフォーム形式で入力、ご提供をよろしくおねがいします。</p>
+        <div class='form-team my-2'>
+          <%= f.label :まず弊社からのご連絡の際の緊急連絡先を入力してください, class: "text-white" %><br>
+          <%= f.text_field :tel, class: 'frame-none contact-form', placeholder: '例）080-9898-9898' %>
+        </div>
+        <br><br>
+        <p>続きまして今回ご契約いただきましたお支払い金額をお選びください</p>
+
+        <div class='form-team my-2'>
+          <%= f.label :金額, class: "text-white" %>
+          <%= f.select :amount, [["30万円", 30], ["50万円", 50], ["100万円", 100]], class: 'frame-none contact-form', placeholder: '例）080-9898-9898' %>
+        </div>
+        <br><br>
+        <div class='form-team my-2'>
+          <%= f.submit '登録する', class: "send-button", data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, id: 'formButton' %>
+        </div>
+      </div>
+  <% end %>
+<% else %>
+  <% if @user.introducer.nil? %>
+    <div class="form-center">
+      <p><%= @user.name %>様</p>
+      <p>弊社へのホームページ作成依頼のご契約誠にありがとうございます。</p>
+      <p>これからホームページ作成に必要な項目の情報をフォーム形式で入力、ご提供をよろしくおねがいします。</p>
+      <p>それに先立ちまして下のボタンより来年度からの月額費用引き落としに使用なさる<br>クレジットカード情報を登録してください。</p>
+      <div class="form-center" style="    width: 80%;
+          height: 320px;
+          background:#d9e7f3 ;
+          margin: auto;padding: 20px;
+          margin-top: 100px;">
+        <div style="font-size: 25px;">月額8900円</div>
+        <div style="    color: #FF5722;">登録日から1年間無料</div>
+        <div style="font-size: 15px;">１年後の経済産業省へ行う実績報告の際に<%= @user.name %>様へ弊社から<br>今回作成するホームページを継続利用するか否かの確認を取らせていただきます。<br>
+          その際に今回作成したホームページの継続を不要と判断しました場合は　<br>ホームページは削除され、お客様の口座から引き落としされることはございません。
+        </div>
+        <div style=" width: 90%;
+            margin: auto;
+            padding: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        ">
+          <%= form_tag(controller: :users, action: :pay, method: :post, id: "#{@user.id}") do %>
+            <script type="text/javascript" src="https://checkout.pay.jp" class="payjp-button"
+                    style="font-size: 30px;" data-key=<%= Rails.application.secrets.payjp_public_key %> data-text="クリック"></script>
+          <% end %>
+          <br>
+          <div style="font-size: 15px;">※初月引き落としは１年後になります</div>
+
+        </div>
+      </div>
+    </div>
+  <% elsif @user.introducer == 1 %>
+    <div class="form-center">
+      <p><%= @user.name %>様</p>
+      <p>弊社へのホームページ作成依頼のご契約誠にありがとうございます。</p>
+      <p>これからホームページ作成に必要な項目の情報をフォーム形式で入力、ご提供をよろしくおねがいします。</p>
+      <p>それに先立ちまして下のボタンより来年度からの月額費用引き落としに使用なさる<br>クレジットカード情報を登録してください。</p>
+      <div class="form-center" style="    width: 80%;
+          height: 320px;
+          background:#d9e7f3 ;
+          margin: auto;padding: 20px;
+          margin-top: 100px;">
+        <div style="font-size: 25px;">月額3900円</div>
+        <div style="    color: #FF5722;">登録日から1年間無料</div>
+        <div style="font-size: 15px;">１年後の経済産業省へ行う実績報告の際に<%= @user.name %>様へ弊社から<br>今回作成するホームページを継続利用するか否かの確認を取らせていただきます。<br>
+          その際に今回作成したホームページの継続を不要と判断しました場合は　<br>ホームページは削除され、お客様の口座から引き落としされることはございません。
+        </div>
+        <div style=" width: 90%;
+            margin: auto;
+            padding: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        ">
+          <%= form_tag(controller: :users, action: :pay2, method: :post, id: "#{@user.id}") do %>
+            <script type="text/javascript" src="https://checkout.pay.jp" class="payjp-button"
+                    style="font-size: 30px;" data-key=<%= Rails.application.secrets.payjp_public_key %> data-text="クリック"></script>
+          <% end %>
+          <br>
+          <div style="font-size: 15px;">※初月引き落としは１年後になります</div>
+
+        </div>
+      </div>
+    </div>
+  <% else %>
+    条件分岐をふやしてください
+  <% end %>
+<% end %>
+
+

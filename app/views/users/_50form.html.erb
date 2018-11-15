@@ -1,0 +1,50 @@
+<p>ホームページ上部やサイドにおけるメニューを３つおけます。</p>
+
+<p>またそれぞれのメニューを押したときに遷移したページで表示する内容を<br>できるだけ細かくご記入ください。
+  ※下は航空業のホームページ作成を想定した例です<br>
+</p>
+<img src="/assets/gazo7.png" style="height: 400px">
+<img src="/assets/gazo8.png" style="height: 400px">
+
+<div class='form-team my-2'>
+  <%= f.label :メニュー１, class: "text-white" %>
+  <%= f.text_field :menu1, class: 'frame-none contact-form', placeholder:'例）写真' %>
+</div>
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :詳細１, class: "text-white" %>
+  <%= f.text_area :menu1_1, class: 'menu_content contact-form', placeholder:'例）世界の写真を国名、土地名とともにギャラリー仕立てで表示したい'  %>
+</div>
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :メニュー2, class: "text-white" %>
+  <%= f.text_field :menu2, class: 'frame-none contact-form', placeholder:'例）会社概要'  %>
+</div>
+
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :詳細2, class: "text-white" %>
+  <%= f.text_area :menu2_1, class: 'menu_content contact-form', placeholder:'例）会社情報をのせたいです。下記が会社情報になるので１ページに整えてのせたいです。
+ 以下
+ 株式会社◯◯
+
+代表取締役	〇〇
+住所	東京都豊島区〜〜〜
+総従業員数	◯名
+取引先金融機関	〇〇金融公庫/〇〇支店
+〇〇銀行/〇〇支店
+設立日	昭和◯年◯月◯日
+資本金	○○万円
+企業情報 〜〜〜〜〜〜〜〜〜'  %>
+</div>
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :メニュー3, class: "text-white" %>
+  <%= f.text_field :menu3, class: 'frame-none contact-form', placeholder:'例）社長の言葉'  %>
+</div>
+<br><br>
+<div class='form-team my-2'>
+  <%= f.label :詳細3, class: "text-white" %>
+  <%= f.text_area :menu3_1, class: 'menu_content contact-form', placeholder:'例）載せたい文章全文をご記入ください'  %>
+</div>
+<br><br>

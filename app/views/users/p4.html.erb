@@ -1,0 +1,25 @@
+<div id="form_content_wrap">
+  <section class="form_step form_step1 on">
+    <%= form_for(@user, url: users_p5_path, method: :get) do |f| %>
+      <div class='container pb-5'>
+        <div class="form-center">
+          <p><%= @user.name %>様</p>
+          <p>ホームページに関することを記入してください</p>
+
+          <% if @user.amount == 30 %>
+            <%= render '30form' , f: f%>
+
+          <% elsif @user.amount == 50 %>
+            <%= render '50form' , f: f%>
+          <% else %>
+            <%= render '100form' , f: f%>
+          <% end %>
+
+          <div class='form-team my-2'>
+            <%= f.submit '登録する', class: "send-button", data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, id: 'formButton' %>
+          </div>
+        </div>
+    <% end %>
+  </section>
+</div>
+
