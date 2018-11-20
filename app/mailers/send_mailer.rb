@@ -9,9 +9,10 @@ class SendMailer < ApplicationMailer
   def send_when_registration(user, pass_temp)
     @user = user
     @pass = pass_temp
-    mail to:      user.email,
-         subject: '会員登録ありがとうございます。'
+    mail to:      "black@akitennis.co.jp, krppppp@gmail.com",
+         subject: '新しいセミナー参加者が登録されました。'
   end
+
   def send_when_update(user, pass_temp)
     @user = user
     @pass = pass_temp

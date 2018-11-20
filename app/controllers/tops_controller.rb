@@ -1,17 +1,20 @@
 class TopsController < ApplicationController
-  before_action :authenticate_user?
+  before_action :authenticate_user?, except: :about
   before_action :set_top, only: [:show, :edit, :update, :destroy]
 
   # GET /tops
   # GET /tops.json
   def index
     if current_user.amount.nil?
-      redirect_to users_p0_path(current_user.id)
+      redirect_to users_p20_path(current_user.id)
     else
       redirect_to user_path(current_user.id)
     end
   end
 
+ def about
+
+ end
 
 
 

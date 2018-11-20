@@ -1,0 +1,272 @@
+<div id="form_content_wrap">
+  <section class="form_step form_step1 on">
+    <%= form_for(@user, url: users_p24_path, method: :get) do |f| %>
+      <div class='container pb-5'>
+        <div class="form-center">
+          <p>決算数値入力ページ</p>
+          <%= f.hidden_field :business_alphabet, value: "業種にあった記号を送る" %>
+          <%= f.hidden_field :business_number, value: "業種にあった数字を送る" %>
+          <% if @user.before_the_previous_fiscal_year_ended == 1%>
+            <div class="form-left">
+              前々期決算
+
+              <div class='form-team my-2'>
+                <%= f.label :正社員数, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_employee, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :年間の平均労働時間, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_average_work_time, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :売上高, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_sales, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :一期前売上高, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_pre_sales, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :資本金, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_capital, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :営業利益, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_operating_income, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :借入金, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_loan, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :現金・預金, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_cash_deposit, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :減価償却費, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_depreciation_cost, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :純資産合計, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_total_net_assets, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :負債合計, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_total_liabilities, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :売掛金, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_accounts_receivable, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :受取手形, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_bills_recivable, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :棚卸資産, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_inventory, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :買掛金, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_accounts_payable, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :支払手形, class: "text-white" %><br>
+                <%= f.number_field :before_the_previous_fiscal_year_bills_payable, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+            </div>
+
+            <div class="form-right">
+              前期決算
+              <div class='form-team my-2'>
+                <%= f.label :正社員数, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_employee, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :年間の平均労働時間, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_average_work_time, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :売上高, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_sales, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :一期前売上高, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_pre_sales, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :資本金, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_capital, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :営業利益, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_operating_income, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :借入金, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_loan, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :現金・預金, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_cash_deposit, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :減価償却費, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_depreciation_cost, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :純資産合計, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_total_net_assets, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :負債合計, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_total_liabilities, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :売掛金, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_accounts_receivable, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :受取手形, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_bills_recivable, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :棚卸資産, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_inventory, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :買掛金, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_accounts_payable, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+              <div class='form-team my-2'>
+                <%= f.label :支払手形, class: "text-white" %><br>
+                <%= f.number_field :previous_fiscal_year_bills_payable, class: 'frame-none contact-form', placeholder: '' %>
+              </div>
+              <br><br>
+            </div>
+
+
+          <% else %>
+
+            前期決算
+            <div class='form-team my-2'>
+              <%= f.label :正社員数, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_employee, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :年間の平均労働時間, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_average_work_time, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :売上高, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_sales, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :一期前売上高, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_pre_sales, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :資本金, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_capital, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :営業利益, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_operating_income, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :借入金, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_loan, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :現金・預金, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_cash_deposit, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :減価償却費, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_depreciation_cost, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :純資産合計, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_total_net_assets, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :負債合計, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_total_liabilities, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :売掛金, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_accounts_receivable, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :受取手形, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_bills_recivable, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :棚卸資産, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_inventory, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :買掛金, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_accounts_payable, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+            <div class='form-team my-2'>
+              <%= f.label :支払手形, class: "text-white" %><br>
+              <%= f.number_field :previous_fiscal_year_bills_payable, class: 'frame-none contact-form', placeholder: '' %>
+            </div>
+            <br><br>
+          <% end %>
+
+
+          <%= f.submit '次へ', class: "send-button", data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, id: 'formButton' %>
+
+        </div>
+    <% end %>
+  </section>
+</div>
+

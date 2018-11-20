@@ -1,0 +1,19 @@
+
+
+<div id="form_content_wrap">
+  <section class="form_step form_step1 on">
+    <%= form_for(@user, url: users_p23_path, method: :get) do |f| %>
+      <div class='container pb-5'>
+        <div class="form-center">
+          <p>添付書類アップデートページ</p>
+          <br><br>
+          <!--<%= f.hidden_field :prefecture_number, value: "#{@user.prefecture}" %>-->
+          <%= f.hidden_field :business_alphabet, value: "業種にあった記号を送る" %>
+          <%= f.hidden_field :business_number, value: "業種にあった数字を送る" %>
+          <%= f.submit '次へ', class: "send-button", data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, id: 'formButton' %>
+
+
+    <% end %>
+  </section>
+</div>
+

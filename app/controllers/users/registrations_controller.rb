@@ -20,6 +20,14 @@ class Users::RegistrationsController < Devise::RegistrationsController
     SendMailer.send_when_registration(current_user, pass_temp).deliver
   end
 
+  def after_sign_up_path_for(resource)
+    about_path
+  end
+
+  def after_inactive_sign_up_path_for(resource)
+    about_path
+  end
+
   # GET /resource/edit
   # def edit
   #   super
@@ -67,7 +75,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   def user_params
-    params.require(:user).permit(:name, :email, :tel, :password, :salt, :encrypted_password,
+    params.require(:user).permit(:last_name, :first_name, :last_name_kana, :first_name_kana, :email, :business_type,
+                                 :tel, :password, :salt, :encrypted_password,
                                  :latitude, :main_image, :title, :city, :self,
                                  :menu1, :menu2, :menu3, :menu4, :menu5,
                                  :image1, :image2, :image3, :image4, :image5,

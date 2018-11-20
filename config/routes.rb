@@ -24,6 +24,7 @@ Rails.application.routes.draw do
     get ":id/#{i}", to: "users#p#{i}", as: "users_p#{i}"
   end
 
+  get "/about", to:"tops#about", as:"about"
 
   resources :tops
 

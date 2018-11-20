@@ -5,7 +5,6 @@
   <section class="form_step form_step1 on">
     <%= form_for @user do |f| %>
       <div class='container pb-5'>
-        <div class="btn btn-login" style="display: block"><a style=" color: white;" href="/users/sign_in" target="_blank">ログインはこちら</a></div>
         <script src='https://ajaxzip3.github.io/ajaxzip3.js' charset='UTF-8'></script>
         <%= f.hidden_field :password, :value => "test1234" %>
         <%= f.hidden_field :password_confirmation, :value => "test1234" %>
@@ -13,8 +12,23 @@
         <div class="form-center">
 
           <div class='form-team my-2'>
-            <%= f.label :本名, class: "text-white" %>
-            <%= f.text_field :name, class: 'frame-none contact-form', placeholder: '例）山田　太郎' %>
+            <%= f.label :性, class: "text-white" %>
+            <%= f.text_field :last_name, class: 'frame-none contact-form', placeholder: '例）山田　太郎' %>
+          </div>
+          <div class='form-team my-2'>
+            <%= f.label :性かな, class: "text-white" %>
+            <%= f.text_field :last_name_kana, class: 'frame-none contact-form', placeholder: '例）山田　太郎' %>
+          </div>
+          <br><br>
+
+
+          <div class='form-team my-2'>
+            <%= f.label :名, class: "text-white" %>
+            <%= f.text_field :first_name, class: 'frame-none contact-form', placeholder: '例）山田　太郎' %>
+          </div>
+          <div class='form-team my-2'>
+            <%= f.label :名かな, class: "text-white" %>
+            <%= f.text_field :first_name_kana, class: 'frame-none contact-form', placeholder: '例）山田　太郎' %>
           </div>
           <br><br>
           <div class='form-team my-2'>
@@ -22,7 +36,10 @@
             <%= f.text_field :email, class: 'frame-none contact-form', placeholder: '例）email@example.com' %>
           </div>
           <br><br>
-
+          <div class='form-team my-2'>
+            <%= f.label :組織形態, class: "text-white" %>
+            <%= f.select :business_type, {"株式・有限・合名・合資・合同などの会社組織":0, "個人事業主": 1, "組合関連": 2, "療法人、社会福祉法人":3, "その他法人":4 } , class:'business_type' %>
+          </div>
           <br><br>
 
           <div class='form-team my-2'>

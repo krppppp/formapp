@@ -1,0 +1,145 @@
+<div id="form_content_wrap">
+  <section class="form_step form_step1 on">
+    <%= form_for(@user, url: users_p22_path, method: :get) do |f| %>
+      <% require 'jp_prefecture' %>
+      <% pref = JpPrefecture::Prefecture.find(@user.prefecture_number) %>
+      <div class='container pb-5'>
+        <div class="form-center">
+          <p>会社情報</p>
+          <%= @user.prefecture%>
+          <br><br>
+          <!--<%= f.hidden_field :prefecture_number, value: "#{@user.prefecture}" %>-->
+          <%= f.hidden_field :prefecture, value: "#{pref.name}" %>
+
+          <% unless @user.business_type == 1 %>
+          <p>おもてなしは全角をがうまく処理できない</p>
+            <div class='form-team my-2'>
+              <%= f.label :会社名, class: "text-white" %><br>
+              <%= f.text_field :co_name, class: 'frame-none contact-form', placeholder: '例）AKI TENNIS株式会社' %>
+            </div>
+            <br><br>
+
+            <div class='form-team my-2'>
+              <%= f.label :会社名かな, class: "text-white" %><br>
+              <%= f.text_field :co_name_kana, class: 'frame-none contact-form', placeholder: '例）えーけーあいてにすかぶしきがいしゃ' %>
+            </div>
+            <br><br>
+
+            <div class='form-team my-2'>
+              <%= f.label :法人番号（13桁）, class: "text-white" %><br>
+              <%= f.number_field :co_number, class: 'frame-none contact-form', placeholder: '13桁を入力してください' %>
+            </div>
+            <br><br>
+          <% end %>
+
+
+
+          <a href="https://www.e-stat.go.jp/classifications/terms/10" target="_blank">業種番号の確認</a>
+
+          <div class='form-team my-2'>
+            <%= f.label :業種番号（4桁）, class: "text-white" %><br>
+            <%= f.number_field :business_number, class: 'frame-none contact-form', placeholder: '4桁を入力してください' %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :業種（大分類）, class: "text-white" %><br>
+            <%= f.select :business, {"農業・林業":"農業・林業","漁業": "漁業", "鉱業・採石業・砂利採取業": "鉱業・採石業・砂利採取業", "建設業":"建設業" , "製造業":"製造業" , "電気・ガス・熱供給・水道業":"電気・ガス・熱供給・水道業" , "情報通信業":"情報通信業" , "運輸業，郵便業":"運輸業，郵便業" , "卸売業，小売業": "卸売業，小売業", "金融業，保険業":"金融業，保険業" , "不動産業，物品賃貸業":"不動産業，物品賃貸業" , "学術研究，専門・技術サービス業":"学術研究，専門・技術サービス業", "宿泊業，飲食サービス業":"宿泊業，飲食サービス業" , "生活関連サービス業，娯楽業":"生活関連サービス業，娯楽業" , "教育，学習支援業":"教育，学習支援業" , "医療，福祉":"医療，福祉", "複合サービス事業":"複合サービス事業" ,"サービス業（他に分類されないもの）":"サービス業（他に分類されないもの）","公務（他に分類されるものを除く）":"公務（他に分類されるものを除く）"} ,class: 'business_type' %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :業種（中分類）, class: "text-white" %><br>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :業種（小分類）, class: "text-white" %><br>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :決算月, class: "text-white" %><br>
+            <%= f.select :financial_month, {"1": 1,"2": 2,"3": 3,"4": 4,"5":5,"6": 6,"7": 7,"8": 8,"9": 9,"10": 10,"11": 11,"12": 12,} %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :設立日（半角８桁）, class: "text-white" %><br>
+            <%= f.number_field :establishment_date, class: 'frame-none contact-form', placeholder: '半角数字８桁' %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%= f.label :事業所数, class: "text-white" %><br>
+            <%= f.number_field :number_of_shop, class: 'frame-none contact-form', placeholder: 'ハイフンなし半角数字11桁' %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%= f.label :郵便番号（ハイフンなし半角7桁）, class: "text-white" %><br>
+            <%= f.number_field :co_address_postcode, class: 'frame-none contact-form', placeholder: '(ハイフンなし半角7桁）' %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%= f.label :都道府県, class: "text-white" %><br>
+            <%= f.collection_select :co_prefecture, JpPrefecture::Prefecture.all, :code, :name %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :市区町村, class: "text-white" %><br>
+            <%= f.text_field :co_city, class: 'frame-none contact-form', placeholder: '例）新宿区' %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :丁目, class: "text-white" %><br>
+            <%= f.text_field :co_address, class: 'frame-none contact-form', placeholder: '例）西新宿' %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :番地、建物名, class: "text-white" %><br>
+            <%= f.text_field :co_address_small, class: 'frame-none contact-form', placeholder: '1-1-1 新宿タワー１F' %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%= f.label :資本金, class: "text-white" %><br>
+            <%= f.number_field :capital_stock, class: 'frame-none contact-form', placeholder: '円' %>
+          </div>
+          <br><br>
+
+
+          <div class='form-team my-2'>
+            <%= f.label :従業員数, class: "text-white" %><br>
+            <%= f.select :number_of_employees, {"0～5人":"0～5人","6～20人":"6～20人","21～50人":"21～50人","51～100人":"51～100人","101～200人":"101～200人","201～300人":"201～300人","301～500人":"301～500人","501～1000人":"501～1000人","1001人以上":"1001人以上","3000人以上":"3000人以上","5000人以上":"5000人以上","10000人以上":"10000人以上","20000人以上":"20000人以上",}, class: 'business_type' %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :正社員数, class: "text-white" %><br>
+            <%= f.number_field :number_of_regular_employees, class: 'frame-none contact-form', placeholder: '数字を入力してください' %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :事業概要、建物名, class: "text-white" %><br>
+            <%= f.text_area :about_business, class: 'frame-none contact-form', placeholder: 'テニス用品の通販事業、WEB制作事業' %>
+          </div>
+          <br><br>
+
+
+          <div class='form-team my-2'>
+            <%= f.label :前々期決算の数値を持っていますか？, class: "text-white" %><br>
+            <%= f.select :before_the_previous_fiscal_year_ended, {"いいえ":0,"はい":1}, class: 'business_type' %>
+          </div>
+          <br><br>
+
+
+
+          <%= f.submit '次へ', class: "send-button", data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, id: 'formButton' %>
+
+        </div>
+    <% end %>
+  </section>
+</div>
+

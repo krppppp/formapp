@@ -1,0 +1,61 @@
+<div id="form_content_wrap">
+  <section class="form_step form_step1 on">
+    <%= form_for(@user, url: users_p21_path, method: :get) do |f| %>
+      <div class='container pb-5'>
+        <div class="form-center">
+            <%= f.hidden_field :co_name, :value => "" %>
+
+
+          <p>申請者情報</p>
+          <br><br>
+          <div class='form-team my-2'>
+            <%= f.label :誕生日（半角８桁）, class: "text-white" %><br>
+            <%= f.number_field :birthday, class: 'frame-none contact-form', placeholder:'（半角８桁）' %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%= f.label :電話番号（ハイフンなし半角11桁）, class: "text-white" %><br>
+            <%= f.telephone_field :phone_number, class: 'frame-none contact-form', placeholder:'(ハイフンなし半角11桁）' %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%= f.label :郵便番号（ハイフンなし半角7桁）, class: "text-white" %><br>
+            <%= f.number_field :postcode, class: 'frame-none contact-form', placeholder:'(ハイフンなし半角7桁）' %>
+          </div>
+          <br><br>
+          <div class='form-team my-2'>
+            <%= f.label :都道府県, class: "text-white" %><br>
+            <%= f.collection_select :prefecture_number, JpPrefecture::Prefecture.all, :code, :name %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :市区町村, class: "text-white" %><br>
+            <%= f.text_field :city, class: 'frame-none contact-form', placeholder:'例）新宿区' %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :丁目, class: "text-white" %><br>
+            <%= f.text_field :address, class: 'frame-none contact-form', placeholder:'例）西新宿' %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :番地、建物名, class: "text-white" %><br>
+            <%= f.text_field :address_small, class: 'frame-none contact-form', placeholder:'1-1-1 新宿タワー１F' %>
+          </div>
+          <br><br>
+
+          <div class='form-team my-2'>
+            <%= f.label :プラン, class: "text-white" %><br>
+            <%= f.select :price, {"30万円プラン":0, "50万円プラン": 1, "100万円プラン": 2} , class:'business_type' %>
+          </div>
+          <br><br>
+          <%= f.submit '次へ', class: "send-button", data: {confirm: '一度登録すると変更できない項目があります。本当に登録してもよろしいででしょうか？'}, id: 'formButton' %>
+
+        </div>
+    <% end %>
+  </section>
+</div>
+

@@ -1,5 +1,8 @@
 {
   "name": "loginapp",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "aws-sdk": "^2.356.0",
+    "nodemailer": "^4.6.8"
+  }
 }
